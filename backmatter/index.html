@@ -21,4 +21,144 @@
     <p>There is also a summary page for a short overview of the stuff I will continue to use <a href="./summary.html">here</a>, but that will not explain how they work.</p>
     <p></p>
     
+    <h3>Control theory</h3>
+    <p>
+        I think the best introduction to what control theory is and can do is a historic example. This is a "governor":
+    </p>
+    <center>
+    <img width="50%" src="./Fliehkraftregler.PNG">
+    </center>
+    <p>It was invented by James Watt, the one from the physical unit of power (W), to make sure the steam engines he built ran at a constant speed.</p>
+    <p>
+        It works like this: the steam engine spins the vertical rod on the left. The rotation induces forces in the spheres that pull them outward, which affects the rest of the lever system. The final lever <i>closes</i> the valve that lets steam into the steam engine, but only a bit.
+    </p>
+    <p>
+        (You can try this at home too: stand, spin and notice how your arms will lift by themselves! Excercise left to the reader)
+    </p>
+    <p>
+        It needs to be carefully constructed and built, and maybe a bit fine tuning is necessary, but when everything is in place, the steam engine can hold a certain speed, deliver constant power and the only left to do for operation is to make sure there is enough water, pressure and that there is a sufficient fire going.
+    </p>
+    <p>It was a clever/necessary invention:</p>
+    <ul>
+        <li>
+            operating a speed control, like a gas pedal in a car, could be done, but it required constant attention. This saves a task for operator. It also eliminated the risk that the operator would make a mistake.
+        </li>
+        <li>
+            running the engine slower than required was bad. One of the uses for early steam engines in England was the operation of pumps, that made sure the miners underground didn't drown. The other big use was manufacturing industry, automated looms being a big factor. Time is money, you didn't want them to run slower than necessary.
+        </li>
+        <li>
+            running the engine faster than required was bad too. Technical devices are often built for certain amounts of power, but not significantly more. Doing so can damage machinery, taking a pump as a example, there is a maximum force the parts can withstand. If a steam engine would run too faster, it would convert the power to force too rapidly, too much force would be applied and important parts could bend and break.
+        </li>
+        <li>
+            It was required for electricity generation, as devices with alternating current (AC) are built for a certain frequency. Speed it up and the device speeds up. The same limit for maximum power still applies too: put too much current through a wire and the wire will heat up and can start a fire.
+        </li>
+    </ul>
+    <!--
+    <p>
+        Anyway it's a neat thing to have. Others applied the concept and brought you the thermostat. A worse example because it's not as visual, but the working principle is the same. The action of the entire thing, the heating, will affect the controlling part, which will regulate the amount of input and keep something constant. Now humanity is free of having to watch and maintain a fire or something like that.
+    </p>
+    
+    -->
+    <p>
+        The next big step of note for the sake of this short history, happened in world war two. Or shortly after. Norbert Wiener discovered that the same principle could be applied to virtually any machine, provided some conditions were met. He wrote a book about and gave it the title...
+    </p>
+    <center>
+        <h3>cybernetics</h3>
+    </center>
+    <p>
+        He summarized the principle, calling it a feedbackloop, something like this. Althought this illustration is mine.
+    </p>
+    <center>
+        <img src="full_feedback_ortho.svg">
+    </center>
+    <p>Setting one up goes like this:</p>
+    <ol>
+        <li>a start and a goal have to be determined.</li>
+        <li>in the loop start analysis, the problem needs to be looked at and a course of action has to be determined.</li>
+        <li>the action needs to be performed</li>
+        <li>after the action has been performed, it is necessary to analyse the outcome.
+        <ul>
+            <li>has the goal been achieved?</li>
+            <li>are you close to your goal now?</li>
+            <li>has nothing happened at all?</li>
+            <li>did it go horribly, horribly wrong?</li>
+        </ul>
+        if the goal has been achieved, nothing else needs to be done, but that's rarely the case on first try.
+        </li>
+        <li>the outcome of this analysis is the feedback. In the most simple cases, as with the governor above, it's just the action that has to be taken next, opening or closing the valve. The feedback should be provided for the next loop start analysis, so that mistakes that were made are not repeated, accidents can be avoided.</li>
+    </ol>
+    <p>
+        This concept is great for several reasons: it's simple. It is recursive: any step inside of a feedbackloop can be described in terms of another, smaller feedbackloop. And it can be applied to basically everything. Not entirely accurately because things like laws of nature don't have anyone or anything "performing" this loop or any control action, but an imbalance will self correct.
+    </p>
+    <p>
+        Modern advances in electronics and cheap computers allow it to build all kinds of things that self balance:
+    </p>
+    <ul>
+        <li>pendulums</li>
+        <li><a href="https://www.youtube.com/watch?v=n_6p-1J551Y">cubli</a></li>
+        <li>the robots of boston dynamics</li>
+    </ul>
+    
+    <p>
+        The principle is universal. It can be applied to balance things, but it can also be use to just maximize towards any particular goal.
+    </p>
+    <p>
+        Evolutionary algorithms for example, skip any pretense at analysis. They don't know what the best way to achieve something is. They run many different simulations in parralel. As an action step, variables are varied by a random amount, and the after loop analysis simply checks if the goal is closer. The feedback then uses the "successful", "best" solution from the last loop as the base case for the next mass variation and mass test. Here is an article on how to learn to "walk".
+        <a href="https://towardsdatascience.com/introduction-to-evolutionary-algorithms-a8594b484ac">https://towardsdatascience.com/introduction-to-evolutionary-algorithms-a8594b484ac</a>
+    </p>
+    
+    <h3>It doesn't have to be about technology</h3>
+    <p>
+        Political processes, democractic voting, as well as power struggles in more authoritarian societies follow the same set of rules. The participants look at the situation, take their actions and repeat after some time.
+    </p>
+    <h3>But...</h3>
+    <p>
+        If the principle is universal and can be applied to anything, anything can be optimized or stabilized by it, why did we have an economic crisis in 2009? Why was the best choice to lead the USA between 2016 and 2020 Donald Trump?
+    </p>
+    <p>
+        That's what I'm wondering anyway.
+    </p>
+    
+    <h2>Precise communication</h2>
+    
+    <p>This is one piece of the puzzle that still needs some highlighting.</p>
+    <p>
+        James Watt could only come up with the governor, because he knew the area around the problem very well. The different things that would be inputs or outputs for his device were precisely defined and calculated. The governor, unlike a person running a feedbackloop process, wouldn't think, it would just <i>be</i> and it's function would be the outcome of it's design.
+    </p>
+    <p>
+        James Watt was just one person too and after the problem was solved, there weren't many things that could be controlled by a different mechanical device in a similar way.
+    </p>
+    <p>
+        Industry had to mature for decades for the next significant step. Unfortunately, that step was world war one. This bit is a bit focused on the German side, additional sources are welcome.
+    </p>
+    <p>
+        For many different reasons, the war went on for longer than was expected by the people who planned it. Not that anyone directly planned it, but the mutual arms race in europe and the different alliances being forged paved a clear path to what was going to follow. Russia and Japan had fought in 1904 and 1904. Germany had it's last war in 1871 against France, ending in swift victory, the British Empire was at the apex of it's power. It was difficult to imagine a war as long as it turned out.
+    </p>
+    <p>
+        One of the side effects, was that machines were difficult to maintain or replace. The reason being that in times of peace, spare parts could be ordered, it was just a matter of time and price. In war, waiting for a spare part for a cannon could alter the course of a battle. A steam locomotive that wouldn't move because of lacking spare parts or a difficult maintenance, wouldn't deliver much needed supplies. In short, <i>waiting</i> for custom made spare parts or specialists, was simply no longer an option.
+    </p>
+    <p>
+        Another factor was that even things made according to the same instructions, like a factory A and a factory B producing the same thing, would produce similar but slightly different products. Parts could not be exchanged, they had to come from exactly the point of origin or it wouldn't work. Which increased the difficulty of supply even more, because when any factory hit it's absolute maximum of productivity, but more parts or products were needed still, it represented a crippling bottleneck.
+    </p>
+    <p>
+        There were two alternatives. One option was to distribute information on how to make parts and machines, and in a way that would enable anyone to read them, understand them and produce a compatible product. The other, was to provide certain standard parts, that would be used in <i>all</i> products, making all parts interchangeable.
+    </p>
+    <p>
+    Both were pursued, they culminated in the <a href="https://en.wikipedia.org/wiki/Deutsches_Institut_f%C3%BCr_Normung">"DIN"</a>, founded 1917, that was supposed to provide the instructions, while the rest of the industry would follow the instructions.
+    </p>
+    <p>
+    Several key things had to be done and achived for this to work:
+    </p>
+    <ul>
+        <li>
+            The visual language used for design had to be so universal that anyone would be taught to read and understand it.
+        </li>
+        <li>
+            The output of the factories had to be produced and measured in a way, that would ensure their function, completely independent of what their final purpose was going to be.
+        </li>
+        <li>
+            The need for 
+        </li>
+    </ul>
+    
 </body>
