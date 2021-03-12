@@ -1,0 +1,47 @@
+<!doctype html>
+
+<meta charset="UTF-8">
+
+<html>
+    
+    <head>
+        <title>
+        Information quality management - Project Management
+        </title>
+        <link rel="stylesheet" type="text/css" href="../mainstyle.css"/>
+    </head>
+
+<body>
+    <h3>Project Management</h3>
+    <p>These tools are motivated by me encountering problems and not being able to deal with them effectively. Be it because the necessary tool didn't exist or because I didn't have access to it.
+    </p>
+    <p>
+        I will probably release them as open source eventually, because I really just want everyone to not have these problems anymore. Sooner or later they're bound to be my problem as well.
+        Be it by others spending "opportunity cost" time on it, or because not using them, or tools like them, actively creates problems.
+    </p>
+    <h3>dependency management</h3>
+    <p>
+        Suppose there is a chain of people working on something and they had over stuff. 
+    </p>
+    <img src="./simple1.svg">
+    
+    <p>
+        And supposed A notices he made a mistake, but it's already in C's hands. There should be a way to inform everyone up to who handles it at the time, of the issue. But not beyond.
+    </p>
+    <img src="./simple2.svg">
+    
+    <p>When it's not just one chain but a network of people working on something, you want everyone to be informed that's in the dependency tree.</p>
+    
+    <img src="./complex1.svg">
+    <img src="./complex2.svg">
+    
+    <p>That should be a very very simple, interaction. Of course that depends there being an organization chart for the project and stakeholders. What I have handles the network aspect, but not the actual message sending, that's up to the user of the library.</p>
+    
+    <h3>time management / Gantt</h3>
+    <p>
+        It should be trivial, but I've noticed that it's somehow still inaccessible to just do simple time management sometimes. This tool can create the chart below but calculateing backwards in time.
+    </p>
+    <p>Starting by defining end date and project name and then a top down definition of the different steps.</p>
+    <img src="./Gantout.svg">
+
+</body>
