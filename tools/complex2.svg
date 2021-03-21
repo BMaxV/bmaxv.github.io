@@ -60,8 +60,14 @@
 <!-- C&#45;&gt;D -->
 <g id="edge3" class="edge">
 <title>C&#45;&gt;D</title>
-<path fill="none" stroke="black" d="M198,-90C200.61,-90 203.23,-90 205.84,-90"/>
-<polygon fill="black" stroke="black" points="205.93,-93.5 215.93,-90 205.93,-86.5 205.93,-93.5"/>
+<path fill="none" stroke="black" d="M192.38,-78.73C198.78,-76.78 205.18,-76.11 211.58,-76.72"/>
+<polygon fill="black" stroke="black" points="211.15,-80.2 221.64,-78.73 212.52,-73.34 211.15,-80.2"/>
+</g>
+<!-- C&#45;&gt;D -->
+<g id="edge10" class="edge">
+<title>C&#45;&gt;D</title>
+<path fill="none" stroke="blue" d="M192.38,-101.27C198.78,-103.22 205.18,-103.89 211.58,-103.28"/>
+<polygon fill="blue" stroke="blue" points="212.52,-106.66 221.64,-101.27 211.15,-99.8 212.52,-106.66"/>
 </g>
 <!-- E -->
 <g id="node5" class="node">

@@ -239,6 +239,25 @@ z-index:6;
 color:green;
 }
 
+.pro{
+background:rgb(120,255,120);
+}
+
+td.pro:hover{
+color:rgb(0,50,0);
+background:rgb(200,255,200);
+}
+
+.contra{
+background:rgb(255,120,120);
+}
+
+
+.contra:hover{
+color:rgb(50,0,0);
+background:rgb(255,200,200);
+}
+
 .ui{
 position:fixed;
 top:500px;
