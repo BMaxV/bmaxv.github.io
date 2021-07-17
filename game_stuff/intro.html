@@ -1,0 +1,94 @@
+<!doctype html>
+
+<meta charset="UTF-8">
+
+<html>
+    
+    <head>
+        <title>
+        Gamestuff
+        </title>
+        <link rel="stylesheet" type="text/css" href="./../mainstyle.css"/>
+    </head>
+
+<body>
+        <h2>What?</h2>
+        <h3>Map</h3>
+        <p>RTS, RPGs and MMOs lack a certain kind of granularity and depth.</p>
+        <p>To scratch the itch I want to make a game that improves this. On this website I plan to document the problems and my attemps at solutions.
+        </p>
+        <p>First things first, something that <a href="https://twitch.tv/arkcard">https://twitch.tv/arkcard</a> mentioned, that I agree with, is that in "total war warhammer (I),II,(III)" should add another layer to the map, to smaller details in provinces, doing more tactical stuff in smaller areas.</p>
+        <center>
+        <img src="./map.png">
+        </center>
+        <p>The method I have picked should allow it to apply a procedural terrain algorithm as well.</p>
+        <h3>Crime and Justice</h3>
+        <p>Another thing that's a problem in eve online is crime. Crime in eve online, basically stealing, is just some not very clever exploitation of access priviliges. Basically people work to grow their trust, then they cash out and take everything they have access to. But that's NOT how a cool heist would work.</p>
+        <p>What I think is needed is a system with guards that watch an area and can actually protect it and where the setup of the area and the guards is up to the players.</p>
+        <p>I have the "watching" implement, what constitutes a crime and how fame/identification would work I haven't figured out.</p>
+        <h3>RTS controls</h3>
+        <p>When player groups in MMOs grow too big, problems arise. Problems of organization, hardware limitations that force eve online to do a "time dilation" to allow the server to process all inputs and broadcast all results.</p>
+        <p>So eventually, RPG or Squad mechanics would have to transform into RTS concepts and controls. I have some formations, but no movement, pathfinding or controls yet.</p>
+        <h3>Transport, movement and pathfinding</h3>
+        <p>Fast travel can kill the immersion of a game. The experience of going to locations in Skyrim for the first time, because you don't have fast travel yet, is probably the most immersive part of the game. Later on, zooming between locations turns the game world from a world into a theme park that just plays events and cutscenes for you, which I think is less interesting.</p>
+        <p>In eve online fast travel/jump drives erase almost all chances of traditional piracy. At the same time it makes travel quick and easy. It erases the need for patrols, it reduces prices of goods in remote places, decreasing the need for players to earn money to afford their equipment and thus reducing engagement with the game overall.</p>
+        <p>That's why I'm not going to do it.</p>
+        <h3>Cities and Buildings</h3>
+        <p>Creating/designing cities and buildings is actually pretty difficult, since they're built for a purpose. The purpose has to be known, understood and included in how the city is being generated. Traffic is a big limitation and therefore interesting. How to avoid it and how to deal with it, should be a problem for players to solve.</p>
+        <p>So basically I need to solve pathfinding in terrain with obstacles/in narrow places first.</p>
+        <h3>Niches</h3>
+        <p>Going back the start, one of the reasons Arkcard mentioned wanting this "smaller detail" level for the maps, was that on harder difficulties, he was slowly losing and couldn't switch to more guerilla tactics that would have maybe improved his situation. Guerilla tactics largely consist of exploiting secrecy and the terrain to your advantage. If the terrain does not give such an advantage, RTS opponents can you just roflstomp you, like is being described as "n+1" in eve online.</p>
+        <p>
+        In other words, different terrains in different regions of the map, should offer different advantages to different tactics and styles of gameplay. Cavalry, castles, island federations, swamps, deserst, forests. You get the point.
+        </p>
+        <p>Currently I don't really have these.</p>
+        <h3>Power curve, leveling systems, "hero's journey" and plot devices</h3>
+        <p>Watch this video: <a href="https://www.youtube.com/watch?v=VHrTTgmB_3w">youtube, TUN: Magic!</a>.</p>
+        <p>
+        The thing that's going wrong in most MMOs is that they can't diverge from the hero's journey story template, because it's so effective. This implies a story arc, a character progression, often a power level increase, and results in a state where the player has "finished" the game.
+        </p>
+        <p>
+        This is bad, because the content can always only be created slower than players can consume it, the classic problem of theme park vs. sandbox mmos.
+        </p>
+        <p>
+        Over the years I have become progressively less interested in leveling systems, they make no sense beyond roping the player into switching gear. A sword is a sword. A gun is a gun.
+        </p>
+        <p>
+        In addition to that, arcs often conclude with aqcuiring plot device levels of power. If an addition is being made, that power or that plot device has to be retconned to be weaker. Boring.
+        </p>
+        <p>
+        I think it's weird that people don't steal from well working concepts more. E.g. in the lord of the rings, there is ONE big bad ring of power. It's not something every MMOs character gets as a participation trophy. The other rings don't even do that much. Most mortals and most elves are just regular dudes doing their jobs as guards, soldiers, gardeners.
+        </p>
+        <p>
+        tl;dr: the power distribution curve should look like this:
+        </p>
+        <center>
+        <img src="player_power_distribution.svg">
+        </center>
+        <p>
+        In words, there should be very few players or characters acquiring really powerful items. Conflicts then revolve around ownership, use, creation and destruction of said items.
+        </p>
+        <h3>Market and industry</h3>
+        <p>Caring about the economy is the motivation for RTS style gameplay. Even in games that favor a solo playstyle, the market motivates which areas players go to and why. So it's important.</p>
+        <p>I am currently working on getting parts of the NPC economy and NPC trading working, to provide a baseline for players to engage with.</p>
+        <h3>Combat systems</h3>
+        <p>
+        I think the combat system has start at the individual level and grow in scale from there. So I have to decide what a single individual should be able to do and in consequence what lots of people should be able to do as a group.
+        </p>
+        <p>
+        E.g. a good approach to handle mass archers would be to abstract single shots in a chance to hit AoE.
+        </p>
+        <p>
+        I haven't really worked on this and thought about it, but I'm reasonably sure about two things:
+        </p>
+        <ul>
+        <li>the bigger the scale, the less individual power and control people will have.</li>
+        <li>I don't think I want "dodging with i-frames".</li>
+        </ul>
+        <h3>nature and pve</h3>
+        <p>One of the biggest problems is to program the AI and the features for what will happen if players don't interact with the game, because it should feel natural. There should be predator and prey animals, there should be NPC cities and economies working by themselves.</p>
+        <p>It should be a "world on wire" that players can interact with, not some theater where people pretend to not play all the parts.</p>
+        
+        
+        
+</body>
