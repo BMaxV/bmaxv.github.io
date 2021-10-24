@@ -1,0 +1,11 @@
+I think if you made a graph of
+Requirements and solutions
+The "correct" path is the one that 
+Puts all the requirements at the top
+And solves as many as possible in as few
+Steps as possible.
+
+Doing type checking in python would be worse
+Than doing it in C because the type system is
+Core to how c is written and only an after thought
+In python.
