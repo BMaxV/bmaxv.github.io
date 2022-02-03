@@ -1,0 +1,14 @@
+digraph{
+    Start -> O
+    O [label="less assets than opponent"]
+    O -> A [label="aggressive"]
+    A [label="invest all assets in offense\nconcentrate forces and attack"]
+    O -> B [label="defensive"]
+    B [label="invest assets in economy and defense\ngrow resources"]
+    B -> P [label="grow"]
+    P [label="more assets than opponent"]
+    P -> A
+    A -> End
+    End [label="End\nhopefully victory"]
+    
+}
