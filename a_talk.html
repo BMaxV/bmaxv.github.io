@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<!-- <html lang="en-US"> -->
+<html lang="en-US" class="fade">
+<!-- 
+  ^ a class of "fade" makes slides fade smoothly into one another
+ -->
+<!-- <html lang="en-US" class="nonumbers"> -->
+<!-- 
+  If you want no numbers on the slides add a "nonumbers" class 
+  to the HTML element.
+  Adding a class of "fade" will make slides fade into another. 
+-->
+<head>
+  <meta charset="UTF-8">
+  <title>Big if True</title>
+<!-- 
+  If you upload your slides to the web, ensure that you have 
+  a good title - this shows up in search results and social
+  media links
+ -->
+  <meta name="viewport" content="width=device-width, user-scalable=yes">
+  <link rel="stylesheet" href="themes/mozilla/styles/style.css">
+</head>
+<body class="list">
+  <header class="caption">
+    <h1>Big if True</h1>
+    <p class="footer">
+      Max,
+      <!-- 
+      {your <a href="http://twitter.com/">@twitter</a> or 
+      <a href="mailto:you@email.com">you@email.com</a>}
+      -->
+    </p>
+  </header>
+  <aside class="talkdescription">
+    <p>This slide deck is using the shower system - roll over the previews to see the notes and click any slide to go into presentation mode. Then use keys to navigate. <button onclick="goFullScreen()">Go fullscreen</button></p>
+    <p class="abstract">
+      <strong>Abstract: </strong>
+       Information is fickle, 
+    </p>
+  </aside>
+
+<!-- 
+    Simply copy the whole block for each slide you want.
+  Special slides get extra classes. Each slide needs an ID 
+  to allow for bookmarking and target jumping.
+-->
+
+  <div id="cover" class="slide"><div>
+    <section>
+      <header>
+        <h2>Big if True <br> the state of information</h2>
+      </header>
+      <!--
+      <img src="pictures/templatedemos/high-five.jpg" 
+           class="middle shadow" height="400"
+           alt="High-five at the Mozilla Festival!">
+      <small class="byline">
+        {Firstname}, {Lastname}, {Conference}, {Location}, {date}
+      </small>
+      <footer class="notes">
+        This is a simple cover slide with an image in the middle
+      </footer>
+      -->
+    </section>
+  </div></div>
+
+ <div id="thanks" class="slide"><div>
+    <section>
+      <header>
+        <h2>Thanks</h2>
+      </header>
+      <img src="pictures/mozillaoverview/redpanda.jpg" class="right" alt="Red panda (Firefox)">
+      <ul class="nobull">
+        <li>{name}</li>
+        <li>{title}</li>
+        <li>{<a href="http://twitter.com/">@twitter</a>}</li>
+        <li><strong>Slides</strong>: {slideurl}</li>
+      </ul>
+      <small class="credits">
+        <a href="http://www.flickr.com/photos/yortw/5798336827/">Photo by Yortw</a>
+      </small>
+
+    <footer class="notes">
+    </footer>
+
+    </section>
+  </div></div>
+
+ <div id="langMenuDivId">
+    <!-- Having event.stopPropagation() prevents keypresses on the language menu from affecting slideshow progression -->
+    <select id="langMenuId" onchange="changeLanguage();" onkeydown="event.stopPropagation()">
+      <option value="en-US">English</option>
+      <option value="zh-CN">中文（简体）</option>
+      <option value="zh-TW">中文（繁體）</option>
+      <option value="ja-JP">日本語</option>
+    </select>
+  </div>
+  <script src="scripts/script.js"></script>
+  <!-- Copyright © 2010–2012 Vadim Makeev — pepelsbey.net -->
+</body>
+</html>
