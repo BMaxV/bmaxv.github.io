@@ -1,0 +1,43 @@
+<!doctype html>
+<head>
+    <title>politics</title>
+    <meta charset="utf-8"> 
+    <link rel="stylesheet" type="text/css" href="./../mainstyle.css"/>
+</head>
+
+<!-- 
+this is shit, because js but seems acceptable
+source : https://stackoverflow.com/a/19844696
+-->
+<script>
+function changeCSS(cssFile, cssLinkIndex) {
+
+    var oldlink = document.getElementsByTagName("link").item(cssLinkIndex);
+
+    var newlink = document.createElement("link");
+    newlink.setAttribute("rel", "stylesheet");
+    newlink.setAttribute("type", "text/css");
+    newlink.setAttribute("href", cssFile);
+
+    document.getElementsByTagName("head").item(cssLinkIndex).replaceChild(newlink, oldlink);
+}
+</script>
+
+<body>
+    <div class="darkmodetoggle">
+    <a href="#" onclick="changeCSS('./../mainstyle.css', 0);">light</a> 
+    <a href="#" onclick="changeCSS('./../darkmainstyle.css', 0);">darkmode</a>
+    </div>
+<h2>politics</h2>
+<p>"politics" usually describes a narrow set of social interactions. I want it to be used in the broadest possible sense. In greek it was about "the affairs of the people of the city", which also probably meant the rich, ruling class.</p>
+<p>I want to use it as "issues of or with people"</p>
+<ul>
+    <li>"social issues"</li>
+    <li>laws</li>
+    <li>political participation</li>
+    <li>political opposition</li>
+    <li>inter personal things</li>
+    <li>diplomacy</li>
+    <li>negotiation</li>
+</ul>
+</body>

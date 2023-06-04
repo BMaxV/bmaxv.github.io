@@ -1,81 +1,50 @@
 <!doctype html>
+<head>
+    <title>landing</title>
+    <meta charset="utf-8"> 
+    <link rel="stylesheet" type="text/css" href="./mainstyle.css"/>
+</head>
 
-<meta charset="UTF-8">
+<!-- 
+this is shit, because js but seems acceptable
+source : https://stackoverflow.com/a/19844696
+-->
+<script>
+function changeCSS(cssFile, cssLinkIndex) {
 
-<html>
-    
-    <head>
-        <title>
-        Information quality management - Landing
-        </title>
-        <link rel="stylesheet" type="text/css" href="./mainstyle.css"/>
-    </head>
+    var oldlink = document.getElementsByTagName("link").item(cssLinkIndex);
+
+    var newlink = document.createElement("link");
+    newlink.setAttribute("rel", "stylesheet");
+    newlink.setAttribute("type", "text/css");
+    newlink.setAttribute("href", cssFile);
+
+    document.getElementsByTagName("head").item(cssLinkIndex).replaceChild(newlink, oldlink);
+}
+</script>
 
 <body>
-    <h2>Hi!</h2>
-    <p>I recently ran into the original issue again, and found I have no
-    succinct document to link to. Bad. So I fixed that.</p>
-    <ul>
-        <li><a href="./more_succinct.html">Englisch version</a></li>
-        <li>German version</li>
-    </ul>
-    <p>
-    <a href="./talk.html">As a talk.</a>
-    </p>
-    
-    <p style="color:rgb(150,0,0);"><i>So it's been almost a year since I started writing this page... A number of things have happened. Regarding actual tools, I have built them a bit, I had a few ideas but there is nothing ready to use yet. I have decided I will switch the focus a bit. It is probably unreasonable to hide. For a few reasons, I was always a bit scared by the idea of putting something on the internet with my identity attached to it. I have come to think that this reluctance is probably only a distadvantage. I will also try to aim for a more tree like structure, with better structuring, and more density. Having things expressed succintly where possible is better.</i></p>
-    <p>this is the landing page for a writing project about the biggest thing that's wrong with the world: information quality management.</p>
-    
-    <p>I recommend full screen mode (F11 in my browser).</p>
-    <p>I hope it's informative and/or entertaining!</p>
-    
-    <p>As a teaser, Chapter 30 of the 'hitchhikers guide to the galaxy' contains this gem:</p>
-    <blockquote>
-        "You know," said Arthur thoughtfully,  "all this explains a lot of things. All through my life I've had this strange unaccountable feeling that something was going on in the world, something big, even sinister, and no one would tell me what it was."<br>
-        "No"," said [Slartibartfast], "That's just perfectly normal paranoia. Everyone in the Universe has that."
-    </blockquote>
-    
-    <p>This website is my answer, what that big thing is and how to fix it. In theory.</p>
-    <p>
-        I have also tried my best to make it as approachable as possible. Please feel free to skip over the parts that feel familiar.</p><p>I choose to err on the stupid side, because the apparent failure is widespread, worldwide and particularly obvious where you would expect the highest levels of sophistication. Meaning, very smart people, in very high positions seem to get this wrong for reasons I can't explain.
-    </p>
-    <h3>table of contents:</h3>
-    <ul>
-    <li> <a href="intro.html">intro and basic argument</a> </li>
-    <li><a href="./backmatter/index.html">backmatter</a></li>
-    <li><a href="./core/index.html">core arguments</a></li>
-    <li><a href="./examples/list.html">examples</a></li>
-    <li><a href="./dry.html">"DRY" for things I am tired of repeating.</a></li>
-    <li><a href="./tools/list.html">constructive critique and tools to fight the issue.</a></li>
-    </ul>
-    <h3>Meta</h3>
-    <p>
-        Parts of this will inevitably result in some form of "Well, <i>I</i> wrote a <i>blog post</i> about this...". I am aware.
-    </p>
-    <h3 id="disclaimer" >Disclaimer</h3>
-    <p>All arguments presented are nothing but my opinion and my perspective. See <a href="core/arguments.html#7">Core 7 f</a>. I am from Germany, which naturally carries some bias. </p>
-    <p>
-        I am retelling things from my perspective, which is a single point of view, but it would be impossible for the issues to come up if they weren't "normalized". Our society is too interconnected for significant outliers or problems with *known* solutions to remain unnoticed.
-    </p>
-    <p>
-        As an example, let's take the case of a "dark patterns" in social media. It is known that endlessly scrolling content lists are supposed to "engage" users, because that's in the interest of the company operating the network. Whether it is in the interest of the user is of no concern.
-    </p>
-    <p>
-        If such behavior was <i>unusually</i> bad, and only one company was doing it, it would attract attention and hopefully someone would step up to fix the issue.
-    </p>
-    <p>
-        But that doesn't happen. It's not rationally evaluated whether a situation or behavior is a problem, instead if everyone is doing it, it is largely ignored.
-    </p>
-    
-    <h3>Tangential things and inspirations</h3>
-    <ul>
-        <li><a href="http://www.motherfuckingwebsite.com">http://www.motherfuckingwebsite.com</a> <br> and it's derivatives, if you don't know it yet, it's safe to visit.</li>
-        <li>DRY</li>
-        <li>The Zen of Python, by Tim Peters</li>
-        <li>ISO 9000 and 9001</li>
-        <li>The "date" ISO 8601 yyyy-mm-dd hh:mm:ss</li>
-        <li>XKCD</li>
-        <li>graphviz</li>
-    </ul>
+    <div class="darkmodetoggle">
+    <a href="#" onclick="changeCSS('./mainstyle.css', 0);">light</a> 
+    <a href="#" onclick="changeCSS('./darkmainstyle.css', 0);">darkmode</a>
+    </div>
+<h2>hi!</h2>
+<p>I guess this is my blog? basically I want something to link to, as a collection of thoughts. I have opinions on three broad categories:</p>
+<ul>
+	<li><a href="politics/index.html">politics</a></li>
+	<li><a href="technology/index.html">technology</a></li>
+	<li><a href="games/index.html">games</a></li>
+</ul>
+<p>
+    Naturally, there will be some overlap.
+</p>
+<p>
+    Some things are meta, e.g. science and discussion lies somewhere between technology and politics.
+</p>
+<p>
+    <a href="communication_is_hard.html">Talking about things is hard.</a><br> I'm willing to be flexible about my positions. Please be tolerant of wrong opinions. I think I deserve the chance of changing my mind. Also, what I'm writing doesn't necessarily reflect my opinions, because it can be useful or necessary to temporarily adopt wrong opinions for the sake of the argument.
+</p>
+<p>
+    There will be more... infrastructure, hopefully, but overall, discussion and pull requests are welcome.
+</p>
 </body>
-</html>

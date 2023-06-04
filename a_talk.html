@@ -1,102 +1,986 @@
-<!DOCTYPE HTML>
-<!-- <html lang="en-US"> -->
-<html lang="en-US" class="fade">
-<!-- 
-  ^ a class of "fade" makes slides fade smoothly into one another
- -->
-<!-- <html lang="en-US" class="nonumbers"> -->
-<!-- 
-  If you want no numbers on the slides add a "nonumbers" class 
-  to the HTML element.
-  Adding a class of "fade" will make slides fade into another. 
--->
+<!doctype html>
+
+<meta charset="UTF-8">
+
+<html>
+    
 <head>
   <meta charset="UTF-8">
-  <title>Big if True</title>
-<!-- 
-  If you upload your slides to the web, ensure that you have 
-  a good title - this shows up in search results and social
-  media links
- -->
-  <meta name="viewport" content="width=device-width, user-scalable=yes">
-  <link rel="stylesheet" href="themes/mozilla/styles/style.css">
+  <title>
+      Big if True
+    </title>
+  
+  <link rel="stylesheet" type="text/css" href="./mainstyle.css"/>
 </head>
-<body class="list">
-  <header class="caption">
-    <h1>Big if True</h1>
-    <p class="footer">
-      Max,
-      <!-- 
-      {your <a href="http://twitter.com/">@twitter</a> or 
-      <a href="mailto:you@email.com">you@email.com</a>}
-      -->
-    </p>
-  </header>
-  <aside class="talkdescription">
-    <p>This slide deck is using the shower system - roll over the previews to see the notes and click any slide to go into presentation mode. Then use keys to navigate. <button onclick="goFullScreen()">Go fullscreen</button></p>
-    <p class="abstract">
-      <strong>Abstract: </strong>
-       Information is fickle, 
-    </p>
-  </aside>
+<body>
+<h2>Big if True <br> the state of information</h2>
 
-<!-- 
-    Simply copy the whole block for each slide you want.
-  Special slides get extra classes. Each slide needs an ID 
-  to allow for bookmarking and target jumping.
+<div>
+<h2>0. Disclaimers</h2>
+    <p>
+        I don't want to be hostile. I'm not sure how to formulate
+        critique that's succinct, true and protects everyone's feelings.
+    </p>
+    <p>
+        I'm not angry on a personal basis. I'm angry at the state we're
+        in.
+    </p>
+    <p>
+        If you cause something, through innocence or incompetence or even
+        malicious intent, I don't fault you, I fault everyone else and the system
+        we run for not stopping you, for not removing you and for repeating the same mistake.
+    </p>
+</div>
+
+<div>
+<h2>0.1 It's a mess</h2>
+    <p>
+        I'm simplifying, because the topic is vast and I have limited time.
+        I can't give a full picture. I have to rely on pointing some 
+        stepping stones and you making some connections yourself.
+    </p>
+    <p>
+        This makes the argument "weak" in places and I know that and
+        you should know that too.
+    </p>
+    <p>
+        It's wrong for reasons I will go into later.
+    </p>
+</div>
+
+<div>
+<h2>0.2 The topic is complicated.</h2>
+      <p>E.g. wikipedia is wrong.</p>
+      <p><i>Information is processed, organized and structured data. 
+      It provides context for data and enables decision making processes. 
+      </i></p>
+      <p>"I ate one apple."</p>
+      <p>"I ate one apple. I ate one apple. I ate one apple. I ate one apple."</p>
+      <p>Structured data has increased, information has remained the same.</p>
+</div>
+
+
+<div>
+<h2>0.3 Simple definintions</h2>
+      <p>The goal is to communicate. Someone who releases information
+      should strive to ensure it's complete and understandable by the reciepient.</p>
+      <p>It should contain everything relevant, be on a compatible
+      level to, try to not mislead and provide context where possible.
+      The author should respect my time and make it succinct.</p>
+      <p>This stuff fails all the time and it creates friction when it 
+      happens.</p>
+</div>
+
+
+<div>
+<h2>0.4 Why do I care?</h2>
+    <p>
+        Put simply, Information is what we need to navigate, understand
+        and survive the modern world. Information is what is being 
+        communicated.
+    </p>
+    <p>
+        We need this. We need it badly.
+    </p>
+</div>
+
+<div>
+<h2>0.5 We live in a society</h2>
+  <p>
+    We have a cooperative thing going here. We need certain individuals
+    to fulfill their role or make way.
+  </p>
+  <p>
+    We're going to great lengths to sustain this thing. Please be a bit
+    smart about it.
+  </p>
+</div>
+
+<div>
+<h2>0.6 common ground</h2>
+<p>
+    Here are some definitions of things that you probably know, but I
+    need to mention to make sure we're on the same page.
+</p>
+</div>
+
+
+<!--
+###
+###preliminary definitions
 -->
 
-  <div id="cover" class="slide"><div>
-    <section>
-      <header>
-        <h2>Big if True <br> the state of information</h2>
-      </header>
-      <!--
-      <img src="pictures/templatedemos/high-five.jpg" 
-           class="middle shadow" height="400"
-           alt="High-five at the Mozilla Festival!">
-      <small class="byline">
-        {Firstname}, {Lastname}, {Conference}, {Location}, {date}
-      </small>
-      <footer class="notes">
-        This is a simple cover slide with an image in the middle
-      </footer>
-      -->
-    </section>
-  </div></div>
 
- <div id="thanks" class="slide"><div>
-    <section>
-      <header>
-        <h2>Thanks</h2>
-      </header>
-      <img src="pictures/mozillaoverview/redpanda.jpg" class="right" alt="Red panda (Firefox)">
-      <ul class="nobull">
-        <li>{name}</li>
-        <li>{title}</li>
-        <li>{<a href="http://twitter.com/">@twitter</a>}</li>
-        <li><strong>Slides</strong>: {slideurl}</li>
-      </ul>
-      <small class="credits">
-        <a href="http://www.flickr.com/photos/yortw/5798336827/">Photo by Yortw</a>
-      </small>
+<div>
+<h2>1.01 "Normality"</h2>
+    <p>
+        A single thing that's weird, is weird.
+    </p> 
+    <p>
+        If you are in a group, and nobody makes surprise known, that 
+        thing is only weird to you and the situation is "normal".
+    </p>
+</div>
 
-    <footer class="notes">
-    </footer>
+<div>
+<h2>1.02 ideal stituations</h2>
 
-    </section>
-  </div></div>
+<!-- this is from the website, I should link this if I can. -->
+<p>
+The ideal situation goes like this:
+</p>
+<ul>
+<li>0.1 there is a problem</li>
+<li>0.2 information about the problem is being shared</li>
+<li>0.3 people can consume the information</li>
+<li>0.4 draw conclusions</li>
+<li>0.5 and start acting to solve the problem.</li>
+</ul>
+</div>
 
- <div id="langMenuDivId">
-    <!-- Having event.stopPropagation() prevents keypresses on the language menu from affecting slideshow progression -->
-    <select id="langMenuId" onchange="changeLanguage();" onkeydown="event.stopPropagation()">
-      <option value="en-US">English</option>
-      <option value="zh-CN">中文（简体）</option>
-      <option value="zh-TW">中文（繁體）</option>
-      <option value="ja-JP">日本語</option>
-    </select>
-  </div>
-  <script src="scripts/script.js"></script>
-  <!-- Copyright © 2010–2012 Vadim Makeev — pepelsbey.net -->
+<div>
+<h2>1.03 a plan</h2>
+<p>A plan consist of a full description:</p>
+<ul>
+<li>Who does what when where</li>
+<li>Budget</li>
+<li>Who runs it, who changes the planning</li>
+<li>etc.</li>
+</ul>
+<p>If you don't have this, you have idea, not a plan.</p>
+</div>
+
+<div>
+<h2>1.04 feedback loop</h2>
+
+<center>
+<img src="./backmatter/full_feedback_ortho.svg">
+</center>
+</div>
+
+
+
+<sec><h2>1.05 W-questions</h2>
+<p>
+W questions are *the* most basic, most easy to agree on set of questions
+ around events, I learned about them in school, they are supposed to be
+  the bread and butter of journalism.
+</p>
+<p>
+But they have universal relevance.
+</p>
+<p>The example I want to use through this section, is organizing a party. If I want to organize a party, it is necessary that my guests be informed Where, and When, it will take place, that they are invitited to a party, which covers the what, and that they are invited takes care of the "who". "why" is optional, it can be a birthdayparty, or a costume party. This can slightly affect the proceedings.
+</p>
+
+<p>
+If any of these details are missed, there is the chance, that the party won't go smoothly. If they don't know where to go or when the party will take place, they might miss it. If I forget to invite them, they can't come. That it is a party, and not some other, perhaps mandatory event, sets theme, background, gives the option to weigh coming or declining, etc..
+</p>
+</sec>
+
+<sec><h2>1.06 risk management</h2>
+<p>
+Risk management is about dealing with uncertainty. For example I might plan to buy exactly 69 beers for my party. However, there is a chance that the store will not have 69 beers. In case they don't, I will have to get beer from a different place, to get to 69.
+</p>
+<p>Known as "murphys law" "Anything that can go wrong, will go wrong." is the mantra that you should know your risks and perpare measures in case they come to pass.</p>
+<p>Insurance is one of the great achievements of civilized society. The idea is that while a horrible tragedy might befall <i>one</i> of us, it won't happen to everyone at the same time. So we each pitch in, and give the collected money to the poor victim. Because of empathy. At the same time, it creates a shared interest to avoid unnecessary danger, because if we can minimized accidents overall, we have to pay less.</p>
+<p>We're calculating it like this:</p>
+
+chance of the event * value of the damage = expected value
+<p>
+Where the chance of the event is usually the number of actual events, between everyone participating over some time.
+</p>
+
+<p>
+Let's say we're 200 people, 10 of us get sick, and need medicine worth 5€ each.
+the chance to get sick would be 10/200 = 1/20 or 5%.
+</p>
+<p>
+The value of the damage or cost would be 10* 5€, = 50€, but because we're all pitching in, the shared cost would only amount to 50*1/20 or 2,50€.
+</p>
+
+<p>Combined with planning this is known as "strategy", we're planning and taking into account possible failures and thinking of ways to deal with those failures</p>
+
+</sec>
+
+<sec><h2>1.05 priorities</h2>
+<p>
+Priorities are a tool for decision making. You should think of them as a list of important things, sorted by importance and indexed.
+</p>
+<p>For example taking my party, sending invitations would be more important than picking what color the table cloth should be. I can have a party with any kind of table cloth, but I can't have a party without people, therefore people are more important than the color of my table cloth. So I write down people first and the color of my table cloth somewhere below that.
+</p>
+<p>whenever I think of something new to consider for my party, I can find a place somewhere on my list. Drinks are more important than the color of the tablecloth as well.</p>
+<p>
+When I am lost or confused what needs to be done, what I should spend time on organizing and doing, all I need to do, is check my list and go down from the top.</p>
+
+</sec>
+<sec><h2>1.07 reality and "the scientific method"</h2>
+<p>This is where it gets... fun.</p>
+<p>Reality is... uhm... fake?</p>
+<p>It depends on perspective. It's an agreement reached in dialogue. "Science" and "Objectivity" are methods that are supposed to help shape this agreement.</p>
+<p>
+The scientific method, is a very, very long conversation about what is real and true. We're using arguments and lots and lots of measurements to find common ground.</p>
+<p>
+The downside of that, is that people can still not take part. They can simply disagree. They can simply leave the conversation.
+</p>
+
+<h2>1.07.1 Dogma </h2>>
+<p>
+In the 16th/17th century in the area of what is now Italy, a certain Galileo Galilei, had a problem. He had made observations and measurements. But the culture of the time was dominated by the catholic church. They had an official "reality" and it was, under punishment, not allowed to contradict it. They burned people alive for doing so. 
+</p>
+<p>That, is called dogma.</p>
+<p>Duden:
+ Dog­ma, das 
+<ol>
+<li>verbindliche, normative Glaubensaussage</li>
+<li>den Anspruch der absoluten Gültigkeit, Wahrheit erhebende Aussage, Lehrmeinung</li>
+</ol>
+</p>
+<p>
+
+Merriam Webster
+<ul>
+    <li>1a : something held as an established opinion especially : a definite authoritative tenet</li>
+    <li>b : a code of such tenets pedagogical dogma</li>
+    <li>c : a point of view or tenet put forth as authoritative without adequate grounds</li>
+    <li>2 : a doctrine or body of doctrines concerning faith or morals formally stated and authoritatively proclaimed by a church</li>
+</ul>
+</p>
+<p>
+    The definition in wikipedia is "Dogma is a belief or set of beliefs that is accepted by the members of a group without being questioned or doubted."
+</p>
+<p>The reality was of course that voiced doubt was punished.</p>
+<p>
+Gallileo, was of course one of the first and most prominent people, who questioned the idea that the earth is at the center of the universe. This is known as the heliocentric world model. This world model wasn't important to the catholic belief. "Love thy neighbore" has nothing to do with where the earth actually is. However at some point, some member of the church must have pronounced the earth to be center of the universe, and now that fragment of reality couldn't be touched.
+</p>
+<p>
+The problem wasn't so much the answer to the question of whether the earth was the center of the universe or not, the problem was that voicing that question would raise the question whether other things the curch had said would be true, or not.
+</p>
+<p>Since then there have been numerous very bloody events and wars, and we have generally come to the cultural and collective conclusion, that free speech does us more good than harm.</p>
+<p>One more thing must be said about reality and discourse. In the medieval rethoric, there was a fallacy called "non sequitor", it means "does not follow". Because it is difficult to measure and determine and basically subjective, that's not really something we're commonly using.</p>
+<p>Not everything necessarily makes sense at first glance, and that can be a problem.</p>
+</sec>
+<h2>1.08 open source, and reproduction</h2>
+<p>
+    Open source has kind of "ruined the market".
+</p>
+<p>
+    Many open source projects allow you to read, test, change and fix the program. Doing that is really simple.
+</p>
+<p>
+    That's the point of it. Whenever you change something or you're unsure
+    if program is working correctly, you can run the tests and you will
+    get something like
+</p>
+
+<p>[my example]</p>
+<p>
+    We can't rebuild and test the real world in quite the same way.
+    But there are parallels.
+</p>
+
+<p>
+    We can't build a test airport and then build the real airport.
+    But, if there are problems with one billion Euro project, that's a indicator
+    something in the system could be wrong and that we should learn from their particular failure.
+</p>
+
+<p>
+    If we catch someone cheatingon their doctorate, the absolute last thing
+    I want to hear and see is a reaction that tries to spin it, so that it
+    appears as an individual mistake and not the expected outcome of a 
+    bad system.
+</p>
+
+<sec><h2>1.09 what is information anyway?</h2>
+
+</p>
+<p> Duden: In­for­ma­ti­on, die 
+<ol>
+    <li>das Informieren; Unterrichtung über eine bestimmte Sache</li>
+    <li>über alles Wissenswerte in Kenntnis setzende, offizielle, detaillierte Mitteilung über jemanden, etwas</li>
+    <li>Äußerung oder Hinweis, mit dem jemand von einer [wichtigen, politischen] Sache in Kenntnis gesetzt wird</li>
+</ol>
+
+</p>
+<p>
+    Merriam Webster:
+<ol>
+<li>knowledge obtained from investigation, study, or instruction</li>
+<li>intelligence, news</li>
+<li>facts, data</li>
+<li> the attribute inherent in and communicated by one of two or more alternative sequences or arrangements of something (such as nucleotides in DNA or binary digits in a computer program) that produce specific effects</li>
+<li>a signal or character (as in a communication system or computer) representing data</li> 
+<li>something (such as a message, experimental data, or a picture) which justifies change in a construct (such as a plan or theory) that represents physical or mental experience or another construct</li>
+</ol>
+</p>
+<p>
+Wikipedia:
+<ul>
+<li>Information is an abstract concept that refers to that which has the power to inform. (links to communication)</li>
+<li>Communication (from Latin: communicare, meaning "to share" or "to be in relation with") is usually defined as the transmission of information. (links back to information)</li>
+</ul>
+</p>
+<p>A past version of wikipedia said "information is structured data".</p>
+<p>
+If I tell you, "I have an apple." That might be information. If I tell you "I have an apple. I have a banana." That might also be information.
+</p>
+<p>
+If I give you a stack of paper with the pages reading "I have an apple." and on some page in the stack, I have a single sentence saying "I have a banana", the quality of text and structure may still be there, but you may not read the entire stack of paper. You may skip the page with the banana sentence and you never even know!
+</p>
+<p>The text may be encrypted, or simply in a different language you can't read.
+I think we can agree, that the information of the text would be the same. But shape and volume and everything else can change.
+</p>
+<p>
+We have nothing that we can limit and measure and undoutably find about this text,
+that will always be true and unchanged.
+</p>
+<p>
+Information escapes measurement and description to some degree. We can only go back and point out that certain thing were "kinda helpful now that we think about it". And vice versa, it can take a lot of effort to learn that a huge amount of data is completely useless and contains no information at all, no matter how "structured" it is.
+</p>
+<p>It's weird, ok?</p>
+</sec>
+<h1>2 grey area, malfunctions, misinformation</h1>
+
+<p>This section is a collection of symptoms for what I think is an
+underlying issue. Don't focus on the details too much and try to see
+the common thread among them.</p>
+
+</sec>
+
+<div>
+<h2>1.10 ideal state</h2>
+<p>Why am I here? What do I want?</p>
+<p>I am here because I think discourse, dialogue, democracy and organized science
+and working together are pretty good ideas.</p>
+<p>But.</p>
+<p>There are issues I can't explain.</p>
+<p>I would like to believe in some kind of fairy tale country where we're
+doing all of that. And that's unrealistic, so it's probably going to be some
+kind of less strict version of that, but a version where the majority of people
+and institutions still try.</p>
+<p>But these issues make me question even that weaker version.</p>
+<p>
+And the problem with that is that we need some level of trust
+for cooperation to work.
+</p>
+
+<p>
+If you're proposing to do research, I need to trust that you mean, that you will use the funds appropriately. If you're proposing a political idea, I need to trust that you actually
+mean that. If you're proposing to build a technical thing or a business, I need to trust you that you're actually meaning well.
+</p>
+</div>
+
+<div>
+<h2>2. Elon Musk and the WFP</h2>
+<p>Elon Musk and the world food programme.</p>
+<p>
+Elon musk announced if the UN could provide an exakt plan how to end 
+world hunger, he would sell tesla stock to make it happen.
+</p>
+<p>
+The UN produced a two page document billing the cost at 2bil$ and 
+stated that this would help a few countries listed by name and 
+some two dozen "others".
+</p>
+<p>
+Elon musk did not sell stock and gave no money.
+</p>
+</div>
+
+<div>
+<h2>missed opportunity</h2>
+<p>
+The big problem with presenting a bad plan and a bad appeal, is that
+this could have convinced anyone to do more and donate.
+</p>
+<p>
+How is it possible for a plan, of UN organization to be this bad?
+</p>
+<p>
+Shouldn't they have a plan?
+</p>
+<p>
+Shouldn't there be oversight by national governments? Who's doing that?
+</p>
+<p>
+Case distinction:
+<ul>
+    <li>Option A: They lied. They don't need 6 Billion. There aren't people starving. It's being embezzeled.</li>
+    <li>Option B: They didn't lie, they're really bad at telling the truth. They had the opportunity, they had the attention, and all they had to do was provide a convincing plan on how save thousands of lives. Their bad appeal being unconvincing is now causing the starvation of thousands.</li>
+</ul>
+</p>
+<p>Which one do you like better?</p>
+</div>
+
+<div>
+<h2> 2.1 optional BBC drama Why not just trust WFP</h2>
+<p>
+    Can't we just trust them?
+</p>
+<p>
+    No. 
+</p>
+<p>
+    In 2010, the BBC reported
+</p>
+<blockquote>
+    Money that was being channelled through the rebel side went to the party and to buy guns.
+
+    In 1985, Aregawi told me, just 5% of $100m (£65m) they received went to the starving. 
+</blockquote>
+</div>
+
+<div>
+ 2.2. plot twist!
+
+<p>In 2020 the BBC apologized because that turned out to be misrepresented
+and "sexed up".</p>
+</div>
+
+<div>
+2.3 All is well?
+<p>That's great, but where does that leave us?</p>
+<ul>
+    <li>News org publishing two pieces that contradict each other.</li>
+    <li>You are picking the one you want to trust.</li>
+    <li>WFP 2 page planning document, saying "trust us".</li>
+    <li>Someone, somewhere, sometime, manipulated information.</li>
+    <li>Why?</li>
+    <li>The original question is resolved one way or another, but it has
+    left a bigger problem.</li>
+</ul>
+</div>
+
+<div>
+<h2> X manipulation exists</h2>
+<p>
+    We have to factor in the possibility that what read, hear and see
+    isn't true and is only shown to provoke a certain response.
+</p>
+<p>
+    The only defense against that is more transparency and more trust
+    building.
+</p>
+</div>
+
+<div>
+<h2>3. politics.</h2>
+<p>Starvation! That's a political topic.</p>
+<p>Assuming the WFP didn't mess up, and there was a plan...</p>
+<p>We could just do it ourselves, right?</p>
+<p>We're a collectively organized people, we believe in human dignity
+and human rights, we have funding.</p>
+<p>In fact, screw their plan, time to be proactive, what's our plan like?</p>
+</div>
+
+<div>
+<h2>3.1 ministry for development</h2>
+<p>They exist. They have funds.</p>
+<p>What do that they do? They have meetings.</p>
+</div>
+
+<div>
+<p>"approaches of german developmental help"</p>
+<ul>
+<li>"Help them help themselves"</li>
+<li>"Combination of measures"</li>
+<li>"International cooperation"</li>
+<li>"Help cover gaps"</li>
+<li>"improving resilience"
+<p>Für das Programm mit einer Laufzeit bis 2026 stehen rund 542 Millionen Euro zur Verfügung.</p>
+</li>
+<li>"climate change"</li>
+</ul>
+https://www.bmz.de/de/themen/ernaehrungssicherung
+
+How do they do any of this? They don't say.
+</div>
+
+<div>
+<h2>3.4 optional Autobahnmaut</h2>
+<p>Make a plan, get told it won't work.</p>
+<p>Try anyway.</p>
+<p>Fail.</p>
+<p>???</p>
+</div>
+
+<div>
+<h2>3.5 plenar protokolle and general reluctance to share information</h2>
+<p> So there is this initiative I want to shed some light on:</p>
+https://opendiscourse.de/
+<p>
+They have processed and analyzed the provided protokolls of the German
+Bundestag, because the Bundestag somehow seems or seemed to deem it beneath them, to organize
+a good archive that's accessible to the public.
+</p>
+<p>The initiative is cool and nice to have this. My question and my source
+of doubt is that this was necessary to be done by volunteers.
+</p>
+<p>The German government doesn't seem to value this attention to detail, 
+even when it comes to their very own history.
+</p>
+<p>The release they offer, is the release of an institution who can't care
+less about their public image. Priorities, again. If they wanted this to
+be accessible, they would have made sure. And they didn't. Therefore,
+they don't want this to be accessible. They generally don't want anyone to read it.</p>
+</div>
+
+
+<div>
+<h2>4. Media</h2>
+<p>Let's move on to <i>professional</i> journalism.</p>
+<p>Educated people with degrees, careful vetting of sources and information.</p>
+<p>Funded through public interest, sometimes directly for the benefit and betterment of society.</p>
+</div>
+<div>
+
+<h2>4.1 nobody has time for the news cycle</h2>
+<p>Nobody has time to watch 24 hours of news.</p>
+<p>News organizations are supposed to filter and condense information
+into a format that's accessible for consumption.</p>
+<p>News organizations are a significant source of pieces and sources we construct our
+reality with. That means overall, you should be aware that how you present the information, ultimately
+creates a image of reality from that point of view.</p>
+<p>Good archiving and good referencing of other sources, past and external, helps readers accept your version.
+</p>
+<p>For example, "this is the most recent entry our series on this topic (which you can find over here), These sources with a list have reported in similar way." And then you point to them.</p>
+<p>In other words, I am interested, not in your particular version and perspective, I am interested in it as a fragment of a big media landscape.</p>
+<p>You should help me navigate this big media landscape. If you don't, I'm going to do "my own research".</p>
+<p>It is in YOUR interest, to help me navigate this.</p>
+<p>But only as long as you are actually interested in an objective opinion forming process. </p>
+<p>If all you want, is for me to follow you, and only you and only your
+
+words, you don't need competition. YOu don't need sources to confirm your stories, you don't need links.</p>
+<p>If your objective is to be the only one to be listened to, free speech is counterproductive to your interests.</p>
+
+<p>You should give me, the entire argument, sourced, indexed, referenced. Complete.</p>
+
+<p>Plan my consumption of your media. Set things up in a way where I will
+draw the conclusion that you are a trustworthy source.</p>
+</div>
+</div>
+<!--
+<p>Investigative journalism, comments and critique are a nice <i>bonus</i>.
+</p>
+<p>About comments and collumns and feuilleton: I don't care about journalists' opinions. Everyone has one. Everyone
+already shares it.
+</p> -->
+
+
+<!--
+<div>
+<h2>4.3 huh, that's weird...</h2>    
+<p>Maybe there is something going wrong. Maybe politicians and journalists
+as mere "regular citizens" do it get it wrong here and there.</p>
+<p>They're not just wrong because of a lacking divine revelation.</p>
+<p>They get their methods and ideas somewhere.</p>
+
+</div>
+-->
+<div>
+    
+<h2>5. Science and Education</h2>
+<p>So... the bologna reform was actually pretty neat.</p>
+<p>they gave the opportunity to structure learning content according
+to whatever the teaching institution considered good structure.</p>
+<p>The only condition was the teaching institution has to be audited
+and it has to be confirmed they know what they are doing, including
+a self run quality control feedback loop to ensure continuous quality
+and improvement of their research and teaching.</p>
+<p>That means every university has to have a document describing
+what they consider to be "quality" and how to maintain that "quality".</p>
+</div>
+
+<div>
+<p>quality is "the degree to which something fulfills a possibly specified
+expecation". It is the property that things are what you think they are,
+that they behave as you expect them to.</p>
+</div>
+
+<div>
+<h2>5.1 Quality</h2>
+<p>First interesting bit, these processes and documents are all different. 
+All of them. Isn't that weird? Shouldn't we, by means of process, by 
+means of definition, by international cooperation,
+eventually arrive at a, similar truth?
+</p>
+</div>
+
+<div>
+<h2>
+    5.2 Research and Reproduction
+</h2>
+<p>So the idea of organized science is, someone does something, writes down
+how and his conclusion.</p>
+<p>This gets judged by "peers".</p>
+<p>If interesting, it will be reproduced by other, indepdenent 
+individuals at other universities.</p>
+<p>So, there should be some division of what universities are doing on their own
+and what they are doing to confirm results of others?</p>
+<p>So what's the rate here? Is it 1:x and reproduced many many times? Is it just 1:1 and reproduced only once?</p>
+</div>
+
+<div>
+<h2>5.3 motivation for science</h2>
+  <p>Why are you/we doing it?</p>
+  <p>Curiosity.</p>
+  <p>I hope some altruism is part of it.</p>
+  <p>If a group publishes papers that can only be read by a select
+  group of specialists, why are we financing it?</p>
+  <p>As someone with a hobby and curiosity, I understand wanting
+  my hobby to financed by everyone else.</p>
+</div>
+
+<div>
+<h2>5.4 QM TU München</h2>
+<p>"Das Gremium tagt mehrmals jährlich..." S. 8/32 Gutachterbericht Systemakkrediditierung</p>
+<p>
+"Dieser Prozess berücksichtigt alle gestaltbaren Aspekte eines Studien-
+gangs wie z.B. Studiengangsziele, Qualifikationsprofil, Bedarfsanalyse, Studierbarkeit, Zustän-
+digkeiten und Ressourcen und stellt die Erfüllung interner und externer Qualitätsanforderungen
+sicher." S. 10/32 Gutachterbericht
+</p>
+<p>
+"Die TUM hat ein Evaluationssystem eingeführt, das alle Bereiche von Studium und Lehre um-
+fasst." S.11/32 Gutachterbericht
+</p>
+
+<p>
+Die Studierenden der TUM, Absolventinnen und Absolventen der Studiengänge und externe
+Fachexpertise sowie Vertreterinnen und Vertreter der Berufsfelder werden systematisch in die
+Verfahren einbezogen." S.11/32 Gutachterbericht would be very cool and 
+impressive, if there was any indication that it was actually true.
+</p>
+
+<p>
+(QM-Zirkel). In diesem Gremium werden unter Einbezug von Professorin-
+nen und Professoren, Studierenden und wissenschaftlichen Mitarbeitenden unter Vorsitz der
+Studiendekanin oder -dekans die Feedbackergebnisse aus den Evaluationsverfahren aller Ebe-
+nen (alle zum Zeitpunkt der Sitzung vorhanden Evaluationsergebnisse) in der Gesamtschau be-
+trachtet und zusammen mit weiteren Daten (z.B. statistische Kennzahlen) im Hinblick auf Ver-
+besserungspotentiale ausgewertet und für die operative Weiterentwicklung der Studiengänge
+verwendet. Das Gremium tagt einmal pro Semester. S.11/32 Gutachterbericht
+</p>
+
+<p>Die von der TUM zur Verfügung gestellten Dokumen-
+tationen waren umfassend, sehr gut strukturiert und aufschlussreich. S.13/32 Gutachterbericht</p>
+</div>
+
+<p>Die Rücklaufquoten im Bereich der Lehrevaluationen sind oftmals relativ niedrig. S.28/32 Gutachterbericht</p>
+
+<div>
+Referenz auf Funktion "ab 2012", which gives an indicator for when this
+was last actually written/checked.
+TUM_HandbuchModulmanagement
+</div>
+
+<div>
+<h2>5.5 TUHH</h2>
+<p>
+https://www.tuhh.de/tuhh/tu-hamburg/struktur/praesidialverwaltung/ra-rechtsreferat/ordnungen-richtlinien/qualitaetssicherungssatzung.html
+https://www.tuhh.de/tuhh/tu-hamburg/struktur/praesidialverwaltung/ra-rechtsreferat/ordnungen-richtlinien.html
+https://www.tuhh.de/tuhh/tu-hamburg/struktur/praesidialverwaltung/ra-rechtsreferat/ordnungen-richtlinien/richtlinie-zur-sicherung-guter-wissenschaftlicher-praxis.html
+"
+Informatik-Ingenieurwesen B.Sc. E 30.09.2021
+Informatik-Ingenieurwesen M.Sc. E 30.09.2021
+Download datum 16.10.22
+"
+</p>
+
+</div>
+<div>
+<h2>5.6 Uni Bremen</h2>
+<p>https://www.uni-bremen.de/qm-portal/downloads#c5764</p>
+<p>https://www.uni-bremen.de/qm-portal/qualitaetsmanagement/systemakkreditierung gleiche Firma</p>
+</div>
+
+<div><h2>5.7. TU Graz</h2>
+<p>https://www.tugraz.at/tu-graz/universitaet/leitziele-und-schwerpunkte/qualitaetsmanagement</p>
+
+</div>
+
+<div>
+<h2>6. industry and private initiative</h2>
+<p>
+    If you think open source does this better, you're wrong.
+</p>
+</div>
+<div>
+<h2>6.1 Contact and date standard</h2>
+<p>Agreed upon in 2001, current state: unusable.</p>
+<p>We have DIN, they don't care.</p>
+
+</div>
+
+<div>
+<h2>6.1 Vcard and Vcalendar standard </h2>
+"The versit Consortium was a multivendor initiative founded by Apple Computer, AT&T, IBM and Siemens in the early 1990s in order to create Personal Data Interchange (PDI) technology, open specifications for exchanging personal data over the Internet, wired and wireless connectivity and Computer Telephony Integration (CTI). The Consortium started a number of projects to deliver open specifications aimed at creating industry standards. "
+https://en.wikipedia.org/wiki/VCard
+https://en.wikipedia.org/wiki/Versit_Consortium
+https://en.wikipedia.org/wiki/ICalendar#vCalendar_1.0
+
+# by the way, you know what the difference is between the IETF and DIN?
+
+DIn standards cost 50-200 Euros to buy, and are in pdf or paper
+IETF standards are written in html and free to read.
+
+One of them seems to be more accessible.
+
+Anyway, The story goes like this:
+
+These companies sat down, negotiated, talked, wrote a draft, agreed on the
+draft.
+
+And then every. single. vendor. anywhere. Violated the standard, leading
+to the world we are living in today, where transfering contacts or calendar events from
+one service to another is basically impossible.
+
+Restaurant reservations. Elections. Doctors appointments. Release events.
+Deadlines.
+We could have used this for 30 years.
+
+
+And e.g. our govnerment pretends like that's not their problem.
+
+They of course do have all those problems. They do send messages, they
+do organize events. They use calendars.
+
+</div>
+
+<div>
+<h2>6.2 Gas</h2>
+<p>
+So the plan russian gas, was to create economic interdepence, right?
+The plan worked for France and Germany. So the idea wasn't stupid.
+</p>
+<p>Obviously the plan failed.</p>
+<p>In an age of obviously impending transition away from fossil fuels, 
+people still pretend that this crisis is unexpected.</p>
+<p>They pretend like they "still had time".</p>
+<p>PLan B. Ok so you're telling me, there is this super critical 
+resource you need or you will go bankrupt.
+</p>
+<p>And now that the supply is threatened, everyone is screaming that government
+has step in and save you.</p>
+<p>Is this this the famous invisible hand of the market, that's organizing things so neatly?
+That plans so well? This "market self regulation" that solves all problems
+provides for everyone?
+</p>
+<p>You let your pants down.</p>
+<p>Because to me it looks like you're just sitting there and masturbating
+ to your own brilliance until it all comes crashing down. Maybe on your neighbor, maybe on you.</p>
+
+</div>
+
+<!--
+<p>
+    Linux kernel devs don't have onboarding.
+</p>
+<p>
+    Ubuntu, kernel and idk... suse, have different issue tracking systems.
+    Couldn't work together if they wanted to.
+</p>
+<p>
+    If only there was single motivated individual to take of things like...
+    idk... elon musk?!
+</p>
+</div>
+
+
+-->
+<div>
+<h2>7. conclusion</h2>
+
+<p>
+    If you all you take away from this, is the first chapter, the information
+    what a control loop is, what plan looks like. And everything else seems
+    like fringe issues to you, that's regrettable, but that's fine.
+</p>
+</div>
+<div>
+<h2>7.1 Dogmatism and open opposition</h2>
+<p>
+    Something I want to hammer down, because it's really not intuitive,
+    is the dogmatic way of thinking.
+</p>
+<p>
+    Respect that they don't play by these rules anymore. Dogmatists do
+    what they want, because they want to. They will use
+    any means they can get their hands on, to limit free speech, or
+    to limit autonomy and getting rid of rights to spread their dogma.<!-- like banning abortions in the US.-->
+</p>
+<p>
+    This is not because they came to the wrong conclusion. It's because
+    reasoning was never part of their decision making process.
+</p>
+<p>
+    If it's about a political campaign, and there are dogmatic voters,
+    understand that you can't convince them.
+</p>
+</div>
+<div>
+<h2>7.2</h2>
+<p>
+    We're having issues, with "extremism" and scepticism of certain kinds.
+</p>
+<p>
+    Maybe the reason these people believe in their realities and not yours, isn't that they're so dumb, and so misguided.
+    Maybe the reason is that you are doing such a bad job, the difference between true and fake, is actually very small.
+    Maybe the reason we still have a mainstream, isn't because that mainstream
+    is so correct and good and just. 
+    Maybe you assume that and you have not really checked.
+</p>
+<p>
+    For extra edginess, I have to quote sun tzu: Know yourself, know your enemy and you will never lose a battle.
+</p>
+<p>
+    Do you know yourself? Do you know what you are doing?
+</p>
+<p>
+    If the people you are ordering to do things, don't understand you, because you don't give simple enough, accessible education and information
+    and you deliver bans and threats, what kind of reaction do you seriously expect?
+</p>
+<p>
+    Be careful. We already know the way we achieve acceptance, cooperation, peace and prosperity. And it's not this.
+    You are at least on the verge of creating a new culture of dogma.
+    Explain yourselves. Maybe do a bit less and put a bit more effort into your communiation.
+</p>
+</div>
+
+<div>
+<h2>7.3 Change?</h2>
+<p>
+Given that parts of the system we have don't perform as expected...
+what would a system look like that could?
+</p>
+<p>
+Before any demands for change are made, can we identify what's going wrong
+and propose a hypothetical that would solve those malfunctions?
+</p>
+
+</div>
+
+<div>
+<h2>7.X </h2>
+<p>
+    We already have the solution, and the only thing needed is collective action.
+    This problem will last for exactly as long, as it's a low priority for most people.
+</p>
+<p>
+    The very moment there is a majority who wnats to cooperate, it will work.
+    We have enough platforms, we have enough tools.
+    If you really want to, you will accept virtually communication format.
+</p>
+</div>
+<!--
+<div>
+<h2>7.12 </h2>
+<p>
+    Most people don't try to be enlightened. They don't try to research
+    or educate themselves. We have source material to do it, although
+    the quality is debatable.
+</p>
+<p>
+    We have technology to make it affordable.
+</p>
+<p>
+    Occasionally it's prevented by society.
+</p>
+<p>
+    Several bad actors want to keep it that way, and for that they have
+    to understand it. It's not a fight against mere ignorance. (IT'S THEM)
+</p>
+</div>
+-->
+
+
+
+<div>
+<h2>X. peace</h2>
+<p>
+    We have had an unprecedented period of peace in history. Time to think, 
+    time to reflect and to talk things trough.
+</p>
+<p>
+    I'm not complaining about the state we have now. I'm complaining
+    about a situation we have constructed over the past 70 years.
+    Multiple generations of politicians, journalists, educators went through this.
+</p>
+<p>
+    What we have now, is the result of decades of work. We can't find purpose
+    in physics or the universe, but we <i>built</i> what we have here.
+    It should make sense. It should serve a purpose and it should <i>work</i>.
+</p>
+</div>
+
+
+
+<div>
+<h2>X. this is embarassing/insulting me/my work/my country/my mom</h2>
+<p>
+    Trust me, everyone smart enough to understand this problem, and motivated
+    to look, already knows.
+</p>
+<p>
+    They're just hiding it to keep the status quo going. They don't trust/
+    rely because you're giving them reason to, they just believe.
+</p>
+</div>
+
+
+<div>
+<h2>X. Time to not panic</h2>
+<p>
+    If you pretend everything is fine, you don't get immediate chaos.
+</p>
+<p>
+    It's bad for the economy. Don't cause panic, don't let the market
+    wobble.
+</p>
+<p>
+    The things at work are so big and so immovable, your panic won't help.
+</p>
+<p>
+    If you panic, you can't think clearly to make a plan to fix it.
+</p>
+</div>
+
+<div>
+<h2>80/20 principle and the easy of argumentation</h2>    
+<p>
+If there is a very simple way to prove that something is true, 
+I expect it to be done. E.g. links, photos, data.
+</p>
+</div>
+
+
+<div>
+<h2>X. Don't believe in radical solutions </h2>
+<p>
+    Being sceptical of what we have doesn't mean you should abandon it.
+</p>
+<p>
+    Investigate why things don't work.
+</p>
+<p>
+    Don't hand power to people.
+</p>
+</div>
+
+<div>
+<h2>X. don't generalize people</h2>
+<p>Even if most people are malicious, there are exceptions. Believein those
+exceptions</p>
+</div>
+
+<div>
+<h2>X. give second chances</h2>
+<p></p>
+</div>
+
+
+
+
+
 </body>
 </html>

@@ -1,0 +1,46 @@
+<!doctype html>
+<head>
+    <title>technology</title>
+    <meta charset="utf-8"> 
+    <link rel="stylesheet" type="text/css" href="./../mainstyle.css"/>
+</head>
+
+<!-- 
+this is shit, because js but seems acceptable
+source : https://stackoverflow.com/a/19844696
+-->
+<script>
+function changeCSS(cssFile, cssLinkIndex) {
+
+    var oldlink = document.getElementsByTagName("link").item(cssLinkIndex);
+
+    var newlink = document.createElement("link");
+    newlink.setAttribute("rel", "stylesheet");
+    newlink.setAttribute("type", "text/css");
+    newlink.setAttribute("href", cssFile);
+
+    document.getElementsByTagName("head").item(cssLinkIndex).replaceChild(newlink, oldlink);
+}
+</script>
+
+<body>
+    <div class="darkmodetoggle">
+    <a href="#" onclick="changeCSS('./../mainstyle.css', 0);">light</a> 
+    <a href="#" onclick="changeCSS('./../darkmainstyle.css', 0);">darkmode</a>
+    </div>
+<h2>technology</h2>
+<p>This will have a somewhat broader scope than what is commonly refered to as "technology".</p>
+<div class="box">
+<blockquote>
+    "systematic treatment of an art, craft, or technique,"<br>
+    "art, skill, craft in work;<br>
+    a system or method of making or doing,"
+</blockquote>
+<div><a href="https://www.etymonline.com/word/technology">source</a></div>
+</div>
+<h2></h2>
+<ol>
+    <li><a href="magic.html">magic</a></li>
+    <li><a href="science.html">science</a></li>
+</ol>
+</body>

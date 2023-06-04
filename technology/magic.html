@@ -1,0 +1,64 @@
+<!doctype html>
+<head>
+    <title>magic</title>
+    <meta charset="utf-8"> 
+    <link rel="stylesheet" type="text/css" href="./../mainstyle.css"/>
+</head>
+
+<!-- 
+this is shit, because js but seems acceptable
+source : https://stackoverflow.com/a/19844696
+-->
+<script>
+function changeCSS(cssFile, cssLinkIndex) {
+
+    var oldlink = document.getElementsByTagName("link").item(cssLinkIndex);
+
+    var newlink = document.createElement("link");
+    newlink.setAttribute("rel", "stylesheet");
+    newlink.setAttribute("type", "text/css");
+    newlink.setAttribute("href", cssFile);
+
+    document.getElementsByTagName("head").item(cssLinkIndex).replaceChild(newlink, oldlink);
+}
+</script>
+
+<body>
+    <div class="darkmodetoggle">
+    <a href="#" onclick="changeCSS('../mainstyle.css', 0);">light</a> 
+    <a href="#" onclick="changeCSS('../darkmainstyle.css', 0);">darkmode</a>
+    </div>
+<h2>magic</h2>
+<p>
+    A technological book I really like, starts it's explanations with the 'perpetuum mobile', the machine that's impossible for physical reasons. It represents a ideal goal. Just the same, "magic" usually refers to the act of getting things done by easy, impossible, unexplained and unexplainable, not "natural" means.
+</p>
+<div>
+<blockquote>
+    "Any sufficiently advanced technology is indistinguishable from magic."
+</blockquote>
+<a href="https://en.wikipedia.org/wiki/Clarke's_three_laws">Arthur C. Clarke</a>
+</div>
+<h3>inverse definitions</h3>
+<p>
+    By combining this definition and the previous one about technology, we can clearly divide "what we can do" into two sets: the explained, explainable and reproducable being "technology", and every other action that does not have these qualities as "magic".
+</p>
+<h3>why is this important?</h3>
+<p>
+    "Magic" is <b>bad</b>.
+</p>
+<p>
+    "Magic" that works without your understanding, can result in behavior and outcomes that you can't <i>predict</i> or <i>fix</i> or <i>revert</i>.
+</p>
+<p>
+    There are also a lot of political reasons. It being unexplained usually means <i>someone else</i> hasn't explained the object <i>to you</i>. They are withholding information. If it's not <i>explainable</i>, messing with it is risky. That risk may becoime your risk and your problem. If it's not <i>reproducable</i>, the explanation that was given was <i>wrong</i> and the previous two problems exist.
+</p>
+<h3>consequence</h3>
+<p>
+    In a world filled with "unexplained technology"/"magic", we are facing a lot of... events? that are bad for the above reasons. It is in our interest, to:
+</p>
+<ul>
+    <li>understand them, to predict them and avoid bad outcomes, which can be <a href="science.html">"science"</a></li>
+    <li>ensure that, even if we don't understand them, someone else, someone <i>benevolent</i> does and that someone should advise us how to deal with the thing or method at hand.</li>
+</ul>
+<p>How we get others to explain or handle the unexplained is a <a href="./../politics/index.html">political problem.</a></p>
+</body>

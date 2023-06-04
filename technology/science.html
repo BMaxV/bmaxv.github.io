@@ -1,0 +1,76 @@
+<!doctype html>
+<head>
+    <title>science</title>
+    <meta charset="utf-8"> 
+    <link rel="stylesheet" type="text/css" href="./../mainstyle.css"/>
+</head>
+
+<!-- 
+this is shit, because js but seems acceptable
+source : https://stackoverflow.com/a/19844696
+-->
+<script>
+function changeCSS(cssFile, cssLinkIndex) {
+
+    var oldlink = document.getElementsByTagName("link").item(cssLinkIndex);
+
+    var newlink = document.createElement("link");
+    newlink.setAttribute("rel", "stylesheet");
+    newlink.setAttribute("type", "text/css");
+    newlink.setAttribute("href", cssFile);
+
+    document.getElementsByTagName("head").item(cssLinkIndex).replaceChild(newlink, oldlink);
+}
+</script>
+
+<body>
+    <div class="darkmodetoggle">
+    <a href="#" onclick="changeCSS('./../mainstyle.css', 0);">light</a> 
+    <a href="#" onclick="changeCSS('./../darkmainstyle.css', 0);">darkmode</a>
+    </div>
+<h2>science</h2>
+<h3>theory of knowing</h3>
+<p>
+    Science is the "technology" / method of investigating unknown, unexplained or uncatalogued things, and of producing output that makes them "known", "explained" or "catalogued".
+</p>
+<p>
+    The first and most important discipline of science, doesn't explore something else, it explores the method itself.
+</p>
+<p>
+    In English it's called "epistomology". I don't like that name. It's greek. I don't know greek. Nobody I know knows greek. That makes it <a href="magic.html">"magic"</a> Translated, it's "knowledge we base things on". That's not really accurate. It's much more of a "how to" than a fixed body of reliable knowledge.
+</p>
+<div>
+<blockquote>
+    “The difference between screwing around and science is writing it down.”
+</blockquote>
+<a href="https://www.azquotes.com/quote/494312">Adam Savage</a> (although it may not originally by him)
+</div>
+<h2>other disciplines of science</h2>
+<p>
+    Basically there are as many partitions of science as is convenient, many are named after the subject and appended with the greek affix "-logo", "-logos", "logy". "Sociology" or "-ics" like "Mathematics" "Economics".
+</p>
+<h2>method</h2>
+<p>
+    The common part, stemming from epistomology, goes like this:
+</p>
+<ol>
+    <li>something motivates an investigation</li>
+    <li>someone tries something</li>
+    <li>there is a result</li>
+</ol>
+<p>
+    Those things need to be recorded as well as we can.
+</p>
+<p>
+    After this is done, if someone else can pick up the recording, and repeat what was tried and come to the same result, we call it "good science". 
+</p>
+<h2>common things</h2>
+<ul>
+<li>
+    someone asking for a "source?" and "how do you know that?" is asking epistomologic questions.
+</li>
+<li>
+    Some statements or things don't need "sources". They are "obvious", or without them, the whole discussion doesn't make sense. For exapmle, if "knowledge" didn't exist, "the study or method of how we know things" wouldn't make sense.
+</li>
+</ul>
+</body>

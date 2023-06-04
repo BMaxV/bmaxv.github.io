@@ -1,0 +1,461 @@
+<!doctype html>
+
+<meta charset="UTF-8">
+
+<head>
+    <title>communication is hard</title>
+    <meta charset="utf-8"> 
+    <link rel="stylesheet" type="text/css" href="./mainstyle.css"/>
+</head>
+
+<!-- 
+this is shit, because js but seems acceptable
+source : https://stackoverflow.com/a/19844696
+-->
+<script>
+function changeCSS(cssFile, cssLinkIndex) {
+
+    var oldlink = document.getElementsByTagName("link").item(cssLinkIndex);
+
+    var newlink = document.createElement("link");
+    newlink.setAttribute("rel", "stylesheet");
+    newlink.setAttribute("type", "text/css");
+    newlink.setAttribute("href", cssFile);
+
+    document.getElementsByTagName("head").item(cssLinkIndex).replaceChild(newlink, oldlink);
+}
+</script>
+
+<body>
+    <div class="darkmodetoggle">
+    <a href="#" onclick="changeCSS('./mainstyle.css', 0);">light</a> 
+    <a href="#" onclick="changeCSS('./darkmainstyle.css', 0);">darkmode</a>
+    </div>
+<body>
+    <h1>I'm tired of repeating arguments</h1>
+    <p>I started trying to build something around this more than two years ago. I wasn't really happy with the stuff I've built so far. But that's not a good reason to stop trying. So this is attempt... #4?</p>
+    <p>
+        This time, instead of trying to present a solution, I will describe the problem, <a href="#approach">(and my approach to it)</a>:
+    </p>
+    <p>
+        If that's too boring for you, since this is sort of an appeal, here is the short version of <a href="whatiwant.html">what I want from you.</a>
+    </p>
+    <p>
+        I'm a bit self conscious about this writing style, since it's pretty much the somewhat vague, not really helpful style you can find all over the internet. I am torn between liking objectivity and rejecting it because I can't not express a like or dislike about certain things. Not sure what to do about that. I am aware of it though.
+    </p>
+    
+    <h2>communication is insanely, unimaginably hard</h2>
+    
+    <h3>
+        (1) natural language and the things our brains do for us, without us even noticing, are nuts.
+    </h3>
+    <p>
+        I was always kinda good at math. And some logic stuff. "1" is "1" and that's that. Arguing over math is pointless, that's not how it works. You can not understand a part, which is understandable and fine, but disagreeing with the "rules" gets you nowhere.
+    </p>
+    <p>
+        We (humanity) <i>do not</i> have the same kind of shared understanding of how the world works, for any other thing than math, really. Math is a hyper convenient edge case of logic, that is easy. Everything else is hard.
+    </p>
+    <p>
+        (This is the problem. If you believe communication and mutual understanding is good, this should motivate it's solution. So here are sub problems that prevent achieving it.)
+    </p>
+    <h3>
+        (2) building a shared definition and understanding of the world has more enemies than you can possibly imagine.
+    </h3>
+    <p>
+    Lots of people want to be the boss who has authoritative control over information. Not all of them evil or for bad reasons.
+    </p>
+    <ul>
+        <li>advertisers</li>
+        <li>scientists</li>
+        <li>nut-jobs</li>
+        <li>politicians</li>
+        <li>scammers trying to make you buy into their scam</li>
+        <li>open source devs trying to push their project / product</li>
+        <li>parents managing the information intake for their children</li>
+        <li>regular companies trying to push their product</li>
+        <li>corrupt and criminal people, trying to obfuscate and hide their crime</li>
+        <li>'public servants', like teachers, managing the information intake for their students</li>
+        <li>people who preach harmony and tolerance and acceptance</li>
+    </ul>
+    <p>
+        Every single one of them, will present you with specific "bits" and "shards" of information.
+    </p>
+    <p>
+        Every single one of them shares them with the intention <i>to make you do something</i>.
+    </p>
+    <p>
+        That something may not be in your interest.</p>
+    <h3>
+        (3) our world mental model is made up of (those) information bits and they are largely disconnected
+    </h3>
+    <p>
+        "Don't touch the fire." Let's point out how weird it is that we understand this sentence. It requires understanding lots of details: Past experiences of having burned yourself. What fires looks or smells or feels like. 3D space and where you are in relation to the fire. Being aware of your body parts, aware of your control over them and then manipulating them in a way that achieves the goal. 
+    </p>
+    <p>
+        Statements like that are vague. They do not care about the distinction of "identity" or "general description". They have no address, no data, no source. They do not carry "truth" in themselves. Sometimes we "believe" in them, sometimes we use them axiomatically[]. Most of the time, we do not think about them and "just act".
+    </p>
+    <p>
+        They are either "obvious". Which explains nothing. The suddenly not so random arrangement of curiously not so disconnected bits "made" "understanding" "happen".
+    </p>
+    <p>
+        Or they are not. Which somehow explains even less.
+    </p>
+    <h3>
+        (4) we do not get intentional education to be able to talk.
+    </h3>
+    <p>
+        Which is also nuts. What do I mean by that? I mean we do not get the basic information of what an argument is. What the basis for talking about things is. If scientific/mathematical education achieves peak performance, there is a good chance a mathematical "proof" comes up. They kinda sorta make sense, but the theoretical underpinning is usually missing.
+    </p>
+    <p>
+        That an appeal to reason or to emotion or some abstract concept may or may not be a good idea.
+    </p>
+    <h3>
+        (5) actually phrasing stuff is difficult, (somehow?)
+    </h3>
+    <p>
+        Lots of information, presented by smart people <i>may not be worth the time</i> to consume it, and you just don't know until you try. There is some kind of implicit recommended reading order for things. You know, dependencies. But we somehow didn't write that down?
+    </p>
+    <p>
+        I have read books, that had a great first 10% and then completely dropped off in quality, but were still published in full. I have read books with a terrible first 50 page chapter.
+    </p>
+    <p>
+        I have tried reading "the sequences" <a href="https://www.readthesequences.com/">https://www.readthesequences.com/</a> and while I agree with probably 80-90%, the text is so long that I can't recommend reading it.
+    </p>
+    <p>
+        There <i><b>is</b></i> a way to structure an argument:
+    </p>
+    <ol>
+        <li>motivate why the audience should care</li>
+        <li>present information that details the problem or method</li>
+        <li>conclude with a (re)solution or motivate the audience to get active</li>
+    </ol>
+    <p>
+        and <i><b>everything</b></i> from classical drama, scientific papers, books, music, etc. follows this pattern, but we're somehow not referencing or explaining it? And also, lots of people somehow get it wrong?
+    </p>
+    
+    <p></p>
+    <h3>
+        (6) we have "baggage" that's obstructing our efforts to communicate
+    </h3>
+    <p>
+        When people talk on a subject, we will generally give more attention to people with titles and degrees, even <i>unrelated ones</i>.
+    </p>
+    <p>
+        There is some kind of "cult" around celebrity and wealth, a bias that somehow associates being well known or being rich, with being correct or worth listening to.
+    </p>
+    <p>
+        There is abuse of power, where people will use their position and the way they achieved it as justification for doing things the way they want, without justification. And clearly there are instances where this works well. But there are also plenty of instances where it goes wrong.
+    </p>
+    <p>
+        We have inherited concepts like seniority. That "being old" or having "been part of something for x amount of time" somehow "earns you" more authority and more of a right to speak and be listened to.
+    </p>
+    <h3>
+        (7) wisdom in strange places.
+    </h3>
+    <p>This is 'the zen of python' by tim peters.</p>
+    <pre>
+<b>Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+Readability counts.</b>
+Special cases aren't special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+<b>In the face of ambiguity, refuse the temptation to guess.
+There should be one-- and preferably only one --obvious way to do it.</b>
+Although that way may not be obvious at first unless you're Dutch.
+<b>Now is better than never.
+Although never is often better than *right* now.
+If the implementation is hard to explain, it's a bad idea.
+If the implementation is easy to explain, it may be a good idea.</b>
+Namespaces are one honking great idea -- let's do more of those!
+    </pre>
+    
+    <p>
+        I think it has it's weaknesses, which is consistent with the previous... statements, so that's a good sign.
+    </p>
+    <p>
+        But it makes no definite statements over anything. And it's absurdly true and applicable? How does that even work?
+    </p>
+    
+    <p>
+        OK, enough of this, you probably get the idea.
+    </p>
+    
+    <h2 id="approach">How to approach this from a technical perspective</h2>
+    
+    <p>
+        Clearly, merely connecting everyone to the internet hasn't really resolved the problem, so far. Cheap communication is a cool thing but, all it does right now, is highlight the situation.
+    </p>
+    
+    <h3>hashes are cool</h3>
+    
+    <p>
+        A hash function is a math tool that translates/transform some thing (A) into exactly one specific other thing (B) and changing (A) results in a wildly different (B). This is very useful, because while we are lacking the tools to judge "information" automatically, we can deal with specific kinds of data this way, like sentences. Like this:
+    </p>
+    <pre>
+import hashlib
+
+myhash = hashlib.sha256(<b>"This sentence is false."</b>.encode())
+hexhash = myhash.hexdigest()
+print(hexhash)
+# >>> <b>f1e5647e8cf367d428ca8387b762a4b79b40e94e8dc7fae758909d8772565276</b>
+    </pre>
+    
+    <p>It becomes maybe more obvious that this is useful, when looking at a larger body of text, like these opening paragraphs from a <a href="https://en.wikipedia.org/wiki/Constantine_III_%28Western_Roman_emperor%29">Wikipedia article about Constantine III</a>:</p>
+    
+    </p>
+<blockquote><i>
+    <p>
+Constantine III (Latin: Flavius Claudius Constantinus; died shortly before 18 September 411) was a common Roman soldier who was declared emperor in Roman Britain in 407 and established himself in Gaul. He was recognized as co-emperor of the Roman Empire from 409 until 411.
+</p>
+    <p>
+Constantine rose to power from within the field army of Roman Britain and was acclaimed emperor in early 407. He promptly moved to Gaul (modern France), taking all of the mobile troops from Britain, with their commander Gerontius, to confront bands of Germanic invaders who had crossed the Rhine the previous winter. With a mixture of fighting and diplomacy Constantine stabilized the situation and established control over Gaul and Hispania (modern Spain and Portugal), establishing his capital at Arles. The sitting emperor of the Western Roman Empire, Honorius, sent an army under Sarus the Goth to expel Constantine's forces. After initial victories, Sarus was repulsed. In Hispania, Honorius's relatives rose and expelled Constantine's administration. An army under the general Gerontius was sent to deal with this and Constantine's authority was re-established. In early 409 Honorius recognized Constantine as co-emperor. Constantine in turn raised his own oldest son to co-emperor as Constans II.
+</p>
+    <p>
+In 409 Gerontius rebelled, proclaimed his client Maximus emperor and incited barbarian groups in Gaul to rise up. Constans was sent to quash the revolt, but was defeated and withdrew to Arles. Meanwhile, Constantine invaded northern Italy, but his plan failed and he also pulled back to Arles. In 410 Constans was sent to Hispania again. Gerontius had strengthened his army with Germanic tribesmen and defeated Constans; the latter retreated north and was defeated again and killed at Vienne early in 411. Gerontius then besieged Constantine in Arles. Honorius appointed a new general, Flavius Constantius, who arrived at Arles while Gerontius was outside the city. Much of Gerontius's army deserted to Constantius, who took over the siege. A force attempting to relieve Constantine was ambushed. Constantine abdicated, took holy orders and – promised his life – surrendered. Constantius had lied: Constantine was killed and his head presented to Honorius on a pole. 
+    </p>
+</i></blockquote>
+
+<p>
+    Turn into this, comparatively small hash:
+</p>
+<pre>
+824641320fa4f603c79daedea31767c6abbfd75705dcfaa360870277af2c451a
+</pre>
+<p>
+    Doing this we can build patterns:
+</p>
+<ol>
+    <li>All men are mortal.<br><pre>3d8f15ad2783bddba43d6af3a17ff75232c8a91354f416b61351e63af70931b4</pre></li>
+    <li>Socrates is a man.<br><pre>baadc5c28eabbf25731d1378fa4fb95aebee734b989c1b77164a1d0d8d9b3df2</pre></li>
+    <li>Socrates is mortal.<br><pre>5b05e158e9dfbc480664d4df38e874e592af76fb600f3cd8ad918eb86aa65d04</pre></li>
+</ol>
+
+<p>
+    and since we now have a loosely established process of doing this, we can combine them too.
+</p>
+
+<pre>
+hashlib.sha256("All men are mortal. Socrates is a man. Socrates is mortal.".encode())
+d161eecf030ef33cb0de258dd3a79f8c702820e6bb5e2eb6028f28dbad5d7634
+</pre>
+
+<p>
+    This looks very convenient. And it is.
+</p>
+<p>
+    Having social media in mind, surely, it would be easy to build a platform around this? 👍 true stuff? 👎 bad stuff? Have the prototype up this weekend, scaled next month, IPO around Christmas?
+</p>
+<p>
+    No, it's not that simple.
+</p>
+
+<h3 id="natlang">natural language does more than you may think</h3>
+
+<p>
+    You don't have to take my word on this, I tried doing "stuff" with this and it breaks. Nearly guaranteed. Here are some permutations:
+</p>
+
+<div class="box">
+<p>
+    Let's say, we have some statement that looks innocent:
+</p>
+<blockquote>
+    <i>
+    "Cake is nice."
+    </i>
+</blockquote>
+<p>
+    This will surely gather lots of agreement. It's also completely useless. We can hash it, save it somewhere. We could gather some kind of data, but that data only makes sense in the context of who's saying it, or specific "instances" of a general class of "cake". It's not even universal. People with specific allergies won't so readily agree.
+</p>
+<p>
+So what should the button be? "👍 but specific conditions may apply"? "It depends"? We can add more buttons? But... 
+</p>
+<p>
+    Short version: defining any amount of new "symbols" with more or less specific meaning, is never enough, because you can always find some set of statements that are not correctly described by them. Basically what <a href="https://en.wikipedia.org/wiki/Kurt_G%C3%B6del">Gödel</a> did.
+</p>
+</div>
+
+<p>
+    Something slightly more complex:
+</p>
+
+<div class="box">
+<blockquote>
+    <i>
+    (1)"Crime is bad"<br>
+    (2)"We should protect society"
+    </i>
+</blockquote>
+<p>
+    What would "👍" mean here? What do we do with that?<br>Let's assume the <i>absolute worst</i> possible thing: someone horribly misinterprets "protect", "society" and "crime" and suddenly we have death squads hunting people with a particular fashion style. And that someone uses <i>your agreement</i> as justification. "We got X likes on birdbook. The people crave 'justice'."
+</p>
+<p>
+    The conclusions people jump to on the internet are <i>wild</i>. They are fundamentally unpredictable.
+</p>
+<p>
+    I think that's not the fault of the people, or the internet, rather it's "society"'s mistaken assumption that surely we can have a civil discourse. They take some undefined 'common sense' that is practiced by some vague group of people, declares it 'proper style' and erratic misinterpretation "for the memes and the lulz" as 'unlikely' or something.
+</p>
+<p>
+    It isn't.
+</p>
+
+</div>
+
+<p>
+Maybe something more lighthearted:
+</p>
+
+<div class="box">
+<blockquote>
+    <i>
+    <a href="https://www.reddit.com/r/AskReddit/comments/dxosj/what_word_or_phrase_did_you_totally_misunderstand/c13pbyc/">"Knowledge is power"<br>
+     - France is Bacon</a>
+    </i>
+</blockquote>
+<p>
+    Do you 👍 the joke? Do you 👍 the story behind it? Do you 👎 because it's technically an incorrect quote and misleading? If you 👎, what do you do in the social context that other people see you 👎 a good joke/story with a nugget of truth? Do you dislike Francis Bacon? Do you dislike reddit?
+</p>
+<p>
+    "oh my god, I can't believe you hate bacon."
+</p>
+<p>
+    No amount of buttons can resolve this for you.
+</p>
+</div>
+<h2 id="approachconclusion">conclusion</h2>
+<p>
+    Trying to invent any new other "meta language" that is not natural language, will grow until it's tool set is as large as natural language itself. By necessity of the subject of dealing with everything. The original goal of using a smaller, specialized set of words or grammar, to express something "better" can't be achieved anymore, because the tool gets in the way.
+</p>
+<p>
+    If something requires context, give it context. If it doesn't, don't.
+</p>
+
+<h3 id="statusquo">where does that leave us?</h3>
+
+<p>
+With the tech we already have.
+</p>
+
+<p>
+I think expressing something this way, is the best we can do:
+</p>
+
+<div class="box">
+<p>
+    I disagree with this:
+</p>
+<div class="box">
+<blockquote>
+"statement"
+</blockquote>
+
+b111c6e1d318f203063e5c16bab43c108326af0aa2f7b65760c95547a43dbe52
+<br>
+[source with some link]
+</div>
+</div>
+<p>
+The rest we can do with other tools that then deal with very short fragments of text that provide context and fragmented bits "source" information, which we can use to recalculate the hash if we want or update or version or something.
+</p>
+<p>
+URLs and hyperlinks work reasonably well, so I guess we can rely on those, somewhat?
+</p>
+<p>
+Some things to avoid: including pictures, more formatting, support for automatic translations.
+</p>
+<p>
+The set of tools is already pretty complex, this HTML file is good enough. We don't really need pictures, and it's uncertain how valuable they will be in the future, with "not AI" already generating pretty wild stuff. There is always SVG. And I don't really mean this as a "universal and primary" format either.
+</p>
+
+<p>
+    If we want to be "up to date" we can crawl through our references and update the hashes, in the case of smaller mistakes. In the case of bigger changes, the original statement remains true and "valid", even if the link breaks.
+</p>
+<p>I prepared something like this <a href="https://github.com/BMaxV/discussion_bit">over here</a>, but as I said, the implementation is kind of incomplete</p>
+
+<h1>approaching communication, information and education as an amorphous mass</h1>
+<h2>top down is clean, bottom up makes sense</h2>
+
+<p>
+    In practice, deciding on any particular instance, from a generalized approach is hard. Or worse, you can't actually make general rules that are true, useful and effective. Reality is so huge, that taking the holistic approach just doesn't get done fast enough. If we step through everything from the top every time, we don't get to the interesting parts.
+</p>
+<p>
+    Worse, because of chunking and our limited attention and perspective at any given time, we're probably not even aware of the significant part.
+</p>
+<p>
+    I have found that in practice, opinions and positions have to be explored and set in the context of specific instances of problems. And it is very hard to get a complete picture by waiting or letting yourself drift and letting the problems come up naturally.
+</p>
+
+<p>
+    The result that can be expected from an approach like that will be fragmented and with weird local amounts of depth.
+</p>
+
+<div>
+<div><h2 id="introductions">diversity of introductions</h2>
+
+<p>
+    The general approach to introductions to subjects, especially when it comes to education, comes from disagreement with old approaches. Naturally, this leads to an ever growing amount of introductory material. Even if they follow similar currents of thought. Naturally, we will ever only need one explanation per topic and we can't really judge which ones are good or bad. Eventually one works. We can maybe do statistics with how fast which approach works for how many people, but for the individual, the question whether an explanation or a book works, is up to chance.
+</p>
+<p>
+    What makes this harder, is that the failed attempts, nevertheless probably left an impression and will help understanding the next attempt. Anyway, the goal should be to identify motivations and sortings of topics when it comes to introductions, apply some metrics and discard the unnecessary.
+</p>
+<p>E.g. There is a best book about math for elementary students. Let's find it and let's stop printing the rest.</p>
+</div>
+
+<div><h2>on nothing</h2>
+<p>
+    Closely related to that problem are books or sources, that are simply less efficient in their communication. More pages, but not more content.
+</p>
+<p>
+    This has the extreme of books that pretend to be about subjects but fail so badly at elaborating any thought, they end up saying nothing. This is usually contemporary books about certain subjects that are either obviously temporary, or obviously eternal and impossible to resolve. They may merely communicate a single perspective on a topic that doesn't particularly stand out when evaluated objectively.
+</p>
+<p>
+    The exception to this are topics, where the book says nothing, but the topic is discussed so little or so vaguely, that the act of saying nothing becomes an expression of the collective cultural failure of grasping or communicating the subject or the problem. Like "maximum feasible misunderstanding" which doesn't explain or reason, it simply recounts some of the history of social programs around the Kennedy era, revealing the utter confusion when it comes to the topic.
+</p>
+</div>
+
+</div>
+
+<div><h2 id="science">culture of science and scientists</h2>
+    <p>
+        In the face of "fake news" and other events, a confusion can be observed among people who consider themselves "enlightened rationally thinking people".
+    </p>
+    <p>
+        That confusion is usually voiced along the lines of "I can't believe someone would believe ________". Or doesn't know or gets wrong, etc..
+    </p>
+    <p>
+        Look. I'm sorry. But your entire caste has failed.
+    </p>
+    <h3>people are fighting you.</h3>
+    <p>
+        You have to come to terms with the reality that most people do not understand you, do not read your work, do not understand what you are doing, do not understand the outcome or the implications of your work. Those 'most people' will work and fight against you, for whatever wild, cruel, medieval reasons are in vogue.
+    </p>
+    <h3>get real</h3>
+    <p>
+        The idea of a collective collaboration, of you doing 'the hard science' for the benefit of society, that other people will readily and gratefully accept the outcome of your work, regardless of understanding, is a fairy tale. The idea of collective, societal progress, if only we do enough research and push education, is failing as long as there are significant groups that are unreached by those efforts, for whatever reason.
+    </p>
+    <p>
+        Get your priorities in order. If there is no working education system that you can rely on will raise people with the minimum amount of tolerance necessary for your work, you have an issue.
+    </p>
+    <h3>you are a political group</h3>
+    <p>
+        It is in your interest to self organize, self segregate, to worry about recruitment and succession, as any political group should. Because you are a political group. "Free thinking", "free research" and "free education", at least in the sense of freedom, hopefully in the sense of free beer, are political positions. Those political positions are a <b><i>threat</i></b> to certain groups and that makes <b><i>you</i></b> a threat too.
+    </p>
+    <p>
+        Your degree won't defend you against an autocratic government or an actually insane person with a knife or a gun. You should draw very definitive lines in the sand, for who your friends are and who you're not sure about. Believing in other people is fine, but don't let it blind you.
+    </p>
+    <p>
+        Please do not work for your enemies in the hope that they will understand, or learn or better themselves.
+    </p>
+    <p>
+        There is also a problem with people secluding themselves in niche research. If you're one of those, this is your problem too. We're going to need your help in this.
+    </p>
+</div>
+
+</body>
+</html>
