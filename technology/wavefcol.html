@@ -1,0 +1,45 @@
+<!doctype html>
+<head>
+    <title>magic</title>
+    <meta charset="utf-8"> 
+    <link rel="stylesheet" type="text/css" href="./../mainstyle.css"/>
+</head>
+
+<!-- 
+this is shit, because js but seems acceptable
+source : https://stackoverflow.com/a/19844696
+-->
+<script>
+function changeCSS(cssFile, cssLinkIndex) {
+
+    var oldlink = document.getElementsByTagName("link").item(cssLinkIndex);
+
+    var newlink = document.createElement("link");
+    newlink.setAttribute("rel", "stylesheet");
+    newlink.setAttribute("type", "text/css");
+    newlink.setAttribute("href", cssFile);
+
+    document.getElementsByTagName("head").item(cssLinkIndex).replaceChild(newlink, oldlink);
+}
+</script>
+
+<body>
+    <div class="darkmodetoggle">
+    <a href="#" onclick="changeCSS('../mainstyle.css', 0);">light</a> 
+    <a href="#" onclick="changeCSS('../darkmainstyle.css', 0);">darkmode</a>
+    </div>
+    <h2>wave function stuff</h2>
+    <p>
+    i think when thinking about my already done wave funcion code, when converting it to n gons the formulation changes to a center tile. and then sequences of allowed tile forms.
+    </p>
+    <pre>
+0 1 0
+1 x 1
+0 1 0</pre>
+    becomes
+    <pre>
+    x center
+    0 1 0 allowed pattern
+    </pre>
+    if i'm doing overlaps, i need to make sure the patterns still fit? in a circulae fashion.
+</body>
