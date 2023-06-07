@@ -1,0 +1,40 @@
+<!doctype html>
+<head>
+	<title>trade</title>
+	<meta charset="utf-8"> 
+    <link rel="stylesheet" type="text/css" href="./../mainstyle.css"/>
+</head>
+
+<!-- 
+this is shit, because js but seems acceptable
+source : https://stackoverflow.com/a/19844696
+-->
+<script>
+function changeCSS(cssFile, cssLinkIndex) {
+
+    var oldlink = document.getElementsByTagName("link").item(cssLinkIndex);
+
+    var newlink = document.createElement("link");
+    newlink.setAttribute("rel", "stylesheet");
+    newlink.setAttribute("type", "text/css");
+    newlink.setAttribute("href", cssFile);
+
+    document.getElementsByTagName("head").item(cssLinkIndex).replaceChild(newlink, oldlink);
+}
+</script>
+
+<body>
+    <div class="darkmodetoggle">
+    <a href="#" onclick="changeCSS('./../mainstyle.css', 0);">light</a> 
+    <a href="#" onclick="changeCSS('./../darkmainstyle.css', 0);">darkmode</a>
+    </div>
+
+    <h2>trade</h2>
+    <p>
+    one of the most basic concepts and one of the most important ones, is trade/cooperation. I don't mean formalized trade, but the basic tribal behavior, that we can find in animals, like apes but also swarm insects.
+    </p>
+    <p>
+    its usually a very optimistic thing. it doesnt necessarily need accounting or contracts, it works on a unspoken "favor" basis as well.
+    </p>
+    Understanding this is the prerequisite to understanding <a href="scamming.html">scamming</a>.
+</body>

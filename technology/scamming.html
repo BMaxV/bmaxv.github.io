@@ -1,0 +1,38 @@
+<!doctype html>
+<head>
+    <title>scamming</title>
+    <meta charset="utf-8"> 
+    <link rel="stylesheet" type="text/css" href="./../mainstyle.css"/>
+</head>
+
+<!-- 
+this is shit, because js but seems acceptable
+source : https://stackoverflow.com/a/19844696
+-->
+<script>
+function changeCSS(cssFile, cssLinkIndex) {
+
+    var oldlink = document.getElementsByTagName("link").item(cssLinkIndex);
+
+    var newlink = document.createElement("link");
+    newlink.setAttribute("rel", "stylesheet");
+    newlink.setAttribute("type", "text/css");
+    newlink.setAttribute("href", cssFile);
+
+    document.getElementsByTagName("head").item(cssLinkIndex).replaceChild(newlink, oldlink);
+}
+</script>
+
+<body>
+    <div class="darkmodetoggle">
+    <a href="#" onclick="changeCSS('./../mainstyle.css', 0);">light</a> 
+    <a href="#" onclick="changeCSS('./../darkmainstyle.css', 0);">darkmode</a>
+    </div>
+<h2>scamming</h2>
+<p>
+scamming exploits the benevolent optimistic attitude of trade. it uses the expectation and planning of the victim, that some compensation will come their way and "pockets" the benefit without planning to return  something of equal value.
+</p>
+<p>
+more elaborate scams will try to evoke other benevolent ideas and e.g. appeal to empathy or "luck" of encountering a really good business opportunit. zhey will actively encourage the victim to believe that its a fair exchange, when its planned to not be one.
+</p>
+</body>
