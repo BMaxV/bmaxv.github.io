@@ -1,0 +1,76 @@
+<!doctype html>
+<head>
+    <title>space / real estate</title>
+    <meta charset="utf-8"> 
+    <link rel="stylesheet" type="text/css" href="./../mainstyle.css"/>
+</head>
+
+<!-- 
+this is shit, because js but seems acceptable
+source : https://stackoverflow.com/a/19844696
+-->
+<script>
+function changeCSS(cssFile, cssLinkIndex) {
+
+    var oldlink = document.getElementsByTagName("link").item(cssLinkIndex);
+
+    var newlink = document.createElement("link");
+    newlink.setAttribute("rel", "stylesheet");
+    newlink.setAttribute("type", "text/css");
+    newlink.setAttribute("href", cssFile);
+
+    document.getElementsByTagName("head").item(cssLinkIndex).replaceChild(newlink, oldlink);
+}
+</script>
+
+<body>
+    <div class="darkmodetoggle">
+    <a href="#" onclick="changeCSS('./../mainstyle.css', 0);">light</a> 
+    <a href="#" onclick="changeCSS('./../darkmainstyle.css', 0);">darkmode</a>
+    </div>
+<h2>space / real estate</h2>
+<p>
+One of the big questions of politics and wealth distribution, is who gets to live where. Sometimes this has a simple answer: where there is little competition and it's so useful to live in some place that you can just do it.
+</p>
+
+<p>
+The other case is that there is conflict over who gets a nice place and who doesn't.
+</p>
+
+<p>One option on how to solve this, is that the place of living gets assigned.</p>
+
+<p>The other is some kind of negotiation, for example, via a market or as a political discussion of who should live where. This has some issues and consequences:</p>
+
+<ul>
+    <li>the transport problem, of people living in one place and working in another</li>
+    <li>guarantee of ownership and property, sort of guarantees property in perpetuity</li>
+    <li>the uncompetitiveness of necessary services, like daycare vs. a brand clothing store</li>
+    <li>transfer of taxes</li>
+    <li>a market wouldn't by itself fulfill all aspects we want from a nice living space:
+    <ul>
+        <li>standards for materials and technique</li>
+        <li>collective loss leader problem</li>
+    </ul>
+    </li>
+    <li>We can have politics driving spacial ordering that is not in the interest of parts of the population.</li>
+    <li>Possibly racial/religious/economic segregation or mixing as positive of negative, depending on what's mainstream.</li>
+</ul>
+
+<h2 id="berlin">Berlin</h2>
+<p>I'm living in Berlin, there is a "housing shortage" now (2023) and there are certain patterns:</p>
+<ul>
+    <li>The government didn't/doesn't want to and/or is incapable of building public housing.</li>
+    <li>There is demand for cheap labor in the expensive city center</li>
+    <li>There is a problem with the traffic caused by people (e.g. commuting to or from work)</li>
+    <li>When looking at the equation of 
+    <pre>Fraction = Rent / Income</pre>
+    People complain that <b>rent</b> is too high, but very infrequently mention that maybe <b>income</b> isn't high enough. That's suspcious to me.</li>
+    
+    <li>To "solve" this, various initiatives were started, such as 
+    <ul>
+        <li>implementing a legal limit on raising rent</li>
+        <li>selling public parks to real estate developers, but not the ones near where the high society lives.</li>
+        <li>to collectivise big real estate companies and keep rent down that way.</li>
+    </ul>
+</ul>
+</body>

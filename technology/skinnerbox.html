@@ -1,0 +1,59 @@
+<!doctype html>
+<head>
+    <title>the skinner box</title>
+    <meta charset="utf-8"> 
+    <link rel="stylesheet" type="text/css" href="./../mainstyle.css"/>
+</head>
+
+<!-- 
+this is shit, because js but seems acceptable
+source : https://stackoverflow.com/a/19844696
+-->
+<script>
+function changeCSS(cssFile, cssLinkIndex) {
+
+    var oldlink = document.getElementsByTagName("link").item(cssLinkIndex);
+
+    var newlink = document.createElement("link");
+    newlink.setAttribute("rel", "stylesheet");
+    newlink.setAttribute("type", "text/css");
+    newlink.setAttribute("href", cssFile);
+
+    document.getElementsByTagName("head").item(cssLinkIndex).replaceChild(newlink, oldlink);
+}
+</script>
+
+<body>
+    <div class="darkmodetoggle">
+    <a href="#" onclick="changeCSS('./../mainstyle.css', 0);">light</a> 
+    <a href="#" onclick="changeCSS('./../darkmainstyle.css', 0);">darkmode</a>
+    </div>
+<h2>the skinner box</h2>
+<p>
+    Mind control is a real thing. It doesn't work as directly as you may think, and no, tinfoil don't work.
+</p>
+<p>
+    A man named B.F.Skinner <a href="https://en.wikipedia.org/wiki/B.F._Skinner">(link to wikipedia)</a> noticed the following:
+</p>
+<blockquote>
+    An animal can be trained to perform <i>any task</i>, if it is rewarded with some random chance based reward. This effect holds, even if the reward is removed or turns out to be actually harmful or irrational, like not objectively worth the effort.
+</blockquote>
+<p>
+    This experimental setup, which was implemented with rats in a box, is called a "skinner box".
+</p>
+<p>
+    Since we are merely advanced animals, this is true for humans as well.
+</p>
+<p>
+    It is how gambling works as well as many other addictions.
+</p>
+<p>
+    Beware of this effect. It can misguide you into doing the wrong thing, based on "impulse" / learned behavior. Try to actively resist it.
+</p>
+<h3 id="videogames">video games</h3>
+<p>
+     "loot boxes" in video games work this way as well. The rich audio and visual effects as well as the occasional "valuable" reward, are the reward. The learned behavior is to pay money to get the reward. This may not be in your interest.
+</p>
+
+
+</body>
