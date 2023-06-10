@@ -49,6 +49,13 @@ line-height:1.6;
         background:#444;
         color:white;
     }
+    a{
+    color:#C8FFFF;
+    }
+
+    a:visited{
+    color:#DCB4FF;
+    }
 }
 
 

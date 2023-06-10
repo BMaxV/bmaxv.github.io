@@ -1,0 +1,104 @@
+<!doctype html>
+<head>
+    <title>artificial administrative complexity as a barrier</title>
+    <meta charset="utf-8"> 
+    <link rel="stylesheet" type="text/css" href="./../mainstyle.css"/>
+</head>
+
+<!-- 
+this is shit, because js but seems acceptable
+source : https://stackoverflow.com/a/19844696
+-->
+<script>
+function changeCSS(cssFile, cssLinkIndex) {
+
+    var oldlink = document.getElementsByTagName("link").item(cssLinkIndex);
+
+    var newlink = document.createElement("link");
+    newlink.setAttribute("rel", "stylesheet");
+    newlink.setAttribute("type", "text/css");
+    newlink.setAttribute("href", cssFile);
+
+    document.getElementsByTagName("head").item(cssLinkIndex).replaceChild(newlink, oldlink);
+}
+</script>
+
+<body>
+    <div class="darkmodetoggle">
+    <a href="#" onclick="changeCSS('./../mainstyle.css', 0);">light</a> 
+    <a href="#" onclick="changeCSS('./../darkmainstyle.css', 0);">darkmode</a>
+    </div>
+<h2>artificial administrative complexity as a barrier</h2>
+<h3>...and the need for administrative standards in a democracy</h3>
+<p>using the topic of weaknening encryption as an example:</p>
+<p>
+<a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=COM%3A2022%3A209%3AFIN&qid=1652451192472">This</a> is where you can find official documents regarding the proposal.
+<!--
+<br>
+<a href="https://www.bundestag.de/protokolle">this</a> is where you can find official protocols of debate in the German parliament
+-->
+</p>
+<p>looking at the actual document:</p>
+<xmp>
+<p class="Rfrenceinterinstitutionnelle">
+   <span>2022/0155 (COD)</span>
+</p>
+<p class="Statut">
+   <span>Proposal for a</span>
+</p>
+<p class="Typedudocument">
+   <span>REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL</span>
+</p>
+<p class="Titreobjet">
+   <span>laying down rules to prevent and combat child sexual abuse</span>
+</p>
+<p class="IntrtEEE">
+   <span>(Text with EEA relevance)</span>
+</p>
+</div>
+<div class="content">
+<p class="Institutionquiagit">
+   <span>THE EUROPEAN PARLIAMENT AND THE COUNCIL OF THE EUROPEAN UNION,</span>
+</p>
+<p class="Normal">
+   <span>Having regard to the Treaty on the Functioning of the European Union, and in particular Article 114 thereof,</span>
+</p>
+<p class="Normal">
+   <span>Having regard to the proposal from the European Commission,</span>
+</p>
+<p class="Normal">
+   <span>After transmission of the draft legislative act to the national parliaments,</span>
+</p>
+</xmp>
+<p>
+    A lack of linkable identifiers is obvious. You can't link to the "actual" start of the document. You have to scroll until you find it. In the pdf version, links exist, but only on the level of headlines and articles. In both versions one can not reference individual paragraphs or sentences. One has to do so with "natural language" and refer to the "something something paragraph" after you follow some link to the entire document.
+</p>
+<p>
+    The lack of links to these "sub issues" has several consequences:
+</p>
+<ul>
+    <li>
+        A lack of specificity in the wording and structure is a "fake news attack vector", both for malevolent politicians inside the system who intend to abuse the legislative process, and external actors who want to misrepresent the possibly benign legislation as something bad and drum up media attention.
+    </li>
+    <li>
+        Critique can't pinpoint issues. This leads to naturally longer documents of critique, which naturally take more time to process, understand, sort and decide upon. This naturally excludes people with limited time and a "low bullshit tolerance". This is "anti democratic by design".
+    </li>
+    <li>
+        Politicians and proponents of the measure, can't discuss the measure in the necessary detail either. Talking is done largely from memory or with poorly constructed references that are hard to verify and may or may not miss the point of the actual subject.
+    </li>    
+</ul>
+<p>
+    There is room for doubt in favor of the EU, <a href="../technology/stop_using_hanlons_razor.html">but not a lot.</a>
+</p>
+
+<h2>conclusions</h2>
+<ol>
+    <li>
+        if the EU were a benevolent organization with the goal of public participation, there should be a body for regulating the complexity and ease of use of documents and technology for regular citizens. This body doesn't exist or is obviously ineffective, therefore the EU can't be a benevolent organization.
+    </li>
+    <li>
+        The current structure and style of documents was decided by some group of people. I am not aware of this group or the justification for the chosen style. This makes it "<a href="../technology/magic.html">magic</a>" and bad. Also this group should be the result of some kind of democratic process and it's not.
+    </li>
+</ol>
+
+</body>

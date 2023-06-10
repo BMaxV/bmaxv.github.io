@@ -1,0 +1,79 @@
+<!doctype html>
+<head>
+    <title>no common ground</title>
+    <meta charset="utf-8"> 
+    <link rel="stylesheet" type="text/css" href="./../mainstyle.css"/>
+</head>
+
+<!-- 
+this is shit, because js but seems acceptable
+source : https://stackoverflow.com/a/19844696
+-->
+<script>
+function changeCSS(cssFile, cssLinkIndex) {
+
+    var oldlink = document.getElementsByTagName("link").item(cssLinkIndex);
+
+    var newlink = document.createElement("link");
+    newlink.setAttribute("rel", "stylesheet");
+    newlink.setAttribute("type", "text/css");
+    newlink.setAttribute("href", cssFile);
+
+    document.getElementsByTagName("head").item(cssLinkIndex).replaceChild(newlink, oldlink);
+}
+</script>
+
+<body>
+    <div class="darkmodetoggle">
+    <a href="#" onclick="changeCSS('./../mainstyle.css', 0);">light</a> 
+    <a href="#" onclick="changeCSS('./../darkmainstyle.css', 0);">darkmode</a>
+    </div>
+<h2>no common ground</h2>
+<p>
+    Something that can be observed regularly in discussions, is that people are talking and they are not actually sharing common ground.
+</p>
+
+<center>
+<div style="width:50%;">
+<pre style="text-align:left;">
+    >>> position A
+</pre>
+
+<pre style="text-align:right;">
+    something unrelated, not position A <<<
+</pre>
+
+<pre style="text-align:left;">
+    >>> position A + concession A.1
+</pre>
+</div>
+</center>
+
+<p>
+    This is somewhat relating to the technologies of how to talk and make arguments, but I think more than that, it's a social / political failure on part of the person of the left. A failure to recognize that "discussion" isn't happening and that the other person being talked to, has abandonned the concept of discussion, discourse, compromise and cooperation.
+</p>
+<p>
+    They are sitting at the negotiation table, not to reach a deal, but to deceive and to delay and to distract you from taking measures that will enforce or enable discussion.
+</p>
+<p>
+    You may think it's still a question of compromise and are offering concessions and cooperation on other topics. This will not work and only increase your losses.
+</p>
+<p>
+    Examples of this are topics like
+</p>
+<ul>
+    <li>The debate about weakening encryption of private communication and "compliance with laws and rights" in the EU <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=COM%3A2022%3A209%3AFIN&qid=1652451192472">(link to the documents)</a>
+    <br>
+    <ul>
+        <li>the actual purpose is surveilance and oppression of citizens</li>
+        <li>it's giving a pretense purpose ('preventing child abuse')</li>
+        <li>there are no public negotiations about the purpose.</li>
+    </ul>
+    some more sources:
+    <ul>
+        <li><a href="https://www.patrick-breyer.de/beitraege/chatkontrolle/">https://www.patrick-breyer.de/beitraege/chatkontrolle/</a></li>
+    </ul>
+    </li>
+</ul>
+
+</body>

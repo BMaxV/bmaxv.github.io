@@ -1,0 +1,111 @@
+<!doctype html>
+<head>
+    <title>stop using hanlons razor</title>
+    <meta charset="utf-8"> 
+    <link rel="stylesheet" type="text/css" href="./../mainstyle.css"/>
+</head>
+
+<!-- 
+this is shit, because js but seems acceptable
+source : https://stackoverflow.com/a/19844696
+-->
+<script>
+function changeCSS(cssFile, cssLinkIndex) {
+
+    var oldlink = document.getElementsByTagName("link").item(cssLinkIndex);
+
+    var newlink = document.createElement("link");
+    newlink.setAttribute("rel", "stylesheet");
+    newlink.setAttribute("type", "text/css");
+    newlink.setAttribute("href", cssFile);
+
+    document.getElementsByTagName("head").item(cssLinkIndex).replaceChild(newlink, oldlink);
+}
+</script>
+
+<body>
+    <div class="darkmodetoggle">
+    <a href="#" onclick="changeCSS('../mainstyle.css', 0);">light</a> 
+    <a href="#" onclick="changeCSS('../darkmainstyle.css', 0);">darkmode</a>
+    </div>
+
+<div><h2>stop using hanlons razor</h2>
+<div><h3>basis</h3>
+<p>
+    <a href="https://en.wikipedia.org/wiki/Hanlons_razor">https://en.wikipedia.org/wiki/Hanlons_razor</a>
+</p>
+<blockquote>
+    "Never attribute to malice that which is adequately explained by stupidity."
+</blockquote>
+<p>
+    This is a... variation / argument for <a href="https://en.wikipedia.org/wiki/In_dubio_pro_reo">in dubio pro reo</a>, which is pretty foundational to our legal system.
+</p>
+<p>
+    I'm seeing it being used to defend the powerful and the mighty, which is wrong.
+</p>
+<blockquote>
+    "Anything that can go wrong will go wrong."
+</blockquote>
+<p>
+    Is known as <a href="https://en.wikipedia.org/wiki/Murphy's_law">Murphy's law</a>.
+</p>
+<p>
+    There is a very simple choice:
+</p>
+<ul>
+    <li>
+        Either we treat people, everyone, as conscious, knowing, somewhat enlightened people, who are aware and responsible for their actions and predicting the outcome of their actions and who have the responsibility of taking care of their fellow humans.
+    </li>
+    <li>
+        Or we don't, which would eliminate the concept of personal accountability.
+    </li>
+</ul>
+</div>
+<div><h3>arguments</h3>
+<p>
+    It is the responsibility of those wiedling big structures, lots of resources and decision power to take appropriate care when doing so.
+</p>
+<p>
+    The definition of "accident" hinges on the amount of precaution that can be reasonably accomplished by actors. For average individuals, the amount of resources they can spend on prevention or precaution is limited. We still ask for responsible behavior, but "accidents happen".
+</p>
+<p>
+    For governments, big corporations or other big organizations, the concept of "unpredictable" or "unforseeable" or "unpreventable" ceases to hold meaning. Their nature affords them with quasi infinite resources. It enables them to take into account the most remote of possibilities and achieve "complete oversight" over the subject, as long as it's under their control. An accident in this case, isn't an accident.
+</p>
+<p>
+    It is a pre-planned lack of attention to detail. They didn't cause the accident, but they purposefully disregarded building the infrastructure for prevention, when they could have <i>and</i> it is part of their responsibility <i>and</i> they had the resources to do it.
+</p>
+<p>
+    We can argue about grey areas, where something was "unpredictable" or not. But when looking at the extremes, toddlers aren't responsible, because they are "stupid". The leader of multinationals or countries are not "stupid". They can't be, by definition. If they are, it means there is a large groups of idiots who have not noticed their stupidity and not opposed putting someone stupid into a position of dangerous power. This doesn't excuse the bad outcome, it <i>extends the responsibility</i> for the bad outcome to that large group.
+</p>
+</div>
+</div>
+
+<div><h2>conclusions</h2>
+<ul>
+    <li>
+    Responsibility in freely formed groups is a <a href="https://en.wikipedia.org/wiki/Transitive_property">transitive property</a>.
+    </li>
+    <li>
+        The failure of a [person A] is actually the failure of the [group] that didn't prevent [person A] from doing what they did.
+    </li>
+    <li>
+         If [person B] freely associates with [group], it means [person B] accepts a part of that distributed responsibility, for the problem caused by [person A].
+    </li>
+    <li>
+        If the problem caused by [person A] isn't resolved, it's the responsibility of [person B] to correct the problem.
+    </li>
+</ul>
+<p>Don't let people get away with pretending this is not the case.</p>
+</div>
+
+<div><h2>examples</h2>
+<ul>
+    <li>The <a href="https://en.wikipedia.org/wiki/Deepwater_Horizon_oil_spill">"deep water horizon" oil spill</a> by the BP corporation.</li>
+    <li><a href="https://en.wikipedia.org/wiki/Brexit">Brexit</a> as a project of the UK conservative party.</li>
+    <li>The lack of administrative oversight that lead to the scandals around <a href="https://en.wikipedia.org/wiki/Hillary_Clinton_email_controversy">hillary clinton's emails</a> and the case of <a href="https://en.wikipedia.org/wiki/FBI_investigation_into_Donald_Trump's_handling_of_government_documents"> Donald Trump "handling" government documents</a>. Either there is a resonsibility to take appropriate care of paper work, or there isn't. I think there should be.
+    </li>
+    <li>The EU and their democratic deficit, highlighted in the example of <a href="../politics/artificial_administrative_complexity_as_a_barrier.html">trying to eliminate encrypted, private communication</a></li>
+</ul>
+</div>
+
+</body>
