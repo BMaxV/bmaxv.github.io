@@ -1,0 +1,48 @@
+<!doctype html>
+<head>
+    <title>shape and content</title>
+    <meta charset="utf-8"> 
+    <link rel="stylesheet" type="text/css" href="./../mainstyle.css"/>
+</head>
+
+<!-- 
+this is shit, because js but seems acceptable
+source : https://stackoverflow.com/a/19844696
+-->
+<script>
+function changeCSS(cssFile, cssLinkIndex) {
+
+    var oldlink = document.getElementsByTagName("link").item(cssLinkIndex);
+
+    var newlink = document.createElement("link");
+    newlink.setAttribute("rel", "stylesheet");
+    newlink.setAttribute("type", "text/css");
+    newlink.setAttribute("href", cssFile);
+
+    document.getElementsByTagName("head").item(cssLinkIndex).replaceChild(newlink, oldlink);
+}
+</script>
+
+<body>
+    <div class="darkmodetoggle">
+    <a href="#" onclick="changeCSS('./../mainstyle.css', 0);">light</a> 
+    <a href="#" onclick="changeCSS('./../darkmainstyle.css', 0);">darkmode</a>
+    </div>
+<h1>shape and content</h1>
+<p>
+    html and css tried to separate the content into html: answering "what is it?",headline, paragraph, picture and the data that makes up the content. And the look and formatting to css: "font, background, indents, etc."
+</p>
+<p>
+    This was a good idea and a good approach, but formatting is done to communicate. It is also information and content or they carry meaning. 
+</p>
+<p>
+    So there is some overlap between "real content" and "content that's in style".
+</p>
+<h2 id="research">research</h2>
+<p>
+    The choice of pdf and "publishing" in "journals" is a conscious one. In my opinion it's a bad one. The scientists involved have to pick something, but tradition doesn't absolve them of their responsibility to pick a good format to present their research in.
+</p>
+<p>
+    Publishing or having published in traditional journals that are run for profit or aren't universally open access, is not defensible. People who do it are bad people. The damage they've done can be "undone" by decisive, public positioning against those journals and publishers and using their copyright to ask for depublication. Also naming and shaming of other researchers who hold other parts of the copyright, who refuse to use it for depublication.
+</p>
+</body>
