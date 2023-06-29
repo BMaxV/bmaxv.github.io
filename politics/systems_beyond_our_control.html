@@ -1,16 +1,41 @@
+<!doctype html>
+<head>
+    <title>systems beyond our control</title>
+    <meta charset="utf-8"> 
+    <link rel="stylesheet" type="text/css" href="./../mainstyle.css"/>
+</head>
 
-clearly there are systems and actions we do control
+<!-- 
+this is shit, because js but seems acceptable
+source : https://stackoverflow.com/a/19844696
+-->
+<script>
+function changeCSS(cssFile, cssLinkIndex) {
 
-and there are systems and consequenxes we dont control
+    var oldlink = document.getElementsByTagName("link").item(cssLinkIndex);
 
-if we believe jn personal responsibilty and
-and we are not in control of something and thats
-causing a consequence we dont like
-we have the responsobilty to take control of that
-system
+    var newlink = document.createElement("link");
+    newlink.setAttribute("rel", "stylesheet");
+    newlink.setAttribute("type", "text/css");
+    newlink.setAttribute("href", cssFile);
 
-and change it in a way that it no longer produces the outcome
+    document.getElementsByTagName("head").item(cssLinkIndex).replaceChild(newlink, oldlink);
+}
+</script>
 
-we dont like.
-
-otherwise we would be not taking an action we can take to prevwnt a bad outcome.
+<body>
+    <div class="darkmodetoggle">
+    <a href="#" onclick="changeCSS('./../mainstyle.css', 0);">light</a> 
+    <a href="#" onclick="changeCSS('./../darkmainstyle.css', 0);">darkmode</a>
+    </div>
+<h1>systems beyond our control</h1>
+<p>
+Clearly there are systems and actions we <i>do</i> control and there are systems and consequences we <i>don't</i> control.
+</p>
+<p>
+If we believe in personal responsibilty, and we are not in control of something, and that's causing a consequence we dont like, then we have the responsibility to take control of that system and change it in a way that it no longer produces the outcome we don't like.
+</p>
+<p>
+Otherwise we would be not taking an action we can take to prevent a bad outcome. And that's... not even axiomatically bad. It's just inefficient.
+</p>
+</body>
