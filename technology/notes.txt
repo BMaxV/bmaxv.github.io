@@ -1,0 +1,3 @@
+introduce blocking/blocked into planning
+
+to show/visualize bottlenecks.
