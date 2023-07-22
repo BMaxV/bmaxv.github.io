@@ -1,0 +1,31 @@
+experiments are setups to test predicitons about the behavior of systems.
+
+in software development tests aee automated experiments to verify thst the behavior kf the system has not changed in unwanted ways, after having changed the code and the "rules" of the s,stem. changes are meant to be additive only or to chnage behavior in very predictable ways.
+
+anyway.
+
+the difficulty with tests and experiments, is that for them to be meaningful, setup, data and how to run them has ro be identical.
+
+on analysis of the outcome.
+
+there are mjltiple easy ways to do this wrong:
+
+assuming we have a behavior like a natural law or piece of code we want to test and were running a test to verify:
+
+our idea od what the rule means can be wrong. the actual test and code can be correct but the outcome of the test may return an unexpected fail or pass.
+
+the test can be written in a way that does not actually verify the outcome of thr rule.
+
+like 
+rule:
+x**0=1
+
+test(x)
+
+return type(x) == number
+
+the description of the environment and setup may be so wrong that an accurate reproduction is impossible.
+
+the experimwnt may be so expensive to run that an independent verification is not feasible
+
+
