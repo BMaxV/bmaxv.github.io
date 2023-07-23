@@ -1,31 +1,72 @@
-experiments are setups to test predicitons about the behavior of systems.
+<!doctype html>
+<head>
+    <title>experiments</title>
+    <meta charset="utf-8"> 
+    <link rel="stylesheet" type="text/css" href="./../mainstyle.css"/>
+</head>
 
-in software development tests aee automated experiments to verify thst the behavior kf the system has not changed in unwanted ways, after having changed the code and the "rules" of the s,stem. changes are meant to be additive only or to chnage behavior in very predictable ways.
+<!-- 
+this is shit, because js but seems acceptable
+source : https://stackoverflow.com/a/19844696
+-->
+<script>
+function changeCSS(cssFile, cssLinkIndex) {
 
-anyway.
+    var oldlink = document.getElementsByTagName("link").item(cssLinkIndex);
 
-the difficulty with tests and experiments, is that for them to be meaningful, setup, data and how to run them has ro be identical.
+    var newlink = document.createElement("link");
+    newlink.setAttribute("rel", "stylesheet");
+    newlink.setAttribute("type", "text/css");
+    newlink.setAttribute("href", cssFile);
 
-on analysis of the outcome.
+    document.getElementsByTagName("head").item(cssLinkIndex).replaceChild(newlink, oldlink);
+}
+</script>
 
-there are mjltiple easy ways to do this wrong:
+<body>
+    <div class="darkmodetoggle">
+    <a href="#" onclick="changeCSS('./../mainstyle.css', 0);">light</a> 
+    <a href="#" onclick="changeCSS('./../darkmainstyle.css', 0);">darkmode</a>
+    </div>
+<h2>experiments</h2>
+<p>
+Experiments are setups to test predicitons about the behavior of systems.
+</p>
+<p>
+In software development, tests are automated experiments to verify that the behavior of the system has not changed in unwanted ways, after having changed the code and the "rules" of the system. Changes are meant to be additive only or to change behavior in predicted ways.
+</p>
+<p>Since writing "tests" is shorter and writing actual code and tests that test them is easier than setting and showing how experiments are wrong, I will use software from now on. But the epistomological argumentative mistakes apply to regular scientific experiments.</p>
+<p>
+The difficulty with tests, is that for them to be meaningful, the setup, data and actions of running them has to be "reasonably" identical.
+</p>
+<h2>
+analysis of the outcome
+</h2>
+<p>
+There are multiple easy ways to do this wrong. Assuming we have a behavior like a natural law or piece of code we want to test and were running a test to verify:
+</p>
 
-assuming we have a behavior like a natural law or piece of code we want to test and were running a test to verify:
+<ul>
+	<li>Our idea od what the rule means can be wrong. </li>
+	<li>The actual test and code can be correct but the outcome of the test may return an unexpected fail or pass.</li>
+	<li>The test can be written in a way that does not actually verify the outcome of thr rule.
+	<pre>
+	rule:
+	x**0=1
 
-our idea od what the rule means can be wrong. the actual test and code can be correct but the outcome of the test may return an unexpected fail or pass.
+	test(x)
+	return type(x) == number
+	</pre>
+	The test returns a false positive.
+	</li>
+	<li>
+	The description of the environment and setup may be so wrong that an accurate reproduction is impossible.
+	</li>
+	<li>
+	The experiment may be so expensive to run that an independent verification is not feasible.
+	</li>
+</ul>
 
-the test can be written in a way that does not actually verify the outcome of thr rule.
 
-like 
-rule:
-x**0=1
-
-test(x)
-
-return type(x) == number
-
-the description of the environment and setup may be so wrong that an accurate reproduction is impossible.
-
-the experimwnt may be so expensive to run that an independent verification is not feasible
-
+</body>
 
