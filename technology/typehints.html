@@ -1,0 +1,33 @@
+type hints are bad.
+
+https://peps.python.org/pep-0484/
+
+python as a strongly but dynamically language has big advantages of simplicity and flexibility.
+
+yet type hints were introduced because of ehat i suspect is a sunk cost bias, coupled with some corrupting influence of by employers on member of the python foundation.
+
+which i would normally decry, but people have bills to pay. so whatever.
+
+epistomologically type hints are an interesting flaw for several reasons
+
+the proposal itself is obviously flawed because it offers no justification. it merely describes that something is being done and assumes obviousness for the usefulness.
+
+programming in general has several measurable qualities regarding to predictability:
+
+the code can happen to use bad underlying instructions, turning functional code into erroneous code.
+
+the code can have randomness or pseudorandomness baked in as a feature.
+
+the code can be written, and compiled but the reasoning for why it will work is external and the code is not self desceibing. this happens with bad variables and the infamous "GOTO" that has been banished from newer languages.
+
+the code can be slightly less obfuscated and just work, but with minimal type information and no safeties. e.g. in C it is possible to specify in great detail, the type of variables and its memory use. but the disadvantage is that every type conversion has to be or should be explicit. it is not possible to trear integers and floats as numbers.
+
+in regular python, this type information is omitted for the sake of flexibilty and brevity.
+
+a maybe unintended side effect is that the information thst allows or forbids actions is not defined at the local level of  definition and execution of a function, buy the more remote definition of the type. a "add" operarion doesnt depend on the function, or the local code, it merely depends on whether the author of either ttpe has foreseen the possibility of the operation.
+
+this means that theoretically, someone can write code to solve a certain general problem and a user in the far future can discover a new use for thar code, and doesnt need to change a thing to make it work for their case.
+
+type hinting strongly implies that there is a correct type and strongly implies that other types are not correct, no discussion allowed.
+
+static type analysis
