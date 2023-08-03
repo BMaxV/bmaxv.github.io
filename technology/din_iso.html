@@ -1,15 +1,54 @@
-so, standards.
+<!doctype html>
+<head>
+    <title>weird information</title>
+    <meta charset="utf-8"> 
+    <link rel="stylesheet" type="text/css" href="./../mainstyle.css"/>
+</head>
 
+<!-- 
+this is shit, because js but seems acceptable
+source : https://stackoverflow.com/a/19844696
+-->
+<script>
+function changeCSS(cssFile, cssLinkIndex) {
+
+    var oldlink = document.getElementsByTagName("link").item(cssLinkIndex);
+
+    var newlink = document.createElement("link");
+    newlink.setAttribute("rel", "stylesheet");
+    newlink.setAttribute("type", "text/css");
+    newlink.setAttribute("href", cssFile);
+
+    document.getElementsByTagName("head").item(cssLinkIndex).replaceChild(newlink, oldlink);
+}
+</script>
+
+<body>
+    <div class="darkmodetoggle">
+    <a href="#" onclick="changeCSS('./../mainstyle.css', 0);">light</a> 
+    <a href="#" onclick="changeCSS('./../darkmainstyle.css', 0);">darkmode</a>
+    </div>
+<h2>standards</h2>
+<blockquote>
 thesis: society has an existential interest in having a fixed, mandatory set of rules foe industry.
+</blockquote>
+<p>
+They should habe the character of laws and people who break them knowingly or sabotage quality control should be treated as criminals.
+</p>
+<p>
+We sort of have this for some electrical standards but we dont have it for lots of others.
+</p>
+<p>
+In germany there was DIN, but it was privatized in a "let industry figure it out" way and the competenxe was handed from the state to industry.
+</p>
+<p>
+Now the state is incapable of judging the quality of what the industry does and helpless when it comes to doing new things or recentralizing critical infrastructure, namely digital stuff.
+</p>
+<p>
+On the internet, wc3 does some work and hasnt messed up in the collossal way that ISO is dropping the ball, because let's remember and point out that THEY are the big international standard body and they didn't do anything to handle the internet.
+</p>
+<p>
+Also, <a href="https://xkcd.com/927/">xkcd 927</a>
+</p>
 
-they should habe the character of laws and people who break rhem knowingly or sabotage quality control should be treated as criminals.
-
-we sort of have this for some electrical standards but we dont have it for lots of others.
-
-in germany there was DIN, but it was privatized jn a "let industry figure it out" way and the compwtenxe was handed from the state to industry.
-
-and now the state is incapable of judging the quality of what the industry does.
-
-on the internet, wc3 does some work and hasnt fucked up in the collossal way that ISO is dropping the ball.
-
-
+</body>
