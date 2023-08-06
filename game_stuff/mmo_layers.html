@@ -1,25 +1,73 @@
-the "living world" mmo remains illusive, but tempting.
+<!doctype html>
+<head>
+    <title>mmo layers</title>
+    <meta charset="utf-8"> 
+    <link rel="stylesheet" type="text/css" href="./../mainstyle.css"/>
+</head>
 
-here is my little theory of what necessary ingedients are:
+<!-- 
+this is shit, because js but seems acceptable
+source : https://stackoverflow.com/a/19844696
+-->
+<script>
+function changeCSS(cssFile, cssLinkIndex) {
 
-1 it has to exist and be playable (duh)
+    var oldlink = document.getElementsByTagName("link").item(cssLinkIndex);
 
-2 there needs to be something to do. it can be almosr anyrhing but repetitiveness shpuld be limited.
+    var newlink = document.createElement("link");
+    newlink.setAttribute("rel", "stylesheet");
+    newlink.setAttribute("type", "text/css");
+    newlink.setAttribute("href", cssFile);
 
-3 there needs to be some long term goal, be it a big bad that needs to be defeated or something else.
+    document.getElementsByTagName("head").item(cssLinkIndex).replaceChild(newlink, oldlink);
+}
+</script>
 
-4 there needs to be a social strucutre and gameplay that strongly encourages that it forms "naturally"
-
-e.g. wow classes complementing each other to make tedious or difficult things easy.
-
-4.1it needs real player interaction where playing with the same group benefits you for some reason hopefully without beinf locked in.
-
-4.2 trading
-
-5 it needs to give "enough" "real choices" in terms of how to build the character
-
-6 the whole thing needs a hook, like wow had the character build up of wc3
-
-7 passing time and death are important story telling moments and turning points. if characters cant die, there is no risk and no tension.
-
-(x.1) type variety introduces new problems of identification, valuation and selling
+<body>
+    <div class="darkmodetoggle">
+    <a href="#" onclick="changeCSS('./../mainstyle.css', 0);">light</a> 
+    <a href="#" onclick="changeCSS('./../darkmainstyle.css', 0);">darkmode</a>
+    </div>
+<h2>mmo layers</h2>
+<p>
+The "living world" mmo remains illusive, but tempting.
+</p>
+<p>
+Here is my little theory of what necessary ingedients are:
+</p>
+<p>
+<ol>
+	<li>
+	It has to exist and be playable (duh)
+	</li>
+	<li>
+	There needs to be something to do. it can be almost anyrhing but repetitiveness shpuld be limited.
+	</li>
+	<li>
+	There needs to be some long term goal, be it a big bad that needs to be defeated or something else.
+	</li>
+	<li>
+	There needs to be a social strucutre and gameplay that strongly encourages that it forms "naturally".
+	<br>
+	e.g. wow classes complementing each other to make tedious or difficult things easy.
+	</li>
+	<li>
+	It needs real player interaction where playing with the same group benefits you for some reason hopefully without being locked in.
+	</li>
+	<li>
+	trading
+	</li>
+	<li>
+	It needs to give "enough" "real choices" in terms of how to build the character.
+	</li>
+	<li>
+	The whole thing needs a hook, like wow had the character build up of wc3.
+	</li>
+	<li>
+	Passing time and death are important story telling moments and turning points. if characters cant die, there is no risk and no tension.
+	</li>
+	<li>
+	(x.1) type variety introduces new problems of identification, valuation and selling
+	</li>
+</ol>
+</body>
