@@ -1,0 +1,112 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="Brython">
+<meta name="keywords" content="Python,Brython">
+<meta name="author" content="Pierre Quentel">
+<title>Brython</title>
+
+<script type="text/javascript"
+	src="https://cdn.jsdelivr.net/npm/brython@3.11.0/brython.min.js">
+</script>
+<script type="text/javascript"
+	src="https://cdn.jsdelivr.net/npm/brython@3.11.0/brython_stdlib.js">
+</script>
+
+<style>
+textarea{
+resize:none;
+}
+
+p{
+background-color:rgb(200,200,255);
+}
+</style>
+
+<script type="text/python">
+from browser import document
+import hashlib
+
+def button1func(event):
+	panel = document["myarea"]
+	print(panel.value)
+	myhash=hashlib.sha256(panel.value.encode())
+
+	print(myhash.hexdigest())
+
+	output = document["output"]
+
+	new=panel.value
+
+	output.textContent = new+ "\n\n" + myhash.hexdigest()
+
+def button2func(event):
+	panel = document["mycheckarea"]
+	
+	
+	my_string = panel.value
+	my_string = my_string.split("\n")
+	
+	old_string = my_string[:-2]
+	pot_hash = my_string[-1]
+	old_text = "\n".join(old_string)
+	myhash = hashlib.sha256(old_text.encode())
+	myhash = myhash.hexdigest()
+	if myhash==pot_hash:
+		out_text="the hashes match, the text has not been changed"
+		color="rgb(200,255,200)"
+	else:
+		out_text="the hashes do not match, the text has been changed"
+		color="rgb(255,200,200)"
+	output = document["output2"]
+	output.textContent = out_text
+	output.style.backgroundColor=color
+	
+
+document["button1"].bind("click",button1func)
+document["button2"].bind("click",button2func)
+
+</script>
+
+</head>
+
+<body onload="brython(1)">
+
+<center>
+
+<textarea rows="15" cols="60" id="myarea">
+your text here</textarea>
+<br>
+
+<button id="button1" >click to convert</button>
+
+< br>
+</center>
+
+<p  style="white-space:pre-line" id="output">your output here
+
+your123hash123
+</p>
+
+<center>
+<textarea rows="15" cols="60" id="mycheckarea">
+copy paste the text you want to check here</textarea>
+<br>
+
+<button id="button2" >click to check</button>
+
+</center>
+
+<div width="50%">
+<p  style="white-space:pre-line" id="output2">your output here
+your123hash123
+</p>
+</div>
+
+</body>
+
+</html>
+
