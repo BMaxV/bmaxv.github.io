@@ -6,8 +6,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="description" content="Brython">
 <meta name="keywords" content="Python,Brython">
-<meta name="author" content="Pierre Quentel">
+<link rel="stylesheet" type="text/css" href="./../mainstyle.css"/>
 <title>Brython</title>
+
 
 <script type="text/javascript"
 	src="https://cdn.jsdelivr.net/npm/brython@3.11.0/brython.min.js">
@@ -21,9 +22,6 @@ textarea{
 resize:none;
 }
 
-p{
-background-color:rgb(200,200,255);
-}
 </style>
 
 <script type="text/python">
@@ -57,13 +55,14 @@ def button2func(event):
 	myhash = myhash.hexdigest()
 	if myhash==pot_hash:
 		out_text="the hashes match, the text has not been changed"
-		color="rgb(200,255,200)"
+		color="rgb(50,255,50)"
 	else:
 		out_text="the hashes do not match, the text has been changed"
-		color="rgb(255,200,200)"
+		color="rgb(255,50,50)"
 	output = document["output2"]
 	output.textContent = out_text
-	output.style.backgroundColor=color
+	output.style.backgroundColor = color
+	output.style.color = "black"
 	
 
 document["button1"].bind("click",button1func)
@@ -73,7 +72,27 @@ document["button2"].bind("click",button2func)
 
 </head>
 
+<script>
+function changeCSS(cssFile, cssLinkIndex) {
+
+    var oldlink = document.getElementsByTagName("link").item(cssLinkIndex);
+
+    var newlink = document.createElement("link");
+    newlink.setAttribute("rel", "stylesheet");
+    newlink.setAttribute("type", "text/css");
+    newlink.setAttribute("href", cssFile);
+
+    document.getElementsByTagName("head").item(cssLinkIndex).replaceChild(newlink, oldlink);
+}
+</script>
+
 <body onload="brython(1)">
+    <div class="darkmodetoggle">
+    <a href="#" onclick="changeCSS('./../mainstyle.css', 0);">light</a> 
+    <a href="#" onclick="changeCSS('./../darkmainstyle.css', 0);">darkmode</a>
+    </div>
+
+
 
 <center>
 
@@ -83,7 +102,7 @@ your text here</textarea>
 
 <button id="button1" >click to convert</button>
 
-< br>
+<br>
 </center>
 
 <p  style="white-space:pre-line" id="output">your output here

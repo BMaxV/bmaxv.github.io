@@ -35,6 +35,12 @@ line-height:1.6;
 
 }
 
+textarea{
+background:#444;
+color:white;
+
+}
+
 .darkmodetoggle{
     position: fixed;
     top: 20px;

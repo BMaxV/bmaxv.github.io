@@ -56,6 +56,10 @@ line-height:1.6;
     a:visited{
     color:#DCB4FF;
     }
+    
+    textarea{
+    color:white;
+    background:#444;
 }
 
 
