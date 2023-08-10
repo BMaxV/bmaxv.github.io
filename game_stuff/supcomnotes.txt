@@ -1,0 +1,57 @@
+lack of personality and different uses between T1 and T2 and bots/tanks.
+
+hover crosses water -> water needs to be impassible at times
+spider can climb ledges
+
+uef is a bike ans gets speed
+
+then maybe one with a radius, one with a cone, and one with smaller radius but very cheap and spammy, also some kind stealth/hide mechanic.
+
+artillery had not a lot of range
+
+scout-> big scouting radius maybe message delay.
+
+tank/troup carrier?
+
+big economic differences between personal effort, horses, carts, ships.
+--------
+build bar based scaled where i can increase spending in percent
+
+on different projecta and categories..
+---------
+
+"storming" a position is to concentrate more force at a point than thr defense can handle.
+
+ww1 was an isues because there was no weak spot where defenses had "low bullet throughput".
+
+e.g. *one* single dude with a long range, high vision, slow reload gun can cover an area with x/rounds per minute.
+
+solutiom, being 10x the number.
+
+in medieval fantasy it wouldnt really work like tgat? except on defense. or people with crossbows.
+
+_--------
+
+create requests for tech or wrokers when it comes up.
+
+e.g. long cumbersome walk? wish i had a horse/cart
+doing worj alone? wish i had some help.
+
+----------
+
+infrastrucutre replaxement strategy. DEFINE dsitrict makeup.
+single room multipurpose buildings- > specialized that are better for tasks but useless for other things.
+
+small workshops -> manufactories.
+higher part variety -> efficiency per part+transport cost
+----
+making
+higher tier buildings arent more resource efficient directly.
+
+theyre more efficient because they are denser. and require less resources to protect. so hovel:1 money per person, house 1.5 money per person but fits 2 people.
+
+-----
+
+repairing and maintenance is often not worth it.
+i could do that component based
+and replace the wooden parts frequently?

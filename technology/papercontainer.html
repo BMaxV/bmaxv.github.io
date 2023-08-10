@@ -1,0 +1,65 @@
+<!doctype html>
+<head>
+<title>paper container<title\>
+    <meta charset="utf-8"> 
+    <link rel="stylesheet" type="text/css" href="./../mainstyle.css"/>
+</head>
+
+<!-- 
+this is shit, because js but seems acceptable
+source : https://stackoverflow.com/a/19844696
+-->
+<script>
+function changeCSS(cssFile, cssLinkIndex) {
+
+    var oldlink = document.getElementsByTagName("link").item(cssLinkIndex);
+
+    var newlink = document.createElement("link");
+    newlink.setAttribute("rel", "stylesheet");
+    newlink.setAttribute("type", "text/css");
+    newlink.setAttribute("href", cssFile);
+
+    document.getElementsByTagName("head").item(cssLinkIndex).replaceChild(newlink, oldlink);
+}
+</script>
+
+<body>
+    <div class="darkmodetoggle">
+    <a href="#" onclick="changeCSS('../mainstyle.css', 0);">light</a> 
+    <a href="#" onclick="changeCSS('../darkmainstyle.css', 0);">darkmode</a>
+    </div>
+
+i should investigate making containers from standard paper sizes.
+
+if i take any x cm from sides
+
+how much do i have left?
+can i do golden ratio things here as well?
+
+210 × 297
+
+if i do 2x/y
+2x+y=297 and x/y = 1/2**0.5
+
+>>> 297/(2+2**0.5)
+86.9892859875954
+for x and 
+y
+>>> y
+123.02142802480925
+
+>>> x=210/(2+2**0.5)
+>>> y=x*2**0.5
+>>> x
+61.50757595082502
+>>> t
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 't' is not defined
+>>> y
+86.98484809834997
+>>>
+
+x2 297-2*x 
+173.98484809834997
+</body>
