@@ -1,12 +1,52 @@
-in logic any sequence of words or sybomls forms a sentence.
+<!doctype html>
+<head>
+    <title>sentences</title>
+    <meta charset="utf-8"> 
+    <link rel="stylesheet" type="text/css" href="./../mainstyle.css"/>
+</head>
 
-if all parts of a sentence are true, the sentence is true.
+<!-- 
+this is shit, because js but seems acceptable
+source : https://stackoverflow.com/a/19844696
+-->
+<script>
+function changeCSS(cssFile, cssLinkIndex) {
 
-given an infinite amount of sentences, many mean the same thing.
+    var oldlink = document.getElementsByTagName("link").item(cssLinkIndex);
 
-were trying to find the smaller or smallest sentences that are srill true.
+    var newlink = document.createElement("link");
+    newlink.setAttribute("rel", "stylesheet");
+    newlink.setAttribute("type", "text/css");
+    newlink.setAttribute("href", cssFile);
 
-as many as possible and hopefully all of them.
+    document.getElementsByTagName("head").item(cssLinkIndex).replaceChild(newlink, oldlink);
+}
+</script>
 
-also preferably in an order that makes sense.
- 
+<body>
+    <div class="darkmodetoggle">
+    <a href="#" onclick="changeCSS('../mainstyle.css', 0);">light</a> 
+    <a href="#" onclick="changeCSS('../darkmainstyle.css', 0);">darkmode</a>
+    </div>
+<h2>
+sentences
+</h2>
+<p>
+In logic any sequence of words or sybomls forms a sentence.
+</p>
+<p>
+If all parts of a sentence are true, the sentence is true.
+</p>
+<p>
+Given an infinite amount of sentences, many mean the same thing.
+</p>
+<p>
+We are trying to find the smaller or smallest sentences that are still true.
+</p>
+<p>
+As many as possible and hopefully all of them.
+</p>
+<p>
+Also, preferably in an order that makes sense.
+</p>
+</body>
