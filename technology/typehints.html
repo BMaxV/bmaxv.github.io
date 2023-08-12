@@ -1,33 +1,84 @@
+<!doctype html>
+<head>
+    <title>type hints</title>
+    <meta charset="utf-8"> 
+    <link rel="stylesheet" type="text/css" href="./../mainstyle.css"/>
+</head>
+
+<!-- 
+this is shit, because js but seems acceptable
+source : https://stackoverflow.com/a/19844696
+-->
+<script>
+function changeCSS(cssFile, cssLinkIndex) {
+
+    var oldlink = document.getElementsByTagName("link").item(cssLinkIndex);
+
+    var newlink = document.createElement("link");
+    newlink.setAttribute("rel", "stylesheet");
+    newlink.setAttribute("type", "text/css");
+    newlink.setAttribute("href", cssFile);
+
+    document.getElementsByTagName("head").item(cssLinkIndex).replaceChild(newlink, oldlink);
+}
+</script>
+
+<body>
+    <div class="darkmodetoggle">
+    <a href="#" onclick="changeCSS('../mainstyle.css', 0);">light</a> 
+    <a href="#" onclick="changeCSS('../darkmainstyle.css', 0);">darkmode</a>
+    </div>
+<h2>
 type hints are bad.
-
+</h2>
+<p>
 https://peps.python.org/pep-0484/
-
-python as a strongly but dynamically language has big advantages of simplicity and flexibility.
-
-yet type hints were introduced because of ehat i suspect is a sunk cost bias, coupled with some corrupting influence of by employers on member of the python foundation.
-
-which i would normally decry, but people have bills to pay. so whatever.
-
+</p>
+<p>
+Python as a strongly but dynamically language has big advantages of simplicity and flexibility.
+</p>
+<p>
+Yet type hints were introduced because of ehat i suspect is a sunk cost bias, coupled with some corrupting influence of by employers on member of the python foundation.
+</p>
+<p>
+Which i would normally decry, but people have bills to pay. So whatever.
+</p>
+<p>
 epistomologically type hints are an interesting flaw for several reasons
 
-the proposal itself is obviously flawed because it offers no justification. it merely describes that something is being done and assumes obviousness for the usefulness.
+</p>
+<p>
+The proposal itself is obviously flawed because it offers no justification. it merely describes that something is being done and assumes obviousness for the usefulness.
+</p>
+<p>
+Programming in general has several measurable qualities regarding to predictability:
+</p>
 
-programming in general has several measurable qualities regarding to predictability:
+<ul>
+    <li>
+    the code can happen to use bad underlying instructions, turning functional code into erroneous code.
+    </li>
+    <li>
+    the code can have randomness or pseudorandomness baked in as a feature.
+    </li>
+    <li>
+    the code can be written, and compiled but the reasoning for why it will work is external and the code is not self desceibing. this happens with bad variables and the infamous "GOTO" that has been banished from newer languages.
+    </li>
+    <li>
+    the code can be slightly less obfuscated and just work, but with minimal type information and no safeties. e.g. in C it is possible to specify in great detail, the type of variables and its memory use. but the disadvantage is that every type conversion has to be or should be explicit. it is not possible to trear integers and floats as numbers.
+    </li>
+</ul>
 
-the code can happen to use bad underlying instructions, turning functional code into erroneous code.
-
-the code can have randomness or pseudorandomness baked in as a feature.
-
-the code can be written, and compiled but the reasoning for why it will work is external and the code is not self desceibing. this happens with bad variables and the infamous "GOTO" that has been banished from newer languages.
-
-the code can be slightly less obfuscated and just work, but with minimal type information and no safeties. e.g. in C it is possible to specify in great detail, the type of variables and its memory use. but the disadvantage is that every type conversion has to be or should be explicit. it is not possible to trear integers and floats as numbers.
-
-in regular python, this type information is omitted for the sake of flexibilty and brevity.
-
-a maybe unintended side effect is that the information thst allows or forbids actions is not defined at the local level of  definition and execution of a function, buy the more remote definition of the type. a "add" operarion doesnt depend on the function, or the local code, it merely depends on whether the author of either ttpe has foreseen the possibility of the operation.
-
-this means that theoretically, someone can write code to solve a certain general problem and a user in the far future can discover a new use for thar code, and doesnt need to change a thing to make it work for their case.
-
-type hinting strongly implies that there is a correct type and strongly implies that other types are not correct, no discussion allowed.
-
-static type analysis
+<p>
+In regular python, this type information is omitted for the sake of flexibilty and brevity.
+</p>
+<p>
+A maybe unintended side effect is that the information that allows or forbids actions is not defined at the local level of definition and execution of a function, but the more remote definition of the type. A "add" operation doesnt depend on the function, or the local code, it merely depends on whether the author of either type has foreseen the possibility of the operation.
+</p>
+<p>
+This means that theoretically, someone can write code to solve a certain general problem and a user in the far future can discover a new use for that code, and doesnt need to change a thing to make it work for their case.
+</p>
+<p>
+Type hinting strongly implies that there is a correct type and strongly implies that other types are not correct, no discussion allowed.
+</p>
+</body>
