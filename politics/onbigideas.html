@@ -1,0 +1,49 @@
+<!doctype html>
+<head>
+    <title>on big ideas</title>
+    <meta charset="utf-8"> 
+    <link rel="stylesheet" type="text/css" href="./../mainstyle.css"/>
+</head>
+
+<!-- 
+this is shit, because js but seems acceptable
+source : https://stackoverflow.com/a/19844696
+-->
+<script>
+function changeCSS(cssFile, cssLinkIndex) {
+
+    var oldlink = document.getElementsByTagName("link").item(cssLinkIndex);
+
+    var newlink = document.createElement("link");
+    newlink.setAttribute("rel", "stylesheet");
+    newlink.setAttribute("type", "text/css");
+    newlink.setAttribute("href", cssFile);
+
+    document.getElementsByTagName("head").item(cssLinkIndex).replaceChild(newlink, oldlink);
+}
+</script>
+
+<body>
+    <div class="darkmodetoggle">
+    <a href="#" onclick="changeCSS('./../mainstyle.css', 0);">light</a> 
+    <a href="#" onclick="changeCSS('./../darkmainstyle.css', 0);">darkmode</a>
+    </div>
+<h2>on big ideas</h2>
+<p>
+There is some traps and stigma with big sweeping ideas.
+</p>
+<p>
+Some real problems too.
+</p>
+<p>
+Mostly, they look simple and reality is not simple. Then again sometimes reality is very simple too.
+</p>
+<p>
+anyway, i think the realistic failures and threats shouldn't stop anyone from dreaming unrealistically big.
+</p>
+<p>
+an unrealistic goal can still be productive. some.changes aee not incremental and if they were they would be so small to be demotivating. we xant have that.
+</p>
+<p>
+</p>
+</body>
