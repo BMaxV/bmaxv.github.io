@@ -1,27 +1,60 @@
-all groups have the recruitment and onboarding problem.
+<!doctype html>
+<head>
+    <title>recruitment</title>
+    <meta charset="utf-8"> 
+    <link rel="stylesheet" type="text/css" href="./../mainstyle.css"/>
+</head>
 
-be it because of members leaving or aging and eventual death of members, if there is an interest to keep the group alive for longer than the membership of the some original members, new members.have to be found, educated or tested, motivated to join the group, etc..
+<!-- 
+this is shit, because js but seems acceptable
+source : https://stackoverflow.com/a/19844696
+-->
+<script>
+function changeCSS(cssFile, cssLinkIndex) {
 
-with the growth of groups, the administrative workload increases and even if a certain setup works for a small group, that setup will fail eventually.
+    var oldlink = document.getElementsByTagName("link").item(cssLinkIndex);
 
-this means:
+    var newlink = document.createElement("link");
+    newlink.setAttribute("rel", "stylesheet");
+    newlink.setAttribute("type", "text/css");
+    newlink.setAttribute("href", cssFile);
 
-the nature and bevahior of the group has to be communicated to new members somehow.
+    document.getElementsByTagName("head").item(cssLinkIndex).replaceChild(newlink, oldlink);
+}
+</script>
 
-this includes the problem of self presentation and mesaaging ans advertisement.
+<body>
+    <div class="darkmodetoggle">
+    <a href="#" onclick="changeCSS('./../mainstyle.css', 0);">light</a> 
+    <a href="#" onclick="changeCSS('./../darkmainstyle.css', 0);">darkmode</a>
+    </div>
+<h2>recruitment</h2>
 
-more important is thw general advertising strategy:
+<p>
+All groups have the recruitment and onboarding problem.
+</p>
+<p>
+Be it because of members leaving or aging and eventual death of members. If there is an interest to keep the group alive for longer than the membership of the some original members, new members have to be found, educated or tested, motivated to join the group, etc..
+</p>
+<p>
+With the growth of groups, the administrative workload increases and even if a certain setup works for a small group, that setup will fail eventually. This means: the nature and behavior of the group always has to be communicated to potential new members somehow. This includes  this problem of self presentation, how to go about messaging and advertising the group.
+</p>
+<p>
+A big part of this is the general strategic approach:
+</p>
+<h3>corporations</h3>
+<p>
+Corportations rely on the general economic pressure that forces people to seek jobs or money out of self interest. They don't actually advertise themselves as appealing. They assume a general, infite pool of applicants that they can pick and reject from. They don't have to package what the group is about and consequences of success or failure, because it's rather simple. It's about money. Hopefully the job is nice enough, but if it isn't there is always another company or another person to fill the spot.
+</p>
+<h3>political parties</h3>
+<p>
+Sort of the same is true for political groups. They are mostly winner takes all, intransparent orgs that don't talk with outsiders, dont take input and certainly don't use it a transparent way. E.g. letters to members of parliament or petitions are at best ignored. With the current political climate of growing right wing groups, its worth thinking about changing that attitude. its not enough to attract some people and hope for self motivation and self interest.
+</p>
+<p>
+It would be in the interest of certain existing parties to not just find ways for their own group to grown, but also for the other group to shrink too. Which means its not just about motivating joining your groups, its about motivating defection, abandoning the other group.
+</p>
+<p>
+This has to be done by solving the problems that those people see, and solving them better than the other group. Rephrasing them.
+</p>
 
-corportations rely on the general economic pressure that forces people to seek jobs or money out of self interest. they dont actually advertise themselves as appealing, the plication is obvious. 
-
-they assume a generall, infite pool of applicatio s thst they can pick and reject fro.
-
-sort of the same is true for political groups. they are mostly winner takes all, intransparent orgs that dont talk with outsiders, dont take input and certainly dont use it a transparent way.
-
-e.g. letters to members of parliament or petitions are at best ignored. see the petition about voratsdatenspeicherung.
-
-with the current political climate of growing right wing groups, its worth thinking about changing that attitude. its not enough to attract some pepple and hope for self motivation and self interest.
-
-you dont just want your own group to grown, what you really reall, want is for their group to grow smaller too. whoch means its not just about motivating joining your groups, its about motivating defection, abandoning the other group.
-
-this has to be done by solving the problems that those peoppe see, and solving them better than the other group. rephrasing them.
+</body>
