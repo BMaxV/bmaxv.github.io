@@ -1,0 +1,25 @@
+https://chriswarrick.com/blog/2023/01/15/how-to-improve-python-packaging/
+
+this is a pretty good article on tge problematic situation of distribution and packaging.
+
+let me preface that by restating the desired ideal state:
+
+all software is supposed to work.
+
+without conflict
+
+on the newest versions
+
+in harmony.
+
+original package managers tried to do tbis with dependencies.
+
+this no longer works if devs pin their version in tgeor package.
+
+(note: write a tool that checks this.)
+
+it also somewhat fails if a user wants to install a specific oyher version
+
+imo this should be solved by turning "import" into a function with an optional argument specifying another version that last LTS.
+
+meaning i dislike all the tools venvs other managers, pinning etc. because they are impure by design.
