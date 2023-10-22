@@ -1,0 +1,60 @@
+
+<!doctype html>
+<head>
+    <title>year of the linux desktop</title>
+    <meta charset="utf-8"> 
+    <link rel="stylesheet" type="text/css" href="./../mainstyle.css"/>
+</head>
+
+<!-- 
+this is shit, because js but seems acceptable
+source : https://stackoverflow.com/a/19844696
+-->
+<script>
+function changeCSS(cssFile, cssLinkIndex) {
+
+    var oldlink = document.getElementsByTagName("link").item(cssLinkIndex);
+
+    var newlink = document.createElement("link");
+    newlink.setAttribute("rel", "stylesheet");
+    newlink.setAttribute("type", "text/css");
+    newlink.setAttribute("href", cssFile);
+
+    document.getElementsByTagName("head").item(cssLinkIndex).replaceChild(newlink, oldlink);
+}
+</script>
+
+<body>
+    <div class="darkmodetoggle">
+    <a href="#" onclick="changeCSS('../mainstyle.css', 0);">light</a> 
+    <a href="#" onclick="changeCSS('../darkmainstyle.css', 0);">darkmode</a>
+    </div>
+<h2>Version pinning is bad for the ecosystem</h2>
+
+<ul>
+    <li>If there is a bug in a version and the bug is fixed in a newer version, the author of a downstream package can prevent an upstream fix from improving the situation for the user. this can result in duplicate reports, wasted time tracking things down, etc..</li>
+    
+    <li>If there is a bug in a new version, having an old pinned version will cause the bug to persist. The bug will statistically be caught later, because less people are doing effective testing on it.
+    </li>
+</ul>
+
+<p>
+    Bugs are unfortunately found by users sometimes. Especially the rare ones.
+    
+</p>
+
+<h2>fixing this?</h2>
+
+<p>
+I should write a program that can detect unnecessary version pinning
+</p>
+
+<ul>
+    <li>get a repo</li>
+    <li>modify requirements to remove pinned versions</li>
+    <li>install packages</li>
+    <li>runt tests</li>
+    <li>record test results</li>
+    <li>possibly uninstall?</li>
+</ul>
+</body>

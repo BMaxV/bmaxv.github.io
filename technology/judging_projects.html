@@ -1,0 +1,43 @@
+
+<!doctype html>
+<head>
+    <title>year of the linux desktop</title>
+    <meta charset="utf-8"> 
+    <link rel="stylesheet" type="text/css" href="./../mainstyle.css"/>
+</head>
+
+<!-- 
+this is shit, because js but seems acceptable
+source : https://stackoverflow.com/a/19844696
+-->
+<script>
+function changeCSS(cssFile, cssLinkIndex) {
+
+    var oldlink = document.getElementsByTagName("link").item(cssLinkIndex);
+
+    var newlink = document.createElement("link");
+    newlink.setAttribute("rel", "stylesheet");
+    newlink.setAttribute("type", "text/css");
+    newlink.setAttribute("href", cssFile);
+
+    document.getElementsByTagName("head").item(cssLinkIndex).replaceChild(newlink, oldlink);
+}
+</script>
+
+<body>
+    <div class="darkmodetoggle">
+    <a href="#" onclick="changeCSS('../mainstyle.css', 0);">light</a> 
+    <a href="#" onclick="changeCSS('../darkmainstyle.css', 0);">darkmode</a>
+    </div>
+<h2>screening github...</h2>
+
+<ul>
+<li>is the idea good?</li>
+<li>does it run?</li>
+<li>is the idea well done?</li>
+<li>ia the code quality at a point where I could maintain it if I wanted to?</li>
+<li>is it up to date?</li>
+<li>do I agree with the paradigm how the project is setup/coded?</li>
+</ul>
+
+</body>

@@ -1,0 +1,166 @@
+<!doctype html>
+<head>
+    <title>year of the linux desktop</title>
+    <meta charset="utf-8"> 
+    <link rel="stylesheet" type="text/css" href="./../mainstyle.css"/>
+</head>
+
+<!-- 
+this is shit, because js but seems acceptable
+source : https://stackoverflow.com/a/19844696
+-->
+<script>
+function changeCSS(cssFile, cssLinkIndex) {
+
+    var oldlink = document.getElementsByTagName("link").item(cssLinkIndex);
+
+    var newlink = document.createElement("link");
+    newlink.setAttribute("rel", "stylesheet");
+    newlink.setAttribute("type", "text/css");
+    newlink.setAttribute("href", cssFile);
+
+    document.getElementsByTagName("head").item(cssLinkIndex).replaceChild(newlink, oldlink);
+}
+</script>
+
+<body>
+    <div class="darkmodetoggle">
+    <a href="#" onclick="changeCSS('../mainstyle.css', 0);">light</a> 
+    <a href="#" onclick="changeCSS('../darkmainstyle.css', 0);">darkmode</a>
+    </div>
+
+<h2>year of the linux desktop</h2>
+There is a meme about the year of the linux desktop, and everyone always says, "this is the year" and it's bullshit every time.
+
+Here are some reasons from a user perspective of why that won't happen with the current attitude. In no particular order, but maybe I can put the important ones at the top.
+
+<p>
+<b>I'm not accusing anyone.</b> I'm not demanding that this be fixed. I am merely stating that these things are the difference, between me, a somewhat technically minded person being able to plopp a linux distro on my grandpa's PC and tell him "just look for the help button and go from there". ...and <i>not</i> being able to do that.
+</p>
+
+<p>
+The difference can be a simple "let me google that for you" button. It can be a manual, but then the manual should be complete and translated, which is always tough. It can also be a disclaimer that says "look, this is experimental, thanks for using it, if you have problems write me an email at ... or leave message on github/mastodon/facebook/linkedin".
+</p>
+
+<p>
+The things it should not be: obscure or require meta knowledge to even find. This applies to console commands as well. "ls" and "cd" work fine, but if the target person hasn't receieved some kind of hand holdy experience as an introduction to linux or the command line, they will be helpless here is as well.
+</p>
+
+<h2>preface</h2>
+
+<center>
+<p>Setting personal emotions aside, this is your customer:</p>
+<center>
+<img style="height:8cm;" src="hankhillhotdog.jpg" />
+</center>
+
+
+</center>
+
+<h1>not user focused</h1>
+
+<p>
+linux devs are either stuck in details or they are treating software as a personal project and don't think from a users perspective most of the time. What do I mean by that? Well, let's take blender. Blender has a "help" menu that looks like this:
+</p>
+
+<center>
+<img src="blender_help.jpg" />
+</center>
+
+<p>
+This is <i>good</i>,<br> the links to community, documentation and finally bug reporting are there and are reasonable.</p>
+
+<p>
+The "user settings" option in the settings subsection that comes with my xubuntu distro also has a "help" button. Which opens a manual page that looks like this:
+</p>
+
+<center>
+<img style="height:6cm;" src="user_settings_help.jpg" />
+</center>
+
+<p>that's not a loading bug. Or maybe it is, anyway, it stays like that. Empty.</p>
+
+<p>
+This is the volume control:
+</p>
+
+<center>
+<img style="height:6cm;" src="volume_control.jpg" />
+</center>
+
+<p>
+Do you see any help here? No? Me neither. A link to a manual? So, suppose you have a problem, how do you even <i>search</i> for it? Because all you know is that it's "volume control" and "on my linux distribution". 
+</p>
+
+<p>
+And this is the easy, simple stuff. This is the "let's turn on my machine and listen to some music on youtube" level of complexity.
+</p>
+
+<p>
+This is the snap store:
+</p>
+
+<center>
+<img style="height:6cm;" src="snapstore.jpg" />
+</center>
+
+<p>
+What <i>is</i> making me <i>slightly angry</i> is the sheer arrogance: 
+</p>
+<blockquote>"my software is so perfect, so obvious, the user will never need help, there will never be a bug, so there doesn't need to be a bug report button. It is so obviously the most bestest software, that the user doesn't need to know who made it, how to turn it off, and they most certainly will never need to know how it works. It will never break, so it will never need to be repaired, it's perfect, so nobody will ever want or need a replacement."
+</blockquote>
+
+</p>
+As long as this attitude persists, I will recommend linux begrudgingly, as a lesser evil. If someone complains that linux is not for them, I won't correct them. Because this stuff sucks, it's a problem and they may be completely right.
+</p>
+
+<h2>The help/bug report/time to fix is completely unpredictable</h2>
+
+<p>let's take this as a source for some distros <a href="https://distrowatch.com/">https://distrowatch.com/</a></p>
+
+<p>
+Let's say you do find a bug. Let's say you even find the organisation who made the software, the correct forum or bug tracker or whatever. None of the major bug tracking system have any kind of metric to judge how fast you can expect help.
+</p>
+
+<ul>
+    <li><a href="https://launchpad.net/ubuntu">launchpad</a>  tells you the latest questions like it's facebook. "Look what xyz is up to". Search is package name based, so GOOD LUCK.</li>
+    <li>the <a href="https://bugs.kde.org/">kde bug tracker</a> is better, but not ideal. At first sight, it's simple at least.</li>
+    <li><a href="https://en.opensuse.org/openSUSE:Submitting_bug_reports">open suse</a> tells non technical users to try the forum first.  <br>
+    which is sort of fine I suppose, except I don't think open suse will have subforums and topics for every package. It would be unreasonable to expect and frankly, this already incentivizing a bad data flow:
+    <ul>
+        <li>non technical users phrase their question as text</li>
+        <li>experienced users have to parse the text and find the appropriate data link / package / etc.</li>
+        <li>free text has a good chance that it doesn't contain the relevant info like logs, system setup info. They have probably have to be asked for everytime.</li>
+    </ul>
+    In short, it would be much, much simpler if the operating system had a general "help" button that would already collect this info. But alas.
+    </li>
+    <li><a href="https://fedoraproject.org/">fedora</a> has general Q\&A forum, and a live chat that you have to sign up for, which I think is relatively fair.<br>their "get fedora" page has no link to filing bugs. The <a href="https://docs.fedoraproject.org/en-US/quick-docs/bugzilla-file-a-bug/">docs</a>
+    have a friendly little box saying:
+    <blockquote>
+         	Anyone can file bugs: All users are encouraged to file any bugs they run into. Bug filing is not limited to only software developers. 
+    </blockquote>
+    Which is an arrogant, bold faced lie. You dont' want that. Regular users don't want that either.
+    <br>
+    <p>
+    The irony is alive and well of course, because the rest of this docs page is pretty good. In fact, it's good enough to be a general guide to reporting bugs anywhere, excluding some platform specific individual advice and how to's about using e.g. bugzilla.
+    </p>
+    
+    </li>
+    <li><a href="https://linuxmint.com/"> linux mint</a> does not have a "help" button. If you look for an issue tracker, you will probably find <a href="https://projects.linuxmint.com/reporting-an-issue.html">this page</a> which will basically redirect to github. Which is sort of fine?
+    
+    </li>
+</ul>
+
+<p>
+Basically, this is developer land.
+</p>
+
+<p>
+Which is fine, of course.
+</p>
+
+<p>
+But you really shouldn't be surprised that a normal user (read hank hill), being foreign to it, will feel excluded and not wanting to parcitipate in it.
+</p>
+
+</body>
