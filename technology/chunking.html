@@ -1,23 +1,48 @@
-there is a concept called chunking.
+<!doctype html>
+<head>
+    <title>control</title>
+    <meta charset="utf-8"> 
+    <link rel="stylesheet" type="text/css" href="./../mainstyle.css"/>
+</head>
 
-also known as "magical number 7"+-2
+<!-- 
+this is shit, because js but seems acceptable
+source : https://stackoverflow.com/a/19844696
+-->
+<script>
+function changeCSS(cssFile, cssLinkIndex) {
 
-our brains are made to immediatly "access" that number of things.
+    var oldlink = document.getElementsByTagName("link").item(cssLinkIndex);
 
-and everything else depends on how smartly we "chunk" or group information.
+    var newlink = document.createElement("link");
+    newlink.setAttribute("rel", "stylesheet");
+    newlink.setAttribute("type", "text/css");
+    newlink.setAttribute("href", cssFile);
 
-for example, once we understand numbers, we can immediatly recognize a small number of objects. we DONT count them.
+    document.getElementsByTagName("head").item(cssLinkIndex).replaceChild(newlink, oldlink);
+}
+</script>
 
-also, for communication, we build our own models of what the other person knows. tge more people are part of a conversation, the bigger the load on you to remember who knows what.
+<body>
+    <div class="darkmodetoggle">
+    <a href="#" onclick="changeCSS('../mainstyle.css', 0);">light</a> 
+    <a href="#" onclick="changeCSS('../darkmainstyle.css', 0);">darkmode</a>
+    </div>
 
-thats why discussions with more than 4-5 parties take forver.
-
-humanities great trick is summarizing and group things.
-
-the chunk limit only applies to one level.
-
-so. 20 people? difficult. but 5 groups of 4 each? easy.
-
-15 different political opnions? impossible to discuss. but 3 groups of 5 is doable.
-
-do this. use this to your advantage.
+<h2>chunking</h2>
+<p>
+There is a concept called chunking, also known as "magical number 7"+-2.
+</p>
+<p>
+Our brains are made to immediatly "access" that number of things and everything else depends on how smartly we "chunk" or group information. For example, once we understand numbers, we can immediatly recognize a small number of objects. We DONT count them.
+</p>
+<p>
+For communication, we build our own models of what the other person knows. The more people are part of a conversation, the bigger the load on you to remember who knows what. Thats why discussions with more than 4-5 parties take forver.
+</p>
+<p>
+Humanities great trick is summarizing and group things. The chunk limit only applies to one level. So. 
+<pre>20 people? difficult.</pre> <pre>5 groups of 4 each? easy.</pre>
+<p>
+15 different political opinions? Impossible to discuss, but 3 groups of 5 is doable.
+</p>
+</body>
