@@ -1,0 +1,62 @@
+<!doctype html>
+<head>
+    <title>Communication Failure</title>
+    <meta charset="utf-8"> 
+    <link rel="stylesheet" type="text/css" href="./../mainstyle.css"/>
+</head>
+
+<!-- 
+this is shit, because js but seems acceptable
+source : https://stackoverflow.com/a/19844696
+-->
+<script>
+function changeCSS(cssFile, cssLinkIndex) {
+
+    var oldlink = document.getElementsByTagName("link").item(cssLinkIndex);
+
+    var newlink = document.createElement("link");
+    newlink.setAttribute("rel", "stylesheet");
+    newlink.setAttribute("type", "text/css");
+    newlink.setAttribute("href", cssFile);
+
+    document.getElementsByTagName("head").item(cssLinkIndex).replaceChild(newlink, oldlink);
+}
+</script>
+
+<body>
+    <div class="darkmodetoggle">
+    <a href="#" onclick="changeCSS('./../mainstyle.css', 0);">light</a> 
+    <a href="#" onclick="changeCSS('./../darkmainstyle.css', 0);">darkmode</a>
+    </div>
+<h1>Communication Failure</h1>
+<p>
+    If I make an argument, in a language you don't speak, you will fail to understand it.
+</p>
+<p>
+    Is that your fault for not knowing the language, or mine for not accomodating you?
+</p>
+<div><h2 id="superiority"><a href="#superiority">[l]</a>Superiority</h2>
+<p>
+    If what you want to gain from an exchange is a feeling of superiority, you can have that.
+</p>
+<p>
+    E.g. "[math] q.e.d. I got mine, if you don't get it, that's <i>your</i> problem."
+</p>
+</div>
+<div><h2 id="cooperation"><a href="#cooperation">[l]</a>Compromise and cooperation</h2>
+<p>
+    If what you want to gain from an exchange is cooperation and help through insight, you need to make a <b>good, working appeal</b>, and the other person <b>needs to agree</b> with you.
+</p>
+<p>
+    E.g. "If you don't get it, it's <i>our</i> problem."
+</p>
+</div>
+<div><h2 id="overruling"><a href="#overruling">[l]</a>Overruling</h2>
+<p>
+    If what you're doing is merely a hopefully informative or official statement informing other people of your intention, action or reasoning, without the need for feedback... Don't be surprised if they don't react nicely.
+</p>
+<p>
+    E.g. "As your ruler, I am informing you of our action X, your understanding or coopration is not required."
+</p>
+</div>
+</body>
