@@ -1,0 +1,51 @@
+<!doctype html>
+<head>
+    <title>reproducing intelligence</title>
+    <meta charset="utf-8"> 
+    <link rel="stylesheet" type="text/css" href="./../mainstyle.css"/>
+</head>
+
+<!-- 
+this is shit, because js but seems acceptable
+source : https://stackoverflow.com/a/19844696
+-->
+<script>
+function changeCSS(cssFile, cssLinkIndex) {
+
+    var oldlink = document.getElementsByTagName("link").item(cssLinkIndex);
+
+    var newlink = document.createElement("link");
+    newlink.setAttribute("rel", "stylesheet");
+    newlink.setAttribute("type", "text/css");
+    newlink.setAttribute("href", cssFile);
+
+    document.getElementsByTagName("head").item(cssLinkIndex).replaceChild(newlink, oldlink);
+}
+</script>
+
+<body>
+    <div class="darkmodetoggle">
+    <a href="#" onclick="changeCSS('../mainstyle.css', 0);">light</a> 
+    <a href="#" onclick="changeCSS('../darkmainstyle.css', 0);">darkmode</a>
+    </div>
+
+<h2>reproducing intelligence</h2>
+<p>
+    It can be observed that information systems are affected by a sort of entropy that slowly degrades the quality and cohesion of information. 
+</p>
+<p>
+    From another point of view, the total amount of data is also increasing.
+</p>
+<p> 
+    We as a global human society have a self preservation problem. Even if we do division of labor and lots of other smart things to handle complexity and specialisation, those aspects still need to be managed and reproduced, if we want to keep global civilsation going.
+</p>
+<p>
+    For example, it is already unlikely that people really understand all the intricacies of certain linux distros and if ISO keeps creating new mutually incompatible versions of c++, we will arrive at a point of total confusion eventually.
+</p>
+<p>
+    It would be preferable to have a manageable set of information to teach and pass on, that we don't just add to all the time.
+</p>
+<p>
+    Producing this set of information would have been or should be the responsibility of the sciences and education sectors, but I don't think they're fulfilling their roles very well.
+</p>
+</body>
