@@ -1,9 +1,44 @@
-when talking about politics or "the world"
+<!doctype html>
+<head>
+    <title>words create facts</title>
+    <meta charset="utf-8"> 
+    <link rel="stylesheet" type="text/css" href="./../mainstyle.css"/>
+</head>
 
-its spoken or believed words that create the "true state" of the world.
+<!-- 
+this is shit, because js but seems acceptable
+source : https://stackoverflow.com/a/19844696
+-->
+<script>
+function changeCSS(cssFile, cssLinkIndex) {
 
-if "the people" say that a country is ruled justly, THAT is the truth.
+    var oldlink = document.getElementsByTagName("link").item(cssLinkIndex);
 
-you can try to change that opinion through force, panem et circenses or a clever argument, but there should be no doubt about the basis of things.
+    var newlink = document.createElement("link");
+    newlink.setAttribute("rel", "stylesheet");
+    newlink.setAttribute("type", "text/css");
+    newlink.setAttribute("href", cssFile);
 
-this is why its incredibly important to make statements that are easy to understand, short enough to be listened to and easy to accept or reject.
+    document.getElementsByTagName("head").item(cssLinkIndex).replaceChild(newlink, oldlink);
+}
+</script>
+
+<body>
+    <div class="darkmodetoggle">
+    <a href="#" onclick="changeCSS('./../mainstyle.css', 0);">light</a> 
+    <a href="#" onclick="changeCSS('./../darkmainstyle.css', 0);">darkmode</a>
+    </div>
+<h2>words create facts</h2>
+<p>
+When talking about politics or "the world", it's spoken or believed words that create the "true state" of the world.
+</p>
+<p>
+If "the people" say that a country is ruled justly, THAT is the truth.
+</p>
+<p>
+You can try to change that opinion through force, panem et circenses or a clever argument, but there should be no doubt about the basis of things.
+</p>
+<p>
+This is why its incredibly important to make statements that are easy to understand, short enough to be listened to and easy to accept or reject.
+</p>
+</body>

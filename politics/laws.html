@@ -1,15 +1,50 @@
- laws are the written down rules that the governing body of a country has decided shpuld benthe rules.
+<!doctype html>
+<head>
+    <title>laws</title>
+    <meta charset="utf-8"> 
+    <link rel="stylesheet" type="text/css" href="./../mainstyle.css"/>
+</head>
 
- the tradeoffs are pretty obvious:
+<!-- 
+this is shit, because js but seems acceptable
+source : https://stackoverflow.com/a/19844696
+-->
+<script>
+function changeCSS(cssFile, cssLinkIndex) {
 
- regulate too muvh and people will feel restricted and resist, as well as requiring more work and effort that had to be put into control.
+    var oldlink = document.getElementsByTagName("link").item(cssLinkIndex);
 
-regulate too little and the outcome will be essentially anarchy with the added clarification that while anarchy is the abscence of government and control, it does nit have to mean chaos. this is because even ungoverned people like some amount of stability, civility, peace and quiet.
+    var newlink = document.createElement("link");
+    newlink.setAttribute("rel", "stylesheet");
+    newlink.setAttribute("type", "text/css");
+    newlink.setAttribute("href", cssFile);
 
-inndemocracies laws are nominally made by the people via a representative process, factually, they  are made by some governmental bodies that mostly perpetuate themselves, with little control from a population on whether the laws and decisions are (in reality or just peeception), just, good, effective and some other positive attributes.
+    document.getElementsByTagName("head").item(cssLinkIndex).replaceChild(newlink, oldlink);
+}
+</script>
 
-the whole situation is complex and "failure is an option" and finding out that a mistake has been made and fixing it can take decades.
-
-nevertheless, the sentiment that something doesnt work, is actually unjust, or will lead to disaster, can still be correct.
-
-making sure what the case actually is, would have to be some scientific undertaking by the rules and/or inclined individuals or groups. but this is mostly not done in an effective way.
+<body>
+    <div class="darkmodetoggle">
+    <a href="#" onclick="changeCSS('./../mainstyle.css', 0);">light</a> 
+    <a href="#" onclick="changeCSS('./../darkmainstyle.css', 0);">darkmode</a>
+    </div>
+<h2>laws</h2>
+<p>
+Laws are the written down rules that the governing body of a country has decided should be the rules.
+</p>
+<p>
+The tradeoffs are pretty obvious:
+</p>
+<p>
+Regulate too much and people will feel restricted and resist, as well as requiring more work and effort that has to be put into control.
+</p>
+<p>
+Regulate too little and the outcome will be essentially anarchy. It should be clear that while anarchy is the abscence of government and control, it does not have to mean chaos. This is because even ungoverned people like some amount of stability, civility, peace and quiet.
+</p>
+<p>
+In democracies laws are nominally made by the people via a representative process, factually, they are made by some governmental bodies that mostly perpetuate themselves, with little control from a population on whether the laws and decisions are (in reality or just perception), just, good, effective and some other positive attributes.
+</p>
+<p>
+The whole situation is complex and "failure is an option" and finding out that a mistake has been made and fixing it can take decades. The sentiment that something doesnt work, is actually unjust, or will lead to disaster, can still be correct and sometimes constitutes the "true state" of the world, instead of deduction from traditon. Making sure what the case actually is, would have to be some scientific undertaking by the rules and/or inclined individuals or groups. But this is mostly not done in an effective way.
+</p>
+</body>

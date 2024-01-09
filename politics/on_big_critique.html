@@ -1,11 +1,53 @@
-i have noticed that while simple populist explanations are often poetrayed as irrational, oversimplified or a class boundry violation (e.g. you are not a member of the "scientist/political class, so your input is invalid"),
+<!doctype html>
+<head>
+    <title>on big critique</title>
+    <meta charset="utf-8"> 
+    <link rel="stylesheet" type="text/css" href="./../mainstyle.css"/>
+</head>
 
-big populist critique is what we have idolized and in retrospect can identify as bog turning points in human society.
+<!-- 
+this is shit, because js but seems acceptable
+source : https://stackoverflow.com/a/19844696
+-->
+<script>
+function changeCSS(cssFile, cssLinkIndex) {
 
-catholic church popularzing a religion of ideals, of kindness and god given laws, possibly in opposition to greek/roman gods who more haphazardly did things.
-martin luther pointing out the disconnection of the supposed mission of the church and the actual actions of abusing the ideal for personal and institutional profit.
-francis bacon, who pointed out that the previous attempts at "finding out how things work" were unreadable and dogmatic.
+    var oldlink = document.getElementsByTagName("link").item(cssLinkIndex);
 
-and also, phrasing a commoly perceived issue in a splified way that can be agreed to by lots of people, a certain "common ground making" seems to be basis for a general consensus, some specialisation and ultimately action by a lot of people.
+    var newlink = document.createElement("link");
+    newlink.setAttribute("rel", "stylesheet");
+    newlink.setAttribute("type", "text/css");
+    newlink.setAttribute("href", cssFile);
 
-so a big systematic critique should be short and generally correct, over detailed and difficult to access.
+    document.getElementsByTagName("head").item(cssLinkIndex).replaceChild(newlink, oldlink);
+}
+</script>
+
+<body>
+    <div class="darkmodetoggle">
+    <a href="#" onclick="changeCSS('./../mainstyle.css', 0);">light</a> 
+    <a href="#" onclick="changeCSS('./../darkmainstyle.css', 0);">darkmode</a>
+    </div>
+<h2>simplified critique is good</h2>
+<p>I think there is a general consensus that "oversimplification is bad" and "expert opinion should be given priority".</p>
+<p>
+I have noticed that while simple, populist explanations are often portrayed as bad, irrational or a class boundry violation (e.g. you are not a member of the "scientist/political class, so your input is invalid"), big populist critique is what we <b>have done in the past, we have idolized it</b>. And in retrospect, points of voicing certain simplified critique, can be identified as big turning points in human history:
+</p>
+<ul>
+<li>The catholic church popularzing a religion of ideals, of kindness and god given laws, possibly in opposition to greek/roman gods who more haphazardly did things. 
+<br>Martin Luther pointing out the disconnection of the supposed mission of the church and the actual actions of abusing the ideals for personal and institutional profit.
+</li>
+<li>
+	Francis bacon, who pointed out that the previous attempts at "finding out how things work" were unreadable and dogmatic.
+	<br>
+	The "royal society" of the UK forming a scientific group because he was sort of right and trying to use his approach.
+</li>
+</ul>
+
+<p>
+Phrasing a commoly perceived issue in a simplified way that can be agreed to by lots of people, a certain "common ground making" seems to be basis for a general consensus, some specialisation and ultimately action by a lot of people.
+</p>
+<p>
+So a big systematic critique should be short and generally correct, so that it can be easily agreed upon, rather than exactly correct, detailed but difficult to access.
+</p>
+</body>

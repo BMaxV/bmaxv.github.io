@@ -1,0 +1,56 @@
+<!doctype html>
+<head>
+    <title>expectable self preserveration.</title>
+    <meta charset="utf-8"> 
+    <link rel="stylesheet" type="text/css" href="./../mainstyle.css"/>
+</head>
+
+<!-- 
+this is shit, because js but seems acceptable
+source : https://stackoverflow.com/a/19844696
+-->
+<script>
+function changeCSS(cssFile, cssLinkIndex) {
+
+    var oldlink = document.getElementsByTagName("link").item(cssLinkIndex);
+
+    var newlink = document.createElement("link");
+    newlink.setAttribute("rel", "stylesheet");
+    newlink.setAttribute("type", "text/css");
+    newlink.setAttribute("href", cssFile);
+
+    document.getElementsByTagName("head").item(cssLinkIndex).replaceChild(newlink, oldlink);
+}
+</script>
+
+<body>
+    <div class="darkmodetoggle">
+    <a href="#" onclick="changeCSS('./../mainstyle.css', 0);">light</a> 
+    <a href="#" onclick="changeCSS('./../darkmainstyle.css', 0);">darkmode</a>
+    </div>
+<h2>expectable self preserveration</h2>
+<p>
+A case for a reasonable expectation of self preservation.
+</p>
+<p>
+Shoving someone and him falling down is bad and your fault.
+</p>
+<p>
+Shoving someone and then 40 million people falling over like dominoes because they put absolutely no effort into standing, is maybe not entirely your fault.
+</p>
+<p>
+Telling them to brace for a test, including accurate detailed information about what is to be done to stay standing, them answering 'ready' and them then still falling over when pushed, should not be your fault.
+</p>
+
+<h2>destruction</h2>
+<blockquote>
+“If it can be destroyed by the truth, it deserves to be destroyed by the truth.” 
+</blockquote>
+</p>
+<p>
+The quote is misattributed to carl sagan, but the sentiment remains the same. Is it true? What if the thing that 'should be' destroyed by 'truth' or 'a true theory' or 'a real consequence of misunderstood scientific principle' is people?
+</p>
+
+https://quoteinvestigator.com/2016/03/13/destroy/
+
+</body>

@@ -1,3 +1,38 @@
-when information access is universal, asking for information might just be a small talk like activity.
+<!doctype html>
+<head>
+    <title>asking for information</title>
+    <meta charset="utf-8"> 
+    <link rel="stylesheet" type="text/css" href="./../mainstyle.css"/>
+</head>
 
-so the rudeness in reply to easy quesrions is doubly rude. one because its not providing the original answer but two because its rejecting the invitation for social interaction.
+<!-- 
+this is shit, because js but seems acceptable
+source : https://stackoverflow.com/a/19844696
+-->
+<script>
+function changeCSS(cssFile, cssLinkIndex) {
+
+    var oldlink = document.getElementsByTagName("link").item(cssLinkIndex);
+
+    var newlink = document.createElement("link");
+    newlink.setAttribute("rel", "stylesheet");
+    newlink.setAttribute("type", "text/css");
+    newlink.setAttribute("href", cssFile);
+
+    document.getElementsByTagName("head").item(cssLinkIndex).replaceChild(newlink, oldlink);
+}
+</script>
+
+<body>
+    <div class="darkmodetoggle">
+    <a href="#" onclick="changeCSS('./../mainstyle.css', 0);">light</a> 
+    <a href="#" onclick="changeCSS('./../darkmainstyle.css', 0);">darkmode</a>
+    </div>
+<h2>asking for information</h2>
+<p>
+When information access is universal, asking for information might just be a small talk like activity.
+</p>
+<p>
+So the rudeness in reply to easy quesrions is doubly rude. one because its not providing the original answer but two because its rejecting the invitation for social interaction.
+</p>
+</body>
