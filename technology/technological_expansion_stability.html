@@ -1,9 +1,47 @@
-to operate things has requirements, such as an engine requiring fuel.
+<!doctype html>
+<head>
+    <title>technological stability</title>
+    <meta charset="utf-8"> 
+    <link rel="stylesheet" type="text/css" href="./../mainstyle.css"/>
+</head>
 
-if our entire society and economy has a multitude of things it requires, and it is technologically advancing at the same time, it may be possible to advance to a state where more things and some simpler things are required that are no longer veing produced  by society, because the production was peeceived as "low value".
+<!-- 
+this is shit, because js but seems acceptable
+source : https://stackoverflow.com/a/19844696
+-->
+<script>
+function changeCSS(cssFile, cssLinkIndex) {
 
-e.g. telephone disinfection i suppose.
+    var oldlink = document.getElementsByTagName("link").item(cssLinkIndex);
 
-if these "simple things" are immaterial, it is possible to reach a state of... using physical metaphors, going uphill too fast and losing ground contact on bumps or such.
+    var newlink = document.createElement("link");
+    newlink.setAttribute("rel", "stylesheet");
+    newlink.setAttribute("type", "text/css");
+    newlink.setAttribute("href", cssFile);
 
-for example, i dont trust the current government to pursue a nd create a "basic security". the basic security we enjoy is a product of education and a lack of criminal energy.
+    document.getElementsByTagName("head").item(cssLinkIndex).replaceChild(newlink, oldlink);
+}
+</script>
+
+<body>
+    <div class="darkmodetoggle">
+    <a href="#" onclick="changeCSS('./../mainstyle.css', 0);">light</a> 
+    <a href="#" onclick="changeCSS('./../darkmainstyle.css', 0);">darkmode</a>
+    </div>
+<h2>technological stability</h2>
+<p>
+	Operating things has requirements, such as an engine requiring fuel.
+</p>
+<p>
+	If our entire society and economy has a multitude of things it requires, and it is technologically advancing at the same time, it may be possible to advance to a state where more things and some simpler things are required that are no longer being produced by society, because the production was perceived as "low value".
+</p>
+<p>
+	If these "simple things" are immaterial, it is possible to reach a state of... using physical metaphors, going uphill too fast and losing ground contact on bumps or such.
+</p>
+<p>
+	The most relevant example is probably something like COBOL which we generally don't need, except in the cases where we do. It is "not feasible" to change the system away from using COBOL and it is possible that the demand can't be met either, because education in that area is deprioritized so much it just can't cover the demand anymore.
+</p>
+<p>
+	Specifically with COBOL that won't happen because we're aware of it. I'm concerned with some "unknown known" problems? Groups of problems that can come up but we're not sure in which area?
+</p>
+</body>

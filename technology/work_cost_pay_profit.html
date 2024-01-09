@@ -1,99 +1,122 @@
 
-<!doctype html>                                            <head>                                                         <title>work cost wage profit</title>                                  <meta charset="utf-8">                                     <link rel="stylesheet" type="text/css" href="./../mainstyle.css"/>                                                </head>                                                                                                               <!--
-this is shit, because js but seems acceptable              source : https://stackoverflow.com/a/19844696              -->                                                        <script>                                                   function changeCSS(cssFile, cssLinkIndex) {                                                                               var oldlink = document.getElementsByTagName("link").item(cssLinkIndex);                                                                                                          var newlink = document.createElement("link");              newlink.setAttribute("rel", "stylesheet");                 newlink.setAttribute("type", "text/css");                  newlink.setAttribute("href", cssFile);                                                                                document.getElementsByTagName("head").item(cssLinkIndex).replaceChild(newlink, oldlink);                          }                                                          </script>                                                                                                             <body>
-basically whats a good way to calculate these.
+<!doctype html>
+<head>
+    <title>work, cost, pay, profit</title>
+    <meta charset="utf-8"> 
+    <link rel="stylesheet" type="text/css" href="./../mainstyle.css"/>
+</head>
 
-the basics is of course that
+<!-- 
+this is shit, because js but seems acceptable
+source : https://stackoverflow.com/a/19844696
+-->
+<script>
+function changeCSS(cssFile, cssLinkIndex) {
 
+    var oldlink = document.getElementsByTagName("link").item(cssLinkIndex);
+
+    var newlink = document.createElement("link");
+    newlink.setAttribute("rel", "stylesheet");
+    newlink.setAttribute("type", "text/css");
+    newlink.setAttribute("href", cssFile);
+
+    document.getElementsByTagName("head").item(cssLinkIndex).replaceChild(newlink, oldlink);
+}
+</script>
+
+<body>
+    <div class="darkmodetoggle">
+    <a href="#" onclick="changeCSS('./../mainstyle.css', 0);">light</a> 
+    <a href="#" onclick="changeCSS('./../darkmainstyle.css', 0);">darkmode</a>
+    </div>
+<h2>work, cost, pay, profit</h2>
+<p>
+Whats a good way to calculate these? The basics are:
+</p>
+<pre>
 in flow of money - out flow of money = profit
+</pre>
 
-but the joke is that profit is also an outflow.
-
-really its more like
-
+<p>
+from a slightly different perspective, profit is also an outflow. The above can be rewritten as:
+</p>
+<pre>
 [inflow] - [ "cost" + "profit" ] = 0
+</pre>
 
 <h2> cost </h2>
-
+<p>
 cost is traditionally, normally, expenses you have to pay to achieve whatever it is you want to do.
-
+</p>
+<p>
 like the price of the material, energy to build somethint.
+</p>
+<p>
+when it comes to wages, they are trafitionally alsonthought of as "cost" but thats not 100% consistent, because a wage is just whar someone has <i>negotiated</i>, its not actually, rock bottom, bare metal, what that person needs. It actually includes their profit as well.
+</p>
+<p>
+So in terms of thinking about an organization, to really optimize, it would be more helpful to write the equation like this:
+</p>
+<pre>
+ [inflow]
+-[necessary expenses of the company + necessary expenses of the employees]
+-[profit for the owner + profit for the employees]
+_____
+0
+</pre>
 
-when it comes to wages, they are trafitionally alsonthought of as "cost" but thats not 100% consistent, because a wage is just whar someone has *negotiated* its not actually, rock bottom bare metal what that person needs. it actually includes their profit as well.
-<br>
-so in terms of thinking about an organization, to really optimize, it would be more helpful to write the equation like this:
-
-[inflow] - [necessary expenses of the company + necessary expenses of the employees] - [ profit for the owner + profit for the employees ]
-
-because this presents a more accurate picture of what is "negotiated market advantage" and what is "rock bottom where  the company as an organization of people HAS TO shut down because production is no longer possible.
-
-honorable mention,taxes, "fees" for insurance and public transport required to get to the place of employment, union fees are costs thar are necessary doe the operation of tge whole and are to be oncluded in the "cost" part, not the profit/wage part.
+<p>
+because this presents a more accurate picture of what is "negotiated market advantage" and what is "rock bottom where  the company as an organization of people HAS TO shut down because operation/production is no longer possible.
+</p>
+<p>
+Honorable mention: taxes, "fees" for insurance and public transport required to get to the place of employment, union fees are costs that are necessary for the operation of the whole and are to be included in the "cost" part, not the profit/wage part.
+</p>
 
 <h2> wage relations </h2>
+<p>(disclaimer, this is not "my set in stone opinion", this is a starting point for discussion.)</p>
+<p>
+It's a frequent talking point that ceos earn 200x-400x or more than their least well paid employees. The question is here what is a fair wage, and whats a "motivating wage" and what that motivation should do. The roman army operated in multiples of 0.5x, the next higher rank or people with important duties would earn 1.5x or 2x more. I think this is a good starting point. <a href="https://de.wikipedia.org/wiki/Principales">"Principales" (german article)</a>"tesserarius" "duplicarius"
 
-its a frequent talking point that ceos earn 200x 400x more than lowesr employees.
+<p>
+So, lets look at some skill levels and difficulty of education. First of all, there are a lot of simple jobs that don't require big feats of thinking, but they are absolutely essential for society and often involve intensive physical labor. People working in these jobs shouldn't be poor and shouldn't have to worry about the chances or well being of their children, health insurance or becoming homeless.
+</p>
 
-the question is here what is a fair wage, and whats a "motivating wage"
-
-the roman army operated in multiples of 0.5. 
-
-so the next higher rank or people with important duties would earn 1.5x or 2x more.
-
-i think this is a good starting point.
-
-see wikipedia.
-
-another book about telecommunications also listed the wage of an overseeing officer as 2x.
-
-so, lets look at some skill levels and difficulty of education.
-
-at some point were ar 
-<br>
-
-1x: simple in-door, not customer facing desk work.
-
-1.5x this is for any unskilled labor, shoveling dirt, delivering letters, pizza
-
-2x overseeing either of such labor
-2.5x similaf skilled labor, like an educated carpenter
-4x master carpenter who can run a company has like 5-10 employees, oversees results but is also responsible and liable for delivering the promised quality.
-
-<br>
-
-this category of jobs needs to be high paid, because the goal should be the creation of new companies. not just cornershops, barbers etc. but companies that lay the gdoundwork for new multi nationals.
-
-the wage is not just meant as motivation, its also the method of delivering captial to those with big expected expenses.
-
-7x high quality but not creative, working according to set rules and guidelines
-
-10x creative productive person (there are only like 10 of these even in big companies.
-
-creative engineers who decide what a product might be
-creative directors who set the tone, approve or disapprove of 
-
-writers of laws
-doctors
-
-
-11x leader of research projects
-
-<br>
-
-20x leaders of nations
-multinational ceos
-
-end of the spectrum
-
-<h2>life upkeep.</h2>
-
-im estimating life upkeep at 0.5 to 0.8 of the wage. with a normal job being 30 hours a week.
-
+<ul>
+	<li>1x simple in-door, not customer facing desk work.</li>
+	<li>1.5x this is for any unskilled labor, shoveling dirt, delivering letters, pizza</li>
+	<li>2x overseeing either of such labor</li>
+	<li>2.5x similar skilled labor, like an educated carpenter</li>
+	<li>4x master carpenter who can run a company has like 5-10 employees, oversees results but is also responsible and liable for delivering the promised quality.</li>
+</ul>
+<p>
+The next category of jobs needs to be high paid, partially to motivate poeple to do them, but mostly because the goal should be the creation of new companies. Not just cornershops, barbers etc. but companies that lay the groundwork for new multi nationals. That needs a lot of money and it's not very motivating to rely on venture capital or loans from a bank, because then the VC or the bank will effectively own the company, not the person putting in all the work.
+</p>
+<p>
+I'm not sure about the role of doctors in this, because they should be educated well, but there is also no reason to shove vast of amounts of capital their way, because they are most likely bottle necked by only being able to help one person at a time.
+</p>
+<ul>
+	<li>7x high quality but not creative, working according to set rules and guidelines</li>
+	<li>10x creative productive person <br>(There are only like 10 of these even in big companies. This is who "rocket scientists" think they are.)
+	<ul>
+		<li>creative engineers who decide what a product might be</li>
+		<li>creative directors who set the tone, approve or disapprove big steps, key art, etc..</li>
+		<li>writers of laws</li>
+		<li>ground breaking medical doctors</li>
+	</ul>
+	</li>
+</ul>
+<p>finally, there is room for a "big shot" leadership position, probably, roughly at 0.5*10**-5 of the population. which works out to like 1500 people in the US and about 500 in Germany.</p>
+<ul>
+<li>11x leader of research projects</li>
+<li>20x leaders of nations, multinational ceos</li>
+</ul>
+<h1>how to deal with expected general problems:</h1>
+<h2>life upkeep</h2>
+<p>
+I'm estimating life upkeep at 0.5 to 0.8 of the wage. with a normal job being 30 hours a week.
+</p>
 <h2>shortage</h2>
-
-if a shortage is declared,
-
-the wage for that particular work increases 0.5 per year until the shortage is over. this ignores other usual boundsriws.
-
-
-
+<p>
+If a shortage is declared, the wage for that particular work increases 0.5x per year until the shortage is over. This ignores other usual boundsriws.
+</p>
 </body>
