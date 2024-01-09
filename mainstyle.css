@@ -60,6 +60,24 @@ line-height:1.6;
     textarea{
     color:white;
     background:#444;
+    }
+
+    .box{
+	border: 1px solid black;
+	padding: 3px;
+	}
+	
+	ul{
+	margin: 0;
+	padding: 0;
+	border-left:1px solid rgb(100,100,255);
+	list-style-position: inside;
+	}
+
+	li{
+	padding: 0px 0px 0px 5%;
+	}
+
 }
 
 
