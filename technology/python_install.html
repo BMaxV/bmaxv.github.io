@@ -1,0 +1,78 @@
+
+<!doctype html>
+<head>
+    <title>the python install situation</title>
+    <meta charset="utf-8"> 
+    <link rel="stylesheet" type="text/css" href="./../mainstyle.css"/>
+</head>
+
+<!-- 
+this is shit, because js but seems acceptable
+source : https://stackoverflow.com/a/19844696
+-->
+<script>
+function changeCSS(cssFile, cssLinkIndex) {
+
+    var oldlink = document.getElementsByTagName("link").item(cssLinkIndex);
+
+    var newlink = document.createElement("link");
+    newlink.setAttribute("rel", "stylesheet");
+    newlink.setAttribute("type", "text/css");
+    newlink.setAttribute("href", cssFile);
+
+    document.getElementsByTagName("head").item(cssLinkIndex).replaceChild(newlink, oldlink);
+}
+</script>
+
+<body>
+    <div class="darkmodetoggle">
+    <a href="#" onclick="changeCSS('./../mainstyle.css', 0);">light</a> 
+    <a href="#" onclick="changeCSS('./../darkmainstyle.css', 0);">darkmode</a>
+    </div>
+<h2>the python install situation</h2>
+<p>
+It should be this easy:
+</p>
+
+<pre>
+my_python_tool install .
+</pre>
+
+<p>but it's not, so here we are.</p>
+
+
+<div><h2>what even <i>is</i> python?</h2>
+
+<p>I view python as one step above "scratch". Meaning "beginner / user friendly". The hello world is famously just this:</p>
+
+<pre>
+print("hello world")
+</pre>
+
+<p>
+that's just not the case for installs or building. Just look at this mess: https://packaging.python.org/en/latest/ The guide is so long it needs an introduction.
+</p>
+</div>
+<div><h2>different cases</h2>
+<p>The way I see it, there is one basic distinction that precedes all other considerations:</p>
+<ul>
+	<li>1. building for local, personal use.</li>
+	<li>2. building for distribution, which is "serious" dev territory.</li>
+</ul>
+
+<p>Specifically, I want to build package A, to be used in package B, or within a local, small, closed source environemnt. It's the first step after, "Oh Boy, I sure am copy pasting this piece of code a lot between my projects. I guess I should turn it into a module".</p>
+
+<p><i>Then</i> there are cases for </p>
+
+<ul>
+	<li>2.1 distribution for other "local" users, like jeff from accounting</li>
+	<li>2.2 installing software on remote machines, but as "infrastructure": long iteration time, with a whole process behind them. For example to run websites</li>
+	<li>2.3 There is also the case of almost single use installs, for example in research, where all you want to do is get the research data, get the code, install it, run it, compare results and call it day.</li>
+</ul>
+
+</div>
+<div><h2>venvs</h2>
+venvs are a tool to manage different installed versions. I don't care for it, because my take on versioning is I use "the newest stable one". I update when something breaks. Package maintainers should take care that what they distribute makes sense, I just press "play". And frankly, that's the attitude I sort of expect from everyone else. See <a href="versionpinning">version pinning.</a> You're telling me your <10 user github project needs pinned versions? grow up. There is probably a good reason the maintainer upped the versioning, unless there is a real DEPRACTED use case, which you should agree is bad anyway, that you can't change because you can't put in the man hours, wtf are you doing pinning your versions.
+</div>
+
+</body>
