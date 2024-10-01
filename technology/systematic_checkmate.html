@@ -1,0 +1,56 @@
+<!doctype html>
+<head>
+    <title>systematic checkmate</title>
+    <meta charset="utf-8"> 
+    <link rel="stylesheet" type="text/css" href="./../mainstyle.css"/>
+</head>
+
+<!-- 
+this is shit, because js but seems acceptable
+source : https://stackoverflow.com/a/19844696
+-->
+<script>
+function changeCSS(cssFile, cssLinkIndex) {
+
+    var oldlink = document.getElementsByTagName("link").item(cssLinkIndex);
+
+    var newlink = document.createElement("link");
+    newlink.setAttribute("rel", "stylesheet");
+    newlink.setAttribute("type", "text/css");
+    newlink.setAttribute("href", cssFile);
+
+    document.getElementsByTagName("head").item(cssLinkIndex).replaceChild(newlink, oldlink);
+}
+</script>
+
+<body>
+    <div class="darkmodetoggle">
+    <a href="#" onclick="changeCSS('../mainstyle.css', 0);">light</a> 
+    <a href="#" onclick="changeCSS('../darkmainstyle.css', 0);">darkmode</a>
+    </div>
+
+<h2>systematic checkmate</h2>
+
+<p>In physics there is the problem of "Gimbal Lock", which is problem for satelites. </p>
+
+<blockquote>Gimbal lock is the loss of one degree of freedom in a multi-dimensional mechanism at certain alignments of the axes.
+</blockquote>https://en.wikipedia.org/wiki/Gimbal_lock . 
+
+<p>Basically, a set of moves can be performed where the fitted equiment can no longer change the orientation of the satelite in certain ways. </p>
+<p>other mechanical and also logic systems can put themselves into a configuration from where they can no longer free themselves without external input.</p>
+<p>For logical systems, this is usually, because the designer of the system either didn't consider the consequence of the move or was unaware of the "trap" or that his design would result in such a trap. In programming, this would be the "infinite while loop", e.g. in python:</p>
+<pre>
+while True:
+	pass
+</pre>
+<p>Because systems of rules or just with rules, like laws, are logical systems, they have the risk of encoutering such a "checkmate" situation. They usually reserve some amount of sovereign power to some part of the system to lift this situation. But this brings with it, a new set of challenges and problems:</p>
+
+<ul>
+	
+	<li>it can be difficult to determine that the deadlock has occured and the condition for the sovereign power is met, or not. </li>
+	<li>meaning it can merely transfer the deadlock situation from one decision system to another, still leaving the utlimate problem unresolved.</li>
+</ul>
+
+<p>Sometimes the cause is making assumptions about the function of the system that should enable self correcting behavior, but actually the assumptions aren't true.</p>
+
+</body>
