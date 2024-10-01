@@ -1,0 +1,92 @@
+<!doctype html>
+<head>
+    <title>git</title>
+    <meta charset="utf-8"> 
+    <link rel="stylesheet" type="text/css" href="./../mainstyle.css"/>
+</head>
+
+<!-- 
+this is shit, because js but seems acceptable
+source : https://stackoverflow.com/a/19844696
+-->
+<script>
+function changeCSS(cssFile, cssLinkIndex) {
+
+    var oldlink = document.getElementsByTagName("link").item(cssLinkIndex);
+
+    var newlink = document.createElement("link");
+    newlink.setAttribute("rel", "stylesheet");
+    newlink.setAttribute("type", "text/css");
+    newlink.setAttribute("href", cssFile);
+
+    document.getElementsByTagName("head").item(cssLinkIndex).replaceChild(newlink, oldlink);
+}
+</script>
+
+<body>
+    <div class="darkmodetoggle">
+    <a href="#" onclick="changeCSS('./../mainstyle.css', 0);">light</a> 
+    <a href="#" onclick="changeCSS('./../darkmainstyle.css', 0);">darkmode</a>
+    </div>
+<div><h2>git</h2>
+<p>
+"Git" is a very control program that was built to organize and protocol the writing of software. But because software code is just text, git also serves very well to document the writing of any other kind of text.
+</p>
+<table>
+
+<tr>
+<tr><th>state 1</th><th>state 2</th><th>"diff"</th></tr>
+<td><pre style="text-align: left;">
+hello
+what's
+cooking
+on
+the
+stove</pre></td>
+<td><pre style="text-align: left;">
+hello
+what's
+going
+on
+</pre></td>
+<td><pre style="text-align: left;">diff --git a/text1.txt b/text1.txt
+index 67da562..00d00ad 100644
+--- a/text1.txt
++++ b/text1.txt
+@@ -1,6 +1,4 @@
+ hello
+ what's
+-cooking
++going
+ on
+-the
+-stove
+</pre></td>
+</tr>
+</table>
+
+<p>The "diff" on the right documents which lines changed <pre>@@ -1,6 +1,4 @@</pre> what changed and how <pre>-cooking
++going</pre>"cooking" was remmoved(-), "going" was added(+), "the"(-) and "stove"(-) was removed</p>
+
+there is a chronological log of what was done to the document and by whom, including a the "demo" message, a description of circumstances:
+<pre>
+git log
+commit 1702d6383f7cfba1a6c084151b227abb471c1aa4 (HEAD -> master)
+Author: max my@email.com
+Date:   Fri Sep 20 09:03:54 2024 +0200
+
+    demo
+
+</pre>
+and it can be revealed who wrote which line, when and which "commit id" it is in the log.
+<pre>
+git blame text1.txt
+^1702d63 (max               2024-09-20 09:03:54 +0200 1) hello
+^1702d63 (max               2024-09-20 09:03:54 +0200 2) what's
+00000000 (Not Committed Yet 2024-09-20 09:26:38 +0200 3) going
+^1702d63 (max               2024-09-20 09:03:54 +0200 4) on
+
+</pre>
+
+</div>
+</body>

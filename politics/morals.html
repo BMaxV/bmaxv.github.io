@@ -1,15 +1,48 @@
+<!doctype html>
+<head>
+    <title>words create facts</title>
+    <meta charset="utf-8"> 
+    <link rel="stylesheet" type="text/css" href="./../mainstyle.css"/>
+</head>
+
+<!-- 
+this is shit, because js but seems acceptable
+source : https://stackoverflow.com/a/19844696
+-->
+<script>
+function changeCSS(cssFile, cssLinkIndex) {
+
+    var oldlink = document.getElementsByTagName("link").item(cssLinkIndex);
+
+    var newlink = document.createElement("link");
+    newlink.setAttribute("rel", "stylesheet");
+    newlink.setAttribute("type", "text/css");
+    newlink.setAttribute("href", cssFile);
+
+    document.getElementsByTagName("head").item(cssLinkIndex).replaceChild(newlink, oldlink);
+}
+</script>
+
+<body>
+    <div class="darkmodetoggle">
+    <a href="#" onclick="changeCSS('./../mainstyle.css', 0);">light</a> 
+    <a href="#" onclick="changeCSS('./../darkmainstyle.css', 0);">darkmode</a>
+    </div>
+<h2>morals</h2>
+<p>
 morals are a very old topic.
-
+</p>
+<p>
 in ancient egypt there was a god weighing your good and bad acts.
-
+</p>
+<p>
 boiled down, the question is
-
+</p>
+<blockquote>
 What should you do?
+</blockquote>
 
-with your life, on a day to day basis, to people, to yourself.
-
-if you are not under immediate pressure to hunt, to eat to sleep...
-
-what should you do?
-
-everything on this site is in some way an exploration of various aspects of answers to that.
+<p>
+with your life, on a day to day basis, to people, to yourself. if you are not under immediate pressure to hunt, to eat to sleep... everything on this site is in some way an exploration of various aspects of answers to that.
+</p>
+</body>

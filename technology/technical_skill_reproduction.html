@@ -1,0 +1,53 @@
+<!doctype html>
+<head>
+    <title>technical skill reproduction</title>
+    <meta charset="utf-8"> 
+    <link rel="stylesheet" type="text/css" href="./../mainstyle.css"/>
+</head>
+
+<!-- 
+this is shit, because js but seems acceptable
+source : https://stackoverflow.com/a/19844696
+-->
+<script>
+function changeCSS(cssFile, cssLinkIndex) {
+
+    var oldlink = document.getElementsByTagName("link").item(cssLinkIndex);
+
+    var newlink = document.createElement("link");
+    newlink.setAttribute("rel", "stylesheet");
+    newlink.setAttribute("type", "text/css");
+    newlink.setAttribute("href", cssFile);
+
+    document.getElementsByTagName("head").item(cssLinkIndex).replaceChild(newlink, oldlink);
+}
+</script>
+
+<body>
+    <div class="darkmodetoggle">
+    <a href="#" onclick="changeCSS('./../mainstyle.css', 0);">light</a> 
+    <a href="#" onclick="changeCSS('./../darkmainstyle.css', 0);">darkmode</a>
+    </div>
+<div><h2>technical skill reproduction</h2>
+</div>
+
+<p>politicians and economists are often a panicking because of the declining birthrate and implications for demographics and that in turn affecting who works which jobs when.</p>
+<p>something that is sort of like that and part of the skill teaching, recruitment problem is the reproduction and teaching of *actually relevant* skills.</p>
+<p>so imagine that a "great person", CEO, scientist, politician, whatever, has a "true skill" of 1 in a variety of categories, which in combination allow that outstanding individual to do what they do.</p>
+<p>In theory, we have research and education facilities that are supposed to identify "state of the art" or at least "necessary skills" and pass them on. However, there is going to be a certain error rate, in all aspects:</p>
+<ul>
+    <li>identification of relevant skills</li>
+    <li>actually critical elements of the skills / jobs and how the skill affects performance.</li>
+    <li>teaching</li>
+    <li>learning</li>
+    <li>actual reproduction</li>
+    <li>testing that is supposed to identify and confirm that at least the skill + error rate is reproduced somewhat.</li>
+</ul>
+<p>The ultimate result is that students / citizens will inherit some amount skills and abilities, that are unlike the "parent" generation. We then hope that personal creativity and other aspects, like learning on the job and improvisation, compensating old skills and techniques with new ones, can ultimately get back to the "true skill" of 1, or better.</p>
+<p>
+In other words, there should be some unknown abstract measure of the global competence of a society. We need to reproduce it, we can describe with a baseline of 1, with values bigger than 1 describing increasing, skill, knowledge, competence and values less than 1 describing a decline.
+</p>
+<p>Being at 1 while doing education and research, would mean that despite investments in new research and teaching, we'd be treading water as a society and that we are either severely lacking in identifying and teaching the skills, or that we are severely failing to utilize natural creativity to get from the taught skills, back to "true 1".</p>
+<p>If we are below 1, we will hit (then) unknown unknown problems, because the skills to predict, identify and mitigate the problems have been lost.</p>
+
+</body>
