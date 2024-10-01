@@ -81,4 +81,35 @@ This means that theoretically, someone can write code to solve a certain general
 <p>
 Type hinting strongly implies that there is a correct type and strongly implies that other types are not correct, no discussion allowed.
 </p>
+
+
+<h3>objective reasons</h3>
+<p>
+The syntax is bad. e.g. iso8601 goes `year month day hour minute second` biggest to smallest. C style types go `general_type_name variable_name =  variable_value` `int my_int = 1;` general to specific. python type hints go `variable name : variable type = variable value` medium to large to small</p>
+<p>
+They are not actually ensuring anything. The interpreter does nothing with them. It doesn't optimize, it doesn't precompile, etc. You can write 
+</p>
+<pre>
+```py
+def f( my_variable : int = "hello world"):
+    return my_variable
+f(f)
+``` 
+</pre>
+And that's not even a silent error, it's *not an error*.
+<p>
+I am not convinced that picking `[type hints + type checker + reading the code a lot and taking care]` is superior to just `[reading the code a lot and taking care + maybe testing]` . I have not seen objective measurement that that's the case. I only ever see people who repeat it as a mantra, without any substance to back it up.
+</p>
+
+<p>
+They make code harder to read, because there is just more code to read.
+</p>
+
+To answer your question: Python is the language of "mess around and find out". A well written python module will take any of the things you listed. Just try it. If it doesn't work, the interpreter will tell you immediately and precisely which part didn't work and why. Particularly if it's a type problem.
+
+In practical terms, how to use functions should either be obvious, from your context, from the name, or it should be mentioned in docs, tutorials, or example files.
+<h3>subjective reasons</h3>
+<p>
+The biggest problem I have is more of a spiritual one: Python is <i>specifically built</i> to not care about types. For loops will work for all kinds of iterables, generators and then some. There are even magic methods like `__rmul__` that support that even if you didn't want your type to be multiplied with anything, someone else can write the support for it into <i>their</i> class.
+</p>
 </body>

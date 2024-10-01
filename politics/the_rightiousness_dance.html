@@ -1,37 +1,71 @@
+<!doctype html>
+<head>
+    <title>the righteousness dance</title>
+    <meta charset="utf-8"> 
+    <link rel="stylesheet" type="text/css" href="./../mainstyle.css"/>
+</head>
 
-<!doctype html>                                            <head>                                                         <title>the righteousness dance</title> 
+<!-- 
+this is shit, because js but seems acceptable
+source : https://stackoverflow.com/a/19844696
+-->
+<script>
+function changeCSS(cssFile, cssLinkIndex) {
 
-	<meta charset="utf-8">                                     <link rel="stylesheet" type="text/css" href="./../mainstyle.css"/>                                                </head>                                                                                                               <!--                                                       this is shit, because js but seems acceptable              source : https://stackoverflow.com/a/19844696              -->                                                        <script>                                                   function changeCSS(cssFile, cssLinkIndex) {                                                                               var oldlink = document.getElementsByTagName("link").item(cssLinkIndex);                                                                                                          var newlink = document.createElement("link");              newlink.setAttribute("rel", "stylesheet");                 newlink.setAttribute("type", "text/css");                  newlink.setAttribute("href", cssFile);                                                                                document.getElementsByTagName("head").item(cssLinkIndex).replaceChild(newlink, oldlink);                          }                                                          </script>                                                                                                             <body>
+    var oldlink = document.getElementsByTagName("link").item(cssLinkIndex);
 
-with corruoption and the fighting of that corruption
+    var newlink = document.createElement("link");
+    newlink.setAttribute("rel", "stylesheet");
+    newlink.setAttribute("type", "text/css");
+    newlink.setAttribute("href", cssFile);
 
- there is a certain dance/play to it.
+    document.getElementsByTagName("head").item(cssLinkIndex).replaceChild(newlink, oldlink);
+}
+</script>
 
- first of all, everyone pretends to be righteous and honest, and everyone pretends that everyone believes that to be true as well.
+<body>
+    <div class="darkmodetoggle">
+    <a href="#" onclick="changeCSS('./../mainstyle.css', 0);">light</a> 
+    <a href="#" onclick="changeCSS('./../darkmainstyle.css', 0);">darkmode</a>
+    </div>
 
-then there is an obvious case of suspect behavior.
+<h2>the righteousness dance</h2>
+<p>
+There is a certain dance/play/pattern with corruoption and the fighting of that corruption
+</p>
+<p>
 
-the lawful corrective element will then pretend that this id only a mistake and ask for the correction and sometimes compensation.
+</p>
+<ol>
+	<li>First of all, everyone pretends to be righteous and honest, and everyone pretends that everyone believes that to be true as well.</li>
+	<li>Then there is an obvious case of suspect behavior. Or such a case is actively created.</li>
+	<li>The lawful corrective element will then pretend that this is only a mistake and ask for the correction and sometimes compensation. Or there is sufficient evidence for a crime, but that's usually not how "inquiries" start.</li>
+	<li>The criminal/corrupt element will then either pretend that no rule violation has taken place or claim it was accidental. Whichever minimizes cost.</li>
+</ol>
 
-the criminal/corrupt element will then either pretend that no rule violation has taken place or claim it was accidental.
+<h3>corruption in government</h3>
+<ol>
+<li>With legislative there comes another level, because they make the rules themselves and all consequences are hypotheticals. If the hypothecial is bad enough, reverting can become impossible. This can be called a coup.</li>
 
-with legislative there comes another level, because they make the rules themselves and all consequences are hypotheticals.
-
-also, if the hypothecial is bad enough, reverting can become.imoossible. this can be called a coup.
-
-if a coup is prevented all associated people will disavow their association, claim to be unaware of the attempt.
-
-this is where documents and other records are interesting and relevant becazse they are supposed to prove association or awareness.
-
-therefore, the disappearance of documents and photos is always a sure indicator that someone is trying tk cover their awareness and association tracks they could be accused for, if knowledgr about their actions were to become common
-
+<li>If a coup is prevented all associated people will disavow their association, claim to be unaware of the attempt.
 <br>
+	This is where documents and other records are interesting and relevant becazse they are supposed to prove association or awareness.
+<br>
+	Therefore, the disappearance of documents and photos is always a sure indicator that someone is trying to cover their awareness and association tracks they could be accused for, if knowledge about their actions were to become common
+<br>
+<li>
+On a next level we can look at and collect data about possibility space.
+<ul>
+	<li>how likely is it that some number x of y of participating elements is doing so intentionally with the goal of a coup?</li>
+	<li>how likely is it that some number z of y is so stupid and ignorant they don't notice their peers preparing a coup?</li>
+</ul>
+</ol>
+<p>
+This where i dont like hanlons razor as an excuse.
+</p>
+<h2>example</h2>
+<p>[company]: "Dumping this toxic waste in this particular spot is perfectly legal, moral and generally ok."</p>
+<p>"[company] was unaware of the regulation or the interpretation of the regulation that makes dumping this toxic waste in this particular location illegal."</p>
+<p>"[company] can't attribute the general crime of the company to personal involvement of individuals, who are then let go with generous compensation."</p>
 
-on a next level we can look at and collect data about possibility space.
-
-how likely is it that some number x of y is doing itnetionally with the goal of a coup?
-
-how likely is it that some number z of y is so stupid and ignorant they dont notice their peers preparing a coup?
-
-this where i dont like hanlons razor as an excuse.
 </body>
