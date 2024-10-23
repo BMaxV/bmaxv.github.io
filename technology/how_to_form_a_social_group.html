@@ -1,48 +1,66 @@
+<!doctype html>
+<head>
+    <title>how to form a social group</title>
+    <meta charset="utf-8"> 
+    <link rel="stylesheet" type="text/css" href="./../mainstyle.css"/>
+</head>
 
-<h2>group building</h2>
+<!-- 
+this is shit, because js but seems acceptable
+source : https://stackoverflow.com/a/19844696
+-->
+<script>
+function changeCSS(cssFile, cssLinkIndex) {
+
+    var oldlink = document.getElementsByTagName("link").item(cssLinkIndex);
+
+    var newlink = document.createElement("link");
+    newlink.setAttribute("rel", "stylesheet");
+    newlink.setAttribute("type", "text/css");
+    newlink.setAttribute("href", cssFile);
+
+    document.getElementsByTagName("head").item(cssLinkIndex).replaceChild(newlink, oldlink);
+}
+</script>
+
+<body>
+    <div class="darkmodetoggle">
+    <a href="#" onclick="changeCSS('./../mainstyle.css', 0);">light</a> 
+    <a href="#" onclick="changeCSS('./../darkmainstyle.css', 0);">darkmode</a>
+    </div>
+<div><h2>group building</h2>
 <p>
-i think we collectively lack experience or a manual/guideline to form effective social groups.
+I think we collectively lack experience or a manual/guideline to form effective social groups.
 
-i observed this in mmos where players/gamers gather to achieve a common purpose, but even there, some people "sacrifice" for the group and take it upon them to organize.
+I observed this in mmos where players/gamers gather to achieve a common purpose, but even there, some people "sacrifice" for the group and take it upon them to organize.
 </p>
-then the workload exceeds their "budget" and they burn out.
 <p>
-in case of games, sometimes someone new steps up and tge cycle repeats or the group dissolves. both are bad.
+Then the workload exceeds their "budget" and they burn out.
+</p>
+<p>
+In the case of games, sometimes someone new steps up and tge cycle repeats or the group dissolves. both are bad.
 
-the same pattern can be ovserved in political parties or companies with the difference that polirical activism is done because its "right" but its not fun and corporate activity is paid for.
+The same pattern can be ovserved in political parties or companies with the difference that political activism is done because its "right" but its not fun and corporate activity is paid for.
 </p>
 
-so the motivation pattern ranges from slightly to very different. i sgould put a table here
+So the motivation pattern ranges from slightly to very different. 
 <table>
-<tr>
-games			political		corporate
-</tr>
-<tr>
-fun			obligation		money
-</tr>
-<tr>
-pseudo material reward	self actualization	self preservation
-</tr>
-<tr>
-social experience	justice
-</tr>
+<tr><th>games</th>			<th>political</th>		<th>corporate</th></tr>
+<tr><td>fun</td>			<td>obligation</td>		<td>money</td></tr>
+<tr><td>pseudo material reward</td>	<td>self actualization</td><td>self preservation</td></tr>
+<tr><td>social experience</td>	<td>justice</td></tr>
 </table>
 <p>
-ideally, the workload of "doing for the group" could be tracked to ensure a roughly equal workload, measure effort/performancd, to make sure that everyone participates and feels integratex, that there are no free loaders taking undue leadership positions, to track achievements and use them to justify meritocratic leadership or opinions.
+Ideally, the workload of "doing for the group" could be tracked to ensure a roughly equal workload, measure effort/performancd, to make sure that everyone participates and feels integratex, that there are no free loaders taking undue leadership positions, to track achievements and use them to justify meritocratic leadership or opinions.
 </p>
-
-doing this is a broader general.problem that has several
-sub problems:
-<div>
-	<h2>group identity</h2>
-	<p>formulating and communicating group identity and goals, theory</p>
-	<p>
-managing the group, including moderatuon/policing
-practice of day to day operations
-	</p>
-<p>
-recruitment and social mobility
-</p>
+</div>
+<div><h2>group identity</h2>
+<ul>
+	<li>formulating and communicating group identity and goals, theory</li>
+	<li>managing the group, including moderatuon/policing
+practice of day to day operations</li>
+	<li>recruitment and social mobility</li>
+</ul>
 <p>
 something i can only report on anecdotally / i strongly believe its true, but i have no good academic source on it:
 
@@ -59,15 +77,13 @@ something i can only report on anecdotally / i strongly believe its true, but i 
 <p>and i would say, that that is the weakness of most common political appeals.</p>
 </div>
 
-<div>
-<h3>populist approaches</h3>
+<div><h3>populist approaches</h3>
 <p>i suspect that that is the actual strength of consciously populist approaches, they can make arbitrary wild claims and the member of more violence inclined groups dont really mind extreme "solutions". so any group going roughly a fitting direction will attract populist members.
 </p>
 <p>while more critical people will identify weaknesses and unhandled risks and failure cases as "unfit" and will instead default to not support that group</p>
 </div>
 
-<div>
-<h3>description of the target group for the purpose of "growth"</h3>
+<div><h3>description of the target group for the purpose of "growth"</h3>
 <p>without calling an the approach correct or wrong, and only using the example because its available and easy to research, some open source communities have chosen the path of "inclusion" and are trying to establish certain social rules
 
 e.g. the linux kernel and python foundation code of conduct
@@ -77,13 +93,13 @@ e.g. the linux kernel and python foundation code of conduct
 there are arguments for and against that and i dont particularly care one way or the other</p>
 <p> but something that can be said for certain is this: there is a chain of thought that has lead to this situation that is assumed to be true:
 </p>
-<pre>
-1. the space is.dominated by (rude/rule.violating) men
-2. these men are a minority in a global context
-3. therefore removal of the rudeness and/or fhe men will be appealing to a majority
-4. that majority will join the project because the project is GOOD and JUST
-5. Growth
-</pre>
+<ol>
+	<li>the space is dominated by (rude/ social rule violating) men</li>
+	<li>these men are a minority in a global context</li>
+	<li>therefore removal of the rudeness and/or fhe men will be appealing to a majority</li>
+	<li>that majority will join the project because the project is GOOD and JUST</li>
+	<li>Growth</li>
+</ol>
 
 <p> now, im not saying thats the wrong approach. i hope it is true and what is currently happening in those groups is correct and true and just.</p>
 
@@ -96,5 +112,7 @@ there are arguments for and against that and i dont particularly care one way or
 <p>plus, of course, the case where the group is wrong as a whole aboit their mission being GOOD and JUST but still trying to grow the movement.</p>	
  so actually, its probably a series of steps that all have to be correct. hmmmmm. i should pick a different form of presentation.
 </div>
+</div>
+
 </body>
 
