@@ -1,4 +1,20 @@
 
+<!doctype html>                                            <head>                                                         <title>type hints</title>                                  <meta charset="utf-8">                                     <link rel="stylesheet" type="text/css" href="./../mainstyle.css"/>                                                </head>
+
+<!--                                                       this is shit, because js but seems acceptable              source : https://stackoverflow.com/a/19844696
+-->
+<script>
+function changeCSS(cssFile, cssLinkIndex) {
+
+    var oldlink = document.getElementsByTagName("link").ite
+m(cssLinkIndex);                                                                                                          var newlink = document.createElement("link");              newlink.setAttribute("rel", "stylesheet");                 newlink.setAttribute("type", "text/css");                  newlink.setAttribute("href", cssFile);
+
+    document.getElementsByTagName("head").item(cssLinkIndex).replaceChild(newlink, oldlink);                          }
+</script>
+<body>
+
+
+	<div class="darkmodetoggle">                               <a href="#" onclick="changeCSS('../mainstyle.css', 0);">light</a>                                                     <a href="#" onclick="changeCSS('../darkmainstyle.css', 0);">darkmode</a>                                              </div>
 <h2>explicit vs. implicit</h2>
 <p>
 You can write things that are coincidentally conforming to a standard like 2024 12 24 describing the 2rth of decemver accirding to the iso 8601 standard. Or we can write things explicitly.
@@ -11,4 +27,4 @@ hello this the <dateiso>2024-12-24</dateiso> and we are celebrating christmas.
 <p>and while it is slightly more effort to do this, it enhances the quality of the text and the data a lot. theoretically we could now interpret things client side and display the date however we want.</p>
 
 <p>obviously this is currently not being done.</p>
-
+</body>
