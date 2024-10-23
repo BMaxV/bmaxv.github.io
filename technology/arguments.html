@@ -1,6 +1,10 @@
 
 
 
+<!doctype html>                                            <head>                                                         <title>experiments</title>                                 <meta charset="utf-8">                                     <link rel="stylesheet" type="text/css" href="./../mainstyle.css"/>                                                </head>                                                                                                               <!--                                                       this is shit, because js but seems acceptable              source : https://stackoverflow.com/a/19844696              -->                                                        <script>                                                   function changeCSS(cssFile, cssLinkIndex) {                                                                               var oldlink = document.getElementsByTagName("link").item(cssLinkIndex);                                                                                                          var newlink = document.createElement("link");              newlink.setAttribute("rel", "stylesheet");                 newlink.setAttribute("type", "text/css");                  newlink.setAttribute("href", cssFile);                                                                                document.getElementsByTagName("head").item(cssLinkIndex).replaceChild(newlink, oldlink);                          }                                                          </script>
+
+<body>                                                         <div class="darkmodetoggle">                               <a href="#" onclick="changeCSS('./../mainstyle.css', 0);">light</a>                                                   <a href="#" onclick="changeCSS('./../darkmainstyle.css', 0);">darkmode</a>                                            </div>
+
 <div>
 <h2>arguments</h2>
 
@@ -50,3 +54,5 @@ arguments you cant use:
 	<li>superiority of a position because of the personal attributrs like wealth, fame, skin color, gender, profession, etc of those who represent the position.</li>
 </ul>
 </div>
+
+</body>	
