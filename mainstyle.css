@@ -159,6 +159,11 @@ padding-bottom:0.2em;
 border: 1px solid black;
 }
 
+td.block{
+text-align:left;
+vertical-align:top;
+}
+
 td.imgcontainer{
 padding:0;
 border: 0px solid white;
