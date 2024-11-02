@@ -1,0 +1,68 @@
+<!doctype html>
+<head>
+    <title>Management of technological problem space.</title>
+    <meta charset="utf-8"> 
+    <link rel="stylesheet" type="text/css" href="./../mainstyle.css"/>
+</head>
+
+<!-- 
+this is shit, because js but seems acceptable
+source : https://stackoverflow.com/a/19844696
+-->
+<script>
+function changeCSS(cssFile, cssLinkIndex) {
+
+    var oldlink = document.getElementsByTagName("link").item(cssLinkIndex);
+
+    var newlink = document.createElement("link");
+    newlink.setAttribute("rel", "stylesheet");
+    newlink.setAttribute("type", "text/css");
+    newlink.setAttribute("href", cssFile);
+
+    document.getElementsByTagName("head").item(cssLinkIndex).replaceChild(newlink, oldlink);
+}
+</script>
+
+<body>
+    <div class="darkmodetoggle">
+    <a href="#" onclick="changeCSS('./../mainstyle.css', 0);">light</a> 
+    <a href="#" onclick="changeCSS('./../darkmainstyle.css', 0);">darkmode</a>
+    </div>
+<p>
+Think of any particular technical solution or patent.
+</p>
+<p>
+Maybe a bicycle frame.
+</p>
+<p>
+This bicycle frame represent a successful chain of decisions, a path in a very large problem - solution space, and every possible decision, from idea to purchase, represents a decision, where we're picking a convenient, cheap, technically feasible solution.
+</p>
+<p>
+These decisions are, or should be, rational.
+</p>
+<p>
+And they obviously, reveal a family of alternate paths that we didn't chose. E.g. we're making bicycle frames out of aluminium and not sugar, because of it's material properties. We totally could make a bicycle frame from sugar though. We're just choosing not to.
+</p>
+<p>
+It is very frustrating to me, that nobody is managing that global knowledge, problem, solution space.
+</p>
+<p>
+I think it should be the responsibility of universities and international research to do so. But they don't present themselves like they are doing that.
+</p>
+<p>
+I feel because they don't think in these terms, they are unaware of important research questions and local inefficiencies, because the communication between people who have the problem and the people who could solve the problem or even just answer questions about them, doesn't exist.
+</p>
+<p>
+Particularly when it comes to engineerings problems and engineering software, we would like software input to be as small and therefore fast as possible. We want to minimize UI clicks and interaction, prefer text for versioning and the high degree of specificity.
+</p>
+<p>
+If we had this thing and if it were publicly, globally accessible, it would allow everyone to see pain points by user interaction or small cost problems.
+</p>
+<p>
+E.g. everyone wasting 50cents every day on plastic packaging, multiplied by 2 billion people in the developed world, could be 1 billion $ invested daily, into an industry that could get us closer to e.g. carbon neutral energy economy.
+</p>
+<p>
+If all engineering is done through bad software, and everybody, ever who has to solve a certain problem has to spend 10 minutes instead of 2 seconds.
+</p>
+
+</body>
