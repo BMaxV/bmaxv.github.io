@@ -1,0 +1,97 @@
+<!doctype html>
+<head>
+    <title>threads</title>
+    <meta charset="utf-8"> 
+    <link rel="stylesheet" type="text/css" href="./../mainstyle.css"/>
+</head>
+
+<!-- 
+this is shit, because js but seems acceptable
+source : https://stackoverflow.com/a/19844696
+-->
+<script>
+function changeCSS(cssFile, cssLinkIndex) {
+
+    var oldlink = document.getElementsByTagName("link").item(cssLinkIndex);
+
+    var newlink = document.createElement("link");
+    newlink.setAttribute("rel", "stylesheet");
+    newlink.setAttribute("type", "text/css");
+    newlink.setAttribute("href", cssFile);
+
+    document.getElementsByTagName("head").item(cssLinkIndex).replaceChild(newlink, oldlink);
+}
+</script>
+
+<body>
+    <div class="darkmodetoggle">
+    <a href="#" onclick="changeCSS('./../mainstyle.css', 0);">light</a> 
+    <a href="#" onclick="changeCSS('./../darkmainstyle.css', 0);">darkmode</a>
+    </div>
+    
+<div><h2>threads</h2>
+
+<p>There is something weird about the interconnectedness of arguments. I suspect there is a better kind of "algebra" on how to deal with them, but that's not properly formalized or not popular to the point of being common knowledge.</p></div>
+
+<div>
+<p>First of all, "threads" can be simplified or expanded:</p>
+
+<pre>A->B->C->D->E->F
+
+==
+
+A->(B->C->D->E)->F
+
+==
+
+A->F
+
+==
+
+A->(X->Y->Z)->F
+
+=>
+
+A-->(B->C->D->E)->F
+ \->(X->Y->Z)---/
+
+</pre>
+
+Then, there is temporal / dependency relationship, in the act of arguing. If we "know" that
+
+<pre>
+
+A-\
+B--->X
+C-/
+</pre>
+
+And someone claims X to be true, can ask for their proof of <pre>A, B, C</pre> to support their point, they should be volunteering them.
+</div>
+
+<div><h3>common points</h3>
+
+If the point is commonly made, the proof should be commonly available. E.g. cato the elder is most famous not for his other writing (which I didn't read) but for ending his appeals with  "Carthago delenda est".
+
+This is a more complex point of probably
+
+<pre>
+"I am arguing for the good of rome" -> "we should do X" -> "as we should destroy carthage, which is also for the good of rome"
+</pre>
+
+Which is probably an instance of "appeal to authority" bleeding from one argument to another.
+<pre>
+"I have made this other good point before, therefore you should believe this point I am making right now."
+</pre>
+
+Carthage's destruction being in the interest of rome or the stance and opinion, is common enough knowledge that it doesn't need to be discussed or questioned. The opinion about that stance, whatever it may be, is established.
+
+</div>
+
+<div><h3>missing link</h3>
+
+I am missing discussions being explicitly phrased and encapsulated and declared, including machine readable tags, as "this is a five step alternative argument in support of X".
+
+</div>
+
+</body
