@@ -1,0 +1,72 @@
+<!doctype html>
+<head>
+    <title>logic, scopes and assumptions</title>
+    <meta charset="utf-8"> 
+    <link rel="stylesheet" type="text/css" href="./../mainstyle.css"/>
+</head>
+
+<!-- 
+this is shit, because js but seems acceptable
+source : https://stackoverflow.com/a/19844696
+-->
+<script>
+function changeCSS(cssFile, cssLinkIndex) {
+
+    var oldlink = document.getElementsByTagName("link").item(cssLinkIndex);
+
+    var newlink = document.createElement("link");
+    newlink.setAttribute("rel", "stylesheet");
+    newlink.setAttribute("type", "text/css");
+    newlink.setAttribute("href", cssFile);
+
+    document.getElementsByTagName("head").item(cssLinkIndex).replaceChild(newlink, oldlink);
+}
+</script>
+
+<body>
+    <div class="darkmodetoggle">
+    <a href="#" onclick="changeCSS('./../mainstyle.css', 0);">light</a> 
+    <a href="#" onclick="changeCSS('./../darkmainstyle.css', 0);">darkmode</a>
+    </div>
+<h2>logic, scopes and assumptions</h2>
+<p>
+Python has the "with" context manager that creates "objects" and automatically
+"handles" them when the context is left for any reason, including crashes,
+which is very handy for error handling. I use it most often when
+dealing with files to dump some simple text, but it's much more
+flexible than that.
+</p>
+<p>
+It put me on the track of thinking about languages and programming as
+"sets of assumptions". There is the EBNF ('extended backus naur form') 
+that sort of recursively defines what things mean in the language, but 
+I found that a bit hard to read and it's not clear about some other 
+things, like execution order. It still assumes we read things left to right
+execute statements one by one, etc..
+</p>
+<p>
+Anyway, I thought it would be really neat as a mental model 
+if we could do something like this:
+</p>
+
+<pre>
+with [C assumptions]:
+    [C code]
+</pre>
+<pre>
+with [python assumptions]:
+    [python code]
+</pre>
+<pre>
+with [sequential and precise]:
+    something
+</pre>
+<pre>
+with [I'm describing a general process, but please optimize yourself]:
+    something else
+</pre>
+
+That's a bit rudimentary, I'm sure there are better ways to describe,
+write and order assumptions or to define how "a" interpreter handles them.
+
+</body>
