@@ -1,0 +1,12 @@
+diff --git a/text1.txt b/text1.txt
+index 67da562..00d00ad 100644
+--- a/text1.txt
++++ b/text1.txt
+@@ -1,6 +1,4 @@
+ hello
+ what's
+-cooking
++going
+ on
+-the
+-stove
